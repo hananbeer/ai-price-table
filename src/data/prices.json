@@ -2,94 +2,255 @@
   "models": [
     {
       "name": "GPT-4 Turbo",
-      "provider": "OpenAI",
-      "inputPrice": 0.01,
-      "outputPrice": 0.03,
+      "creator": "OpenAI",
+      "provider": ["openai", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.02",
       "unit": "per 1K tokens",
-      "contextWindow": "128K tokens",
       "description": "Most capable model for complex tasks"
     },
     {
       "name": "GPT-4",
-      "provider": "OpenAI",
-      "inputPrice": 0.03,
-      "outputPrice": 0.06,
+      "creator": "OpenAI",
+      "provider": ["openai", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.045",
       "unit": "per 1K tokens",
-      "contextWindow": "8K tokens",
       "description": "High-performance model for advanced reasoning"
     },
     {
       "name": "GPT-3.5 Turbo",
-      "provider": "OpenAI",
-      "inputPrice": 0.0005,
-      "outputPrice": 0.0015,
+      "creator": "OpenAI",
+      "provider": ["openai", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.001",
       "unit": "per 1K tokens",
-      "contextWindow": "16K tokens",
       "description": "Fast and cost-effective for most tasks"
     },
     {
       "name": "Claude 3 Opus",
-      "provider": "Anthropic",
-      "inputPrice": 0.015,
-      "outputPrice": 0.075,
+      "creator": "Anthropic",
+      "provider": ["anthropic", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.045",
       "unit": "per 1K tokens",
-      "contextWindow": "200K tokens",
       "description": "Most intelligent model for complex reasoning"
     },
     {
       "name": "Claude 3 Sonnet",
-      "provider": "Anthropic",
-      "inputPrice": 0.003,
-      "outputPrice": 0.015,
+      "creator": "Anthropic",
+      "provider": ["anthropic", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.009",
       "unit": "per 1K tokens",
-      "contextWindow": "200K tokens",
       "description": "Balanced performance and cost"
     },
     {
       "name": "Claude 3 Haiku",
-      "provider": "Anthropic",
-      "inputPrice": 0.00025,
-      "outputPrice": 0.00125,
+      "creator": "Anthropic",
+      "provider": ["anthropic", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.00075",
       "unit": "per 1K tokens",
-      "contextWindow": "200K tokens",
       "description": "Fast and affordable for simple tasks"
     },
     {
       "name": "Gemini Pro",
-      "provider": "Google",
-      "inputPrice": 0.0005,
-      "outputPrice": 0.0015,
+      "creator": "Google",
+      "provider": ["google", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.001",
       "unit": "per 1K tokens",
-      "contextWindow": "32K tokens",
       "description": "Google's advanced language model"
     },
     {
       "name": "Gemini Ultra",
-      "provider": "Google",
-      "inputPrice": 0.0125,
-      "outputPrice": 0.05,
+      "creator": "Google",
+      "provider": ["google", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.03125",
       "unit": "per 1K tokens",
-      "contextWindow": "32K tokens",
       "description": "Google's most capable model"
     },
     {
       "name": "Llama 3 70B",
-      "provider": "Meta",
-      "inputPrice": 0.00065,
-      "outputPrice": 0.00065,
+      "creator": "Meta",
+      "provider": ["huggingface", "replicate", "fal", "wavespeed"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.00065",
       "unit": "per 1K tokens",
-      "contextWindow": "8K tokens",
       "description": "Open-source large language model"
     },
     {
       "name": "Mixtral 8x7B",
-      "provider": "Mistral AI",
-      "inputPrice": 0.00027,
-      "outputPrice": 0.00027,
+      "creator": "Mistral AI",
+      "provider": ["mistral", "huggingface", "replicate", "fal", "wavespeed"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.00027",
       "unit": "per 1K tokens",
-      "contextWindow": "32K tokens",
       "description": "Efficient mixture-of-experts model"
+    },
+    {
+      "name": "DALL-E 3",
+      "creator": "OpenAI",
+      "provider": ["openai", "replicate", "fal"],
+      "type": "text-to-image",
+      "inferenceFormula": "images * 0.04",
+      "unit": "per image",
+      "description": "High-quality text-to-image generation"
+    },
+    {
+      "name": "Midjourney",
+      "creator": "Midjourney",
+      "provider": ["midjourney", "replicate", "fal"],
+      "type": "text-to-image",
+      "inferenceFormula": "images * 0.05",
+      "unit": "per image",
+      "description": "Artistic text-to-image generation"
+    },
+    {
+      "name": "Stable Diffusion XL",
+      "creator": "Stability AI",
+      "provider": ["stability", "huggingface", "replicate", "fal", "wavespeed"],
+      "type": "text-to-image",
+      "inferenceFormula": "images * 0.002",
+      "unit": "per image",
+      "description": "Open-source text-to-image model"
+    },
+    {
+      "name": "Qwen-VL",
+      "creator": "Alibaba",
+      "provider": ["huggingface", "replicate", "fal", "wavespeed"],
+      "type": "vision-language",
+      "inferenceFormula": "tokens / 1000 * 0.0015",
+      "unit": "per 1K tokens",
+      "description": "Multimodal vision-language model"
+    },
+    {
+      "name": "Qwen2-VL",
+      "creator": "Alibaba",
+      "provider": ["huggingface", "replicate", "fal", "wavespeed"],
+      "type": "vision-language",
+      "inferenceFormula": "tokens / 1000 * 0.002",
+      "unit": "per 1K tokens",
+      "description": "Advanced multimodal understanding"
+    },
+    {
+      "name": "Sora",
+      "creator": "OpenAI",
+      "provider": ["openai", "replicate", "fal"],
+      "type": "text-to-video",
+      "inferenceFormula": "videoSeconds * 0.12",
+      "unit": "per second",
+      "description": "Text-to-video generation"
+    },
+    {
+      "name": "Runway Gen-3",
+      "creator": "Runway",
+      "provider": ["runway", "replicate", "fal"],
+      "type": "text-to-video",
+      "inferenceFormula": "videoSeconds * 0.08",
+      "unit": "per second",
+      "description": "High-quality video generation"
+    },
+    {
+      "name": "Pika Labs",
+      "creator": "Pika",
+      "provider": ["pika", "replicate", "fal"],
+      "type": "text-to-video",
+      "inferenceFormula": "videoSeconds * 0.06",
+      "unit": "per second",
+      "description": "Creative video generation"
+    },
+    {
+      "name": "Veo",
+      "creator": "Google",
+      "provider": ["google", "replicate", "fal"],
+      "type": "text-to-video",
+      "inferenceFormula": "videoSeconds * 0.1",
+      "unit": "per second",
+      "description": "Google's video generation model"
+    },
+    {
+      "name": "Seedance",
+      "creator": "Seedance",
+      "provider": ["seedance", "replicate", "fal"],
+      "type": "text-to-video",
+      "inferenceFormula": "videoSeconds * 0.04",
+      "unit": "per second",
+      "description": "Efficient video generation"
+    },
+    {
+      "name": "WAN Video",
+      "creator": "WAN",
+      "provider": ["wan", "replicate", "fal"],
+      "type": "text-to-video",
+      "inferenceFormula": "videoSeconds * 0.05",
+      "unit": "per second",
+      "description": "High-quality video synthesis"
+    },
+    {
+      "name": "Qwen-Video",
+      "creator": "Alibaba",
+      "provider": ["huggingface", "replicate", "fal", "wavespeed"],
+      "type": "video-understanding",
+      "inferenceFormula": "videoSeconds * 0.02",
+      "unit": "per second",
+      "description": "Video understanding and analysis"
+    },
+    {
+      "name": "GPT-4V",
+      "creator": "OpenAI",
+      "provider": ["openai", "replicate", "fal"],
+      "type": "vision-language",
+      "inferenceFormula": "tokens / 1000 * 0.01",
+      "unit": "per 1K tokens",
+      "description": "Multimodal vision and language model"
+    },
+    {
+      "name": "Claude 3.5 Sonnet",
+      "creator": "Anthropic",
+      "provider": ["anthropic", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.003",
+      "unit": "per 1K tokens",
+      "description": "Latest Claude model with improved performance"
+    },
+    {
+      "name": "Gemini 1.5 Pro",
+      "creator": "Google",
+      "provider": ["google", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.00125",
+      "unit": "per 1K tokens",
+      "description": "Google's latest large language model"
+    },
+    {
+      "name": "Llama 3.1 405B",
+      "creator": "Meta",
+      "provider": ["huggingface", "replicate", "fal", "wavespeed"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.0015",
+      "unit": "per 1K tokens",
+      "description": "Meta's largest open-source model"
+    },
+    {
+      "name": "Command R+",
+      "creator": "Cohere",
+      "provider": ["cohere", "replicate", "fal"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.0025",
+      "unit": "per 1K tokens",
+      "description": "Enterprise-focused language model"
+    },
+    {
+      "name": "DeepSeek-V2",
+      "creator": "DeepSeek",
+      "provider": ["huggingface", "replicate", "fal", "wavespeed"],
+      "type": "LLM",
+      "inferenceFormula": "tokens / 1000 * 0.0005",
+      "unit": "per 1K tokens",
+      "description": "Efficient reasoning model"
     }
   ]
 }
-

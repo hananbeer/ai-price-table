@@ -1,0 +1,1096 @@
+model_id,tag,inputs,output,options,bip_units,bip_price_usd,notes
+argil/avatars/audio-to-video,audio-to-video,audio,video,,input seconds,0.02,
+argil/avatars/text-to-video,text-to-video,text,video,,output seconds,0.0225,"(video input is implicit, so I guess input & output video length is the same)"
+bria/reimagine/3.2,image-to-image,image,image,,run,0.04,
+bria/text-to-image/3.2,text-to-image,text,image,,run,0.04,
+bria/video/background-removal,video-to-video,video,video,,output seconds,0.14,
+bria/video/increase-resolution,video-to-video,video,video,,output seconds,0.14,
+cassetteai/music-generator,text-to-audio,text,audio,,output minutes,0.02,
+cassetteai/sound-effects-generator,text-to-audio,text,audio,,run,0.01,
+cassetteai/video-sound-effects-generator,video-to-video,audio,video,,output minutes,0.2,
+creatify/lipsync,video-to-video,audio,video,,output minutes,1,
+decart/lucy-14b/image-to-video,image-to-video,image,video,,output seconds,0.08,
+decart/lucy-edit/dev,video-to-video,video,video,720p,output seconds,0.03,
+decart/lucy-edit/pro,video-to-video,video,video,"480p
+720p",output seconds,"0.15
+0.3",
+easel-ai/advanced-face-swap,image-to-image,image,image,,run,0.05,
+easel-ai/easel-avatar,text-to-image,text,image,,run,0.05,
+easel-ai/easel-gifswap,image-to-image,image,image,,run,0.05,
+easel-ai/fashion-photoshoot,image-to-image,image,image,,run,0.07,
+easel-ai/fashion-tryon,image-to-image,image,image,,run,0.05,
+easel-ai/product-photoshoot,image-to-image,image,image,,run,0.08,
+fal-ai/ace-step,text-to-audio,text,audio,,output seconds,0.0002,
+fal-ai/ace-step/audio-inpaint,audio-to-audio,audio,audio,,output seconds,0.0002,
+fal-ai/ace-step/audio-outpaint,audio-to-audio,audio,audio,,output seconds,0.0002,
+fal-ai/ace-step/audio-to-audio,audio-to-audio,audio,audio,,output seconds,0.0002,
+fal-ai/ace-step/prompt-to-audio,text-to-audio,text,audio,,output seconds,0.0002,
+fal-ai/ai-avatar,image-to-video,image,video,"480p
+720p",output seconds,"0.3
+0.6",
+fal-ai/ai-avatar/multi,image-to-video,image,video,"480p
+720p",output seconds,"0.3
+0.6",
+fal-ai/ai-avatar/multi-text,image-to-video,image,video,"480p
+720p",output seconds,"0.3
+0.6",
+fal-ai/ai-avatar/single-text,image-to-video,image,video,"480p
+720p",output seconds,"0.3
+0.6",
+fal-ai/amt-interpolation,video-to-video,video,video,,compute seconds,0.00111,
+fal-ai/amt-interpolation/frame-interpolation,image-to-video,image,video,,compute seconds,0.00111,
+fal-ai/animatediff-sparsectrl-lcm,text-to-video,text,video,,compute seconds,0.00111,
+fal-ai/any-llm,llm,text,text,,run,0.001,
+fal-ai/any-llm/enterprise,llm,text,text,,run,0.001,
+fal-ai/any-llm/vision,vision,image,text,,run,0.01,
+fal-ai/aura-flow,text-to-image,text,image,,compute seconds,0.00125,
+fal-ai/aura-sr,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/auto-caption,video-to-video,video,video,,run,0.1,
+fal-ai/bagel,text-to-image,text,image,,run,0.1,
+fal-ai/bagel/edit,image-to-image,image,image,,run,0.1,
+fal-ai/bagel/understand,image-to-json,image,json,,run,0.05,
+fal-ai/ben/v2/image,image-to-image,image,image,,mega pixels,0.025,
+fal-ai/ben/v2/video,video-to-video,video,video,,mega pixels,0.001,megapixel or mega video tokens?
+fal-ai/birefnet,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/birefnet/v2,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/bria/background/remove,image-to-image,image,image,,run,0.018,
+fal-ai/bria/background/replace,image-to-image,image,image,,run,0.04,
+fal-ai/bria/eraser,image-to-image,image,image,,run,0.04,
+fal-ai/bria/expand,image-to-image,image,image,,run,0.04,
+fal-ai/bria/genfill,image-to-image,image,image,,run,0.04,
+fal-ai/bria/product-shot,image-to-image,image,image,,run,0.04,
+fal-ai/bria/reimagine,image-to-image,image,image,,run,0.04,
+fal-ai/bria/text-to-image/base,text-to-image,text,image,,run,0.04,
+fal-ai/bria/text-to-image/fast,text-to-image,text,image,,run,0.028,
+fal-ai/bria/text-to-image/hd,text-to-image,text,image,,run,0.04,
+fal-ai/bytedance/dreamina/v3.1/text-to-image,text-to-image,text,image,,run,0.03,
+fal-ai/bytedance/omnihuman,image-to-video,image,video,,output seconds,0.14,
+fal-ai/bytedance/omnihuman/v1.5,image-to-video,image,video,,output seconds,0.16,
+fal-ai/bytedance/seedance/v1/lite/image-to-video,image-to-video,image,video,,mega video tokens,0.036,
+fal-ai/bytedance/seedance/v1/lite/reference-to-video,image-to-video,image,video,,mega video tokens,0.036,
+fal-ai/bytedance/seedance/v1/lite/text-to-video,text-to-video,text,video,,mega video tokens,0.036,
+fal-ai/bytedance/seedance/v1/pro/image-to-video,image-to-video,image,video,,mega video tokens,2.5,
+fal-ai/bytedance/seedance/v1/pro/text-to-video,text-to-video,text,video,,mega video tokens,2.5,
+fal-ai/bytedance/seededit/v3/edit-image,image-to-image,image,image,,run,0.03,
+fal-ai/bytedance/seedream/v3/text-to-image,text-to-image,text,image,,run,0.03,
+fal-ai/bytedance/seedream/v4/edit,image-to-image,image,image,,run,0.03,
+fal-ai/bytedance/seedream/v4/text-to-image,text-to-image,text,image,,run,0.03,
+fal-ai/bytedance/video-stylize,image-to-video,image,video,,run,0.23,
+fal-ai/calligrapher,image-to-image,image,image,,mega pixels,0.2,
+fal-ai/cartoonify,image-to-image,image,image,,run,0.1,
+fal-ai/cat-vton,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/ccsr,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/chain-of-zoom,image-to-image,image,image,,run,0.025,
+fal-ai/chatterbox/speech-to-speech,speech-to-speech,audio,audio,,output minutes,0.015,
+fal-ai/chatterbox/text-to-speech,text-to-speech,text,audio,,input kilo tokens,0.025,
+fal-ai/chatterbox/text-to-speech/multilingual,text-to-speech,text,audio,,input kilo tokens,0.025,
+fal-ai/clarity-upscaler,image-to-image,image,image,,mega pixels,0.03,
+fal-ai/codeformer,image-to-image,image,image,,mega pixels,0.0021,input or output?
+fal-ai/cogvideox-5b,text-to-video,text,video,,run,0.2,
+fal-ai/cogvideox-5b/image-to-video,image-to-video,image,video,,run,0.2,
+fal-ai/cogvideox-5b/video-to-video,video-to-video,video,video,,run,0.2,
+fal-ai/cogview4,text-to-image,text,image,,output mega pixels,0.1,
+fal-ai/controlnext,video-to-video,video,video,,compute seconds,0.00111,
+fal-ai/creative-upscaler,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/csm-1b,text-to-audio,text,audio,,input kilo tokens,0.03,
+fal-ai/ddcolor,image-to-image,image,image,,mega pixels,0.001,input or output?
+fal-ai/decart/lucy-5b/image-to-video,image-to-video,image,video,,run,0.15,
+fal-ai/dia-tts,text-to-speech,text,audio,,input kilo tokens,0.04,
+fal-ai/dia-tts/voice-clone,audio-to-audio,audio,audio,,input kilo tokens,0.04,
+fal-ai/diffrhythm,text-to-audio,text,audio,,output seconds,0.001,
+fal-ai/diffusion-edge,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/docres,image-to-image,image,image,,mega pixels,0.025,
+fal-ai/docres/dewarp,image-to-image,image,image,,mega pixels,0.03,
+fal-ai/drct-super-resolution,image-to-image,image,image,,mega pixels,0.0045,
+fal-ai/dreamo,text-to-image,text,image,,output mega pixels,0.05,
+fal-ai/dreamshaper,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/dubbing,video-to-video,audio,video,,output minutes,1,
+fal-ai/dwpose,image-to-image,image,image,,compute seconds,0.0006,
+fal-ai/dwpose/video,video-to-video,video,video,,compute seconds,0.0006,
+fal-ai/echomimic-v3,audio-to-video,audio,video,,output seconds,0.2,
+fal-ai/elevenlabs/audio-isolation,audio-to-audio,audio,audio,,output minutes,0.1,
+fal-ai/elevenlabs/sound-effects,text-to-audio,text,audio,,output seconds,0.002,
+fal-ai/elevenlabs/sound-effects/v2,text-to-audio,text,audio,,output seconds,0.002,
+fal-ai/elevenlabs/speech-to-text,speech-to-text,audio,text,,output minutes,0.03,
+fal-ai/elevenlabs/text-to-dialogue/eleven-v3,text-to-audio,text,audio,,input kilo tokens,0.1,
+fal-ai/elevenlabs/tts/eleven-v3,text-to-audio,text,audio,,input kilo tokens,0.1,
+fal-ai/elevenlabs/tts/multilingual-v2,text-to-audio,text,audio,,input kilo tokens,0.1,
+fal-ai/elevenlabs/tts/turbo-v2.5,text-to-speech,text,audio,,run,0.05,
+fal-ai/era-3d,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/esrgan,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/evf-sam,image-to-image,image,image,"positive prompt
+positive + negative prompts",run,"0.005
+0.01",
+fal-ai/f-lite/standard,text-to-image,text,image,,output mega pixels,0.025,
+fal-ai/f-lite/texture,text-to-image,text,image,,output mega pixels,0.025,
+fal-ai/f5-tts,text-to-audio,text,audio,,run,0.05,
+fal-ai/face-to-sticker,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/fashn/tryon/v1.5,image-to-image,image,image,,run,0.075,
+fal-ai/fashn/tryon/v1.6,image-to-image,image,image,,run,0.075,
+fal-ai/fast-animatediff/text-to-video,text-to-video,text,video,,compute seconds,0.00111,
+fal-ai/fast-animatediff/turbo/text-to-video,text-to-video,text,video,,compute seconds,0.00111,
+fal-ai/fast-animatediff/turbo/video-to-video,video-to-video,video,video,,compute seconds,0.00111,
+fal-ai/fast-animatediff/video-to-video,video-to-video,video,video,,compute seconds,0.00111,
+fal-ai/fast-fooocus-sdxl,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/fast-fooocus-sdxl/image-to-image,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/fast-lcm-diffusion,text-to-image,text,image,,compute seconds,0.000575,
+fal-ai/fast-lcm-diffusion/image-to-image,image-to-image,image,image,,compute seconds,0.000575,
+fal-ai/fast-lcm-diffusion/inpainting,image-to-image,image,image,,compute seconds,0.000575,
+fal-ai/fast-lightning-sdxl,text-to-image,text,image,,compute seconds,0.00125,
+fal-ai/fast-lightning-sdxl/image-to-image,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/fast-lightning-sdxl/inpainting,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/fast-sdxl,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/fast-sdxl-controlnet-canny,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/fast-sdxl-controlnet-canny/image-to-image,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/fast-sdxl-controlnet-canny/inpainting,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/fast-sdxl/image-to-image,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/fast-sdxl/inpainting,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/fast-svd-lcm/text-to-video,text-to-video,text,video,,compute seconds,0.00111,
+fal-ai/fast-svd/text-to-video,text-to-video,text,video,,compute seconds,0.00111,
+fal-ai/ffmpeg-api/compose,video-to-video,audio,video,,output seconds,0.0002,
+fal-ai/ffmpeg-api/extract-frame,image-to-image,image,image,,output seconds,0.0002,
+fal-ai/ffmpeg-api/loudnorm,json,audio,json,,compute seconds,0.00017,
+fal-ai/ffmpeg-api/merge-audio-video,video-to-video,audio,video,,output seconds,0.0002,
+fal-ai/ffmpeg-api/merge-videos,video-to-video,video,video,,compute seconds,0.00017,
+fal-ai/ffmpeg-api/metadata,json,audio,json,,compute seconds,0.00017,
+fal-ai/ffmpeg-api/waveform,json,audio,json,,compute seconds,0.00017,
+fal-ai/film,image-to-image,image,image,,compute seconds,0.0013,
+fal-ai/film/video,video-to-video,video,video,,compute seconds,0.0013,
+fal-ai/finegrain-eraser,image-to-image,image,image,"express
+standard
+premium",run,"0.18
+0.27
+0.36",
+fal-ai/finegrain-eraser/bbox,image-to-image,"express
+standard
+premium",image,,run,"0.09
+0.18
+0.27",express price is wrong?
+fal-ai/finegrain-eraser/mask,image-to-image,image,image,"express
+premium",run,"0.04
+0.13",
+fal-ai/florence-2-large/caption,vision,image,json,,compute seconds,0.00125,
+fal-ai/florence-2-large/caption-to-phrase-grounding,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/florence-2-large/dense-region-caption,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/florence-2-large/detailed-caption,vision,image,json,,compute seconds,0.00125,
+fal-ai/florence-2-large/more-detailed-caption,vision,image,json,,compute seconds,0.00125,
+fal-ai/florence-2-large/object-detection,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/florence-2-large/ocr,vision,image,json,,compute seconds,0.00125,
+fal-ai/florence-2-large/ocr-with-region,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/florence-2-large/open-vocabulary-detection,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/florence-2-large/referring-expression-segmentation,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/florence-2-large/region-proposal,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/florence-2-large/region-to-category,vision,image,json,,compute seconds,0.00125,
+fal-ai/florence-2-large/region-to-description,vision,image,json,,compute seconds,0.00125,
+fal-ai/florence-2-large/region-to-segmentation,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/flowedit,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/flux-1/dev,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux-1/dev/image-to-image,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux-1/dev/redux,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux-1/krea,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux-1/krea/image-to-image,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux-1/krea/redux,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux-1/schnell,text-to-image,text,image,,output mega pixels,0.003,rounding up to nearest megapixel
+fal-ai/flux-1/schnell/redux,image-to-image,image,image,,mega pixels,0.003,
+fal-ai/flux-1/srpo,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux-1/srpo/image-to-image,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux-control-lora-canny,text-to-image,text,image,,output mega pixels,0.04,rounding up to nearest megapixel
+fal-ai/flux-control-lora-canny/image-to-image,image-to-image,image,image,,mega pixels,0.04,rounding up to nearest megapixel
+fal-ai/flux-control-lora-depth,text-to-image,text,image,,output mega pixels,0.04,rounding up to nearest megapixel
+fal-ai/flux-control-lora-depth/image-to-image,image-to-image,image,image,,mega pixels,0.04,rounding up to nearest megapixel
+fal-ai/flux-differential-diffusion,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel
+fal-ai/flux-general,text-to-image,text,image,,output mega pixels,0.075,rounding up to nearest megapixel
+fal-ai/flux-general/differential-diffusion,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/flux-general/image-to-image,image-to-image,image,image,,mega pixels,0.075,rounding up to nearest megapixel
+fal-ai/flux-general/inpainting,image-to-image,image,image,,mega pixels,0.075,rounding up to nearest megapixel
+fal-ai/flux-general/rf-inversion,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/flux-kontext-lora,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-kontext-lora/inpaint,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-kontext-lora/text-to-image,text-to-image,text,image,,output mega pixels,0.035,
+fal-ai/flux-kontext-trainer,training,,model,,kilo steps,2.5,
+fal-ai/flux-kontext/dev,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux-krea-lora,text-to-image,text,image,,output mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-krea-lora/image-to-image,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-krea-lora/inpainting,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-krea-lora/stream,text-to-image,text,image,,output mega pixels,0.035,
+fal-ai/flux-krea-trainer,training,,model,,run,2,
+fal-ai/flux-lora,text-to-image,text,image,,output mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-lora-canny,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-lora-depth,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-lora-fast-training,training,,model,,run,2,
+fal-ai/flux-lora-fill,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-lora-portrait-trainer,training,,model,,steps,0.0024,min 1000 units
+fal-ai/flux-lora/image-to-image,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-lora/inpainting,text-to-image,text,image,,output mega pixels,0.035,rounding up to nearest megapixel
+fal-ai/flux-lora/stream,text-to-image,text,image,,output mega pixels,0.035,
+fal-ai/flux-pro-trainer,training,,model,"<150
+150-500
+>500",iterations,"2
+4
+6",
+fal-ai/flux-pro/kontext,image-to-image,image,image,,run,0.04,
+fal-ai/flux-pro/kontext/max,image-to-image,image,image,,run,0.08,
+fal-ai/flux-pro/kontext/max/multi,image-to-image,image,image,,run,0.08,
+fal-ai/flux-pro/kontext/max/text-to-image,text-to-image,text,image,,run,0.08,
+fal-ai/flux-pro/kontext/multi,image-to-image,image,image,,run,0.04,
+fal-ai/flux-pro/kontext/text-to-image,text-to-image,text,image,,run,0.04,
+fal-ai/flux-pro/new,text-to-image,text,image,,output mega pixels,0.05,rounding up to nearest megapixel
+fal-ai/flux-pro/v1.1,text-to-image,text,image,,output mega pixels,0.04,rounding up to nearest megapixel
+fal-ai/flux-pro/v1.1-ultra,text-to-image,text,image,,output mega pixels,0.06,
+fal-ai/flux-pro/v1.1-ultra-finetuned,text-to-image,text,image,,output mega pixels,0.07,rounding up to nearest megapixel
+fal-ai/flux-pro/v1.1-ultra/redux,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel
+fal-ai/flux-pro/v1.1/redux,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel
+fal-ai/flux-pro/v1/canny,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel
+fal-ai/flux-pro/v1/canny-finetuned,image-to-image,image,image,,mega pixels,0.06,
+fal-ai/flux-pro/v1/depth,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel
+fal-ai/flux-pro/v1/depth-finetuned,image-to-image,image,image,,mega pixels,0.06,
+fal-ai/flux-pro/v1/fill,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel
+fal-ai/flux-pro/v1/fill-finetuned,image-to-image,image,image,,mega pixels,0.06,
+fal-ai/flux-pro/v1/redux,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel
+fal-ai/flux-pulid,image-to-image,image,image,,mega pixels,0.0333,rounding up to nearest megapixel
+fal-ai/flux-subject,text-to-image,text,image,,output mega pixels,0.04,rounding up to nearest megapixel
+fal-ai/flux/dev,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux/dev/image-to-image,image-to-image,image,image,,mega pixels,0.03,rounding up to nearest megapixel
+fal-ai/flux/dev/redux,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux/krea,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux/krea/image-to-image,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux/krea/redux,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux/schnell,text-to-image,text,image,,output mega pixels,0.003,rounding up to nearest megapixel
+fal-ai/flux/schnell/redux,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux/srpo,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/flux/srpo/image-to-image,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel
+fal-ai/fooocus,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/fooocus/image-prompt,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/fooocus/inpaint,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/fooocus/upscale-or-vary,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/framepack,image-to-video,image,video,,output seconds,0.0333,
+fal-ai/framepack/f1,image-to-video,image,video,,output seconds,0.0333,
+fal-ai/framepack/flf2v,image-to-video,image,video,,output seconds,0.0333,
+fal-ai/gemini-25-flash-image,text-to-image,text,image,,run,0.039,
+fal-ai/gemini-25-flash-image/edit,image-to-image,image,image,,run,0.039,
+fal-ai/gemini-flash-edit,image-to-image,image,image,,run,0.04,
+fal-ai/gemini-flash-edit/multi,image-to-image,image,image,,run,0.04,
+fal-ai/ghiblify,image-to-image,image,image,,run,0.05,
+fal-ai/got-ocr/v2,vision,image,json,,run,0.05,
+fal-ai/hidream-e1-1,image-to-image,image,image,,run,0.06,
+fal-ai/hidream-i1-dev,text-to-image,text,image,,output mega pixels,0.03,
+fal-ai/hidream-i1-fast,text-to-image,text,image,,output mega pixels,0.01,
+fal-ai/hidream-i1-full,text-to-image,text,image,,output mega pixels,0.05,
+fal-ai/hidream-i1-full/image-to-image,image-to-image,image,image,,mega pixels,0.05,
+fal-ai/hunyuan_world,image-to-image,image,image,,run,0.15,
+fal-ai/hunyuan_world/image-to-world,image-to-3d,image,3d,,run,0.3,
+fal-ai/hunyuan-avatar,image-to-video,image,video,,output seconds,0.28,min 5 units?
+fal-ai/hunyuan-custom,image-to-video,image,video,"512p
+720p",run,"0.8
+2.4",
+fal-ai/hunyuan-image/v2.1/text-to-image,text-to-image,text,image,,output mega pixels,0.1,
+fal-ai/hunyuan-image/v3/text-to-image,text-to-image,text,image,,output mega pixels,0.1,
+fal-ai/hunyuan-portrait,image-to-video,image,video,,output seconds,0.08,"minimum 5 units? also price per second appears wrong, either 0.8 or 0.18 or 0.08??"
+fal-ai/hunyuan-video,text-to-video,text,video,,run,0.4,
+fal-ai/hunyuan-video-foley,video-to-video,video,video,,output seconds,0.01,
+fal-ai/hunyuan-video-image-to-video,image-to-video,image,video,,run,0.4,
+fal-ai/hunyuan-video-img2vid-lora,image-to-video,image,video,,run,0.3,
+fal-ai/hunyuan-video-lora,text-to-video,text,video,,run,0.4,
+fal-ai/hunyuan-video-lora-training,training,,model,,kilo steps,5,kilosteps or unit or what?
+fal-ai/hunyuan-video-lora/video-to-video,video-to-video,video,video,,compute seconds,0.00125,
+fal-ai/hunyuan-video/video-to-video,video-to-video,video,video,,compute seconds,0.00125,
+fal-ai/hunyuan3d-v21,image-to-3d,image,3d,,run,0.3,
+fal-ai/hunyuan3d/v2,image-to-3d,image,3d,,run,0.16,
+fal-ai/hunyuan3d/v2/mini,image-to-3d,image,3d,,run,0.1,
+fal-ai/hunyuan3d/v2/mini/turbo,image-to-3d,image,3d,,run,0.08,
+fal-ai/hunyuan3d/v2/multi-view,image-to-3d,image,3d,,run,0.017,
+fal-ai/hunyuan3d/v2/multi-view/turbo,image-to-3d,image,3d,,run,0.015,
+fal-ai/hunyuan3d/v2/turbo,image-to-3d,image,3d,,run,0.14,
+fal-ai/hyper-sdxl,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/hyper-sdxl/image-to-image,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/hyper-sdxl/inpainting,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/hyper3d/rodin,image-to-3d,image,3d,,run,0.4,
+fal-ai/hyper3d/rodin/v2,image-to-3d,image,3d,,run,0.4,
+fal-ai/iclight-v2,image-to-image,image,image,,mega pixels,0.1,
+fal-ai/ideogram/character,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.1
+0.15
+0.2",
+fal-ai/ideogram/character/edit,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.1
+0.15
+0.2",
+fal-ai/ideogram/character/remix,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.1
+0.15
+0.2",
+fal-ai/ideogram/upscale,image-to-image,image,image,,run,0.06,
+fal-ai/ideogram/v2,text-to-image,text,image,,run,0.08,
+fal-ai/ideogram/v2/edit,image-to-image,image,image,,run,0.08,
+fal-ai/ideogram/v2/remix,image-to-image,image,image,,run,0.08,
+fal-ai/ideogram/v2/turbo,text-to-image,text,image,,run,0.05,
+fal-ai/ideogram/v2/turbo/edit,image-to-image,image,image,,run,0.05,
+fal-ai/ideogram/v2/turbo/remix,image-to-image,image,image,,run,0.05,
+fal-ai/ideogram/v2a,text-to-image,text,image,,run,0.04,
+fal-ai/ideogram/v2a/remix,image-to-image,image,image,,run,0.04,
+fal-ai/ideogram/v2a/turbo,text-to-image,text,image,,run,0.025,
+fal-ai/ideogram/v2a/turbo/remix,image-to-image,image,image,,run,0.025,
+fal-ai/ideogram/v3,text-to-image,text,image,"turbo
+balanced
+quality",run,"0.03
+0.06
+0.09",
+fal-ai/ideogram/v3/edit,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.03
+0.06
+0.09",
+fal-ai/ideogram/v3/reframe,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.03
+0.06
+0.09",
+fal-ai/ideogram/v3/remix,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.03
+0.06
+0.09",
+fal-ai/ideogram/v3/replace-background,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.03
+0.06
+0.09",
+fal-ai/illusion-diffusion,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/image-apps-v2/age-modify,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/city-teleport,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/expression-change,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/hair-change,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/headshot-photo,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/makeup-application,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/object-removal,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/perspective,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/photo-restoration,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/photography-effects,image-to-image,image,image,,run,0.4,
+fal-ai/image-apps-v2/portrait-enhance,image-to-image,image,image,,run,0.4,
+fal-ai/image-apps-v2/product-holding,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/product-photography,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/relighting,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/style-transfer,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/texture-transform,image-to-image,image,image,,run,0.04,
+fal-ai/image-apps-v2/virtual-try-on,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/age-progression,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/baby-version,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/background-change,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/broccoli-haircut,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/cartoonify,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/color-correction,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/expression-change,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/face-enhancement,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/hair-change,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/object-removal,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/photo-restoration,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/plushie-style,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/professional-photo,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/realism,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/reframe,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/retouch,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/scene-composition,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/style-transfer,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/text-removal,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/time-of-day,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/weather-effect,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/wojak-style,image-to-image,image,image,,run,0.04,
+fal-ai/image-editing/youtube-thumbnails,image-to-image,image,image,,run,0.04,
+fal-ai/image-preprocessors/depth-anything/v2,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/image-preprocessors/hed,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/image-preprocessors/lineart,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/image-preprocessors/midas,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/image-preprocessors/mlsd,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/image-preprocessors/pidi,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/image-preprocessors/sam,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/image-preprocessors/scribble,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/image-preprocessors/teed,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/image-preprocessors/zoe,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/image2svg,image-to-image,image,image,,run,0.005,
+fal-ai/imagen3,text-to-image,text,image,,run,0.05,
+fal-ai/imagen3/fast,text-to-image,text,image,,run,0.025,
+fal-ai/imagen4/preview,text-to-image,text,image,,run,0.04,
+fal-ai/imagen4/preview/fast,text-to-image,text,image,,run,0.02,
+fal-ai/imagen4/preview/ultra,text-to-image,text,image,,run,0.06,
+fal-ai/imageutils/depth,image-to-image,image,image,,compute seconds,0.000167,
+fal-ai/imageutils/marigold-depth,image-to-image,image,image,,compute seconds,0.000167,
+fal-ai/imageutils/nsfw,vision,image,json,,run,0.001,
+fal-ai/imageutils/rembg,image-to-image,image,image,,compute seconds,0.000167,
+fal-ai/infinitalk,image-to-video,image,video,,output seconds,0.3,
+fal-ai/infinitalk/single-text,text-to-video,text,video,,output seconds,0.3,
+fal-ai/infinitalk/video-to-video,video-to-video,video,video,"480p
+720p",output seconds,"0.3
+0.6",
+fal-ai/inpaint,image-to-image,image,image,,compute seconds,0.000575,
+fal-ai/instant-character,image-to-image,image,image,,mega pixels,0.1,
+fal-ai/invisible-watermark,image-to-image,image,image,,compute seconds,0.00017,
+fal-ai/ip-adapter-face-id,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/janus,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/kling-video/lipsync/audio-to-video,text-to-video,text,video,,run,0.14,
+fal-ai/kling-video/lipsync/text-to-video,text-to-video,text,video,,run,0.14,
+fal-ai/kling-video/v1.5/pro/effects,text-to-video,text,video,,output seconds,0.1,
+fal-ai/kling-video/v1.5/pro/image-to-video,image-to-video,image,video,,output seconds,0.1,
+fal-ai/kling-video/v1.5/pro/text-to-video,text-to-video,text,video,,output seconds,0.1,
+fal-ai/kling-video/v1.6/pro/effects,text-to-video,text,video,,output seconds,0.095,
+fal-ai/kling-video/v1.6/pro/elements,image-to-video,image,video,,output seconds,0.095,
+fal-ai/kling-video/v1.6/pro/image-to-video,image-to-video,image,video,,output seconds,0.095,
+fal-ai/kling-video/v1.6/pro/text-to-video,text-to-video,text,video,,output seconds,0.095,
+fal-ai/kling-video/v1.6/standard/effects,text-to-video,text,video,,output seconds,0.045,
+fal-ai/kling-video/v1.6/standard/elements,image-to-video,image,video,,output seconds,0.045,
+fal-ai/kling-video/v1.6/standard/image-to-video,image-to-video,image,video,,output seconds,0.045,
+fal-ai/kling-video/v1.6/standard/text-to-video,text-to-video,text,video,,output seconds,0.045,
+fal-ai/kling-video/v1/pro/ai-avatar,image-to-video,image,video,,output seconds,0.115,
+fal-ai/kling-video/v1/standard/ai-avatar,image-to-video,image,video,,output seconds,0.0562,
+fal-ai/kling-video/v1/standard/effects,text-to-video,text,video,,output seconds,0.045,
+fal-ai/kling-video/v1/standard/image-to-video,image-to-video,image,video,,output seconds,0.045,
+fal-ai/kling-video/v1/standard/text-to-video,text-to-video,text,video,,output seconds,0.045,
+fal-ai/kling-video/v1/tts,text-to-speech,text,audio,,run,0.007,
+fal-ai/kling-video/v2.1/master/image-to-video,image-to-video,image,video,,output seconds,0.28,min 5 units?
+fal-ai/kling-video/v2.1/master/text-to-video,text-to-video,text,video,,output seconds,0.28,min 5 units?
+fal-ai/kling-video/v2.1/pro/image-to-video,image-to-video,image,video,,output seconds,0.09,min 5 units?
+fal-ai/kling-video/v2.1/standard/image-to-video,image-to-video,image,video,,output seconds,0.05,min 5 units?
+fal-ai/kling-video/v2.5-turbo/pro/image-to-video,image-to-video,image,video,,output seconds,0.07,min 5 units?
+fal-ai/kling-video/v2.5-turbo/pro/text-to-video,text-to-video,text,video,,output seconds,0.07,min 5 units?
+fal-ai/kling-video/v2/master/image-to-video,image-to-video,image,video,,output seconds,0.28,min 5 units?
+fal-ai/kling-video/v2/master/text-to-video,text-to-video,text,video,,output seconds,0.28,min 5 units?
+fal-ai/kling/v1-5/kolors-virtual-try-on,image-to-image,image,image,,run,0.07,
+fal-ai/kokoro/american-english,text-to-audio,text,audio,,input kilo tokens,0.02,
+fal-ai/kokoro/brazilian-portuguese,text-to-audio,text,audio,,input kilo tokens,0.02,
+fal-ai/kokoro/british-english,text-to-audio,text,audio,,input kilo tokens,0.02,
+fal-ai/kokoro/french,text-to-audio,text,audio,,input kilo tokens,0.02,
+fal-ai/kokoro/hindi,text-to-audio,text,audio,,input kilo tokens,0.02,
+fal-ai/kokoro/italian,text-to-audio,text,audio,,input kilo tokens,0.02,
+fal-ai/kokoro/japanese,text-to-audio,text,audio,,input kilo tokens,0.02,
+fal-ai/kokoro/mandarin-chinese,text-to-audio,text,audio,,input kilo tokens,0.02,
+fal-ai/kokoro/spanish,text-to-audio,text,audio,,input kilo tokens,0.02,
+fal-ai/kolors,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/kolors/image-to-image,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/latentsync,video-to-video,video,video,,output seconds,0.005,minimum 40 units?
+fal-ai/layer-diffusion,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/lcm,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/lcm-sd15-i2i,image-to-image,image,image,,compute seconds,0.000575,
+fal-ai/leffa/pose-transfer,image-to-image,image,image,,run,0.1,
+fal-ai/leffa/virtual-tryon,image-to-image,image,image,,run,0.1,
+fal-ai/lightning-models,text-to-image,text,image,,compute seconds,0.000575,
+fal-ai/live-portrait,image-to-video,image,video,,compute seconds,0.00125,
+fal-ai/live-portrait/image,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/llava-next,vision,image,text,,compute seconds,0.00125,
+fal-ai/lora,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/lora/image-to-image,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/lora/inpaint,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/ltx-video,text-to-video,text,video,,run,0.02,
+fal-ai/ltx-video-13b-dev,text-to-video,text,video,,run,0.2,
+fal-ai/ltx-video-13b-dev/extend,video-to-video,video,video,,run,0.2,
+fal-ai/ltx-video-13b-dev/image-to-video,image-to-video,image,video,,run,0.2,
+fal-ai/ltx-video-13b-dev/multiconditioning,video-to-video,video,video,,run,0.2,
+fal-ai/ltx-video-13b-distilled,text-to-video,text,video,,run,0.04,
+fal-ai/ltx-video-13b-distilled/extend,video-to-video,video,video,,run,0.04,
+fal-ai/ltx-video-13b-distilled/image-to-video,image-to-video,image,video,,run,0.04,
+fal-ai/ltx-video-13b-distilled/multiconditioning,video-to-video,video,video,,run,0.04,
+fal-ai/ltx-video-lora/image-to-video,image-to-video,image,video,,run,0.2,
+fal-ai/ltx-video-lora/multiconditioning,video-to-video,video,video,,run,0.2,
+fal-ai/ltx-video-trainer,training,,model,,steps,0.002,
+fal-ai/ltx-video-v095,text-to-video,text,video,,run,0.04,
+fal-ai/ltx-video-v095/extend,video-to-video,video,video,,run,0.04,
+fal-ai/ltx-video-v095/multiconditioning,video-to-video,video,video,,run,0.04,
+fal-ai/ltx-video/image-to-video,image-to-video,image,video,,run,0.02,
+fal-ai/ltxv-13b-098-distilled,text-to-video,text,video,,output seconds,0.02,24 fps
+fal-ai/ltxv-13b-098-distilled/extend,video-to-video,audio,video,,output seconds,0.02,24 fps
+fal-ai/ltxv-13b-098-distilled/image-to-video,image-to-video,image,video,,output seconds,0.02,24 fps
+fal-ai/ltxv-13b-098-distilled/multiconditioning,video-to-video,audio,video,,output seconds,0.02,24 fps
+fal-ai/luma-dream-machine,text-to-video,text,video,,run,0.5,
+fal-ai/luma-dream-machine/image-to-video,image-to-video,image,video,,run,0.5,
+fal-ai/luma-dream-machine/ray-2,text-to-video,text,video,,output seconds,0.5,
+fal-ai/luma-dream-machine/ray-2-flash,text-to-video,text,video,,output seconds,0.04,
+fal-ai/luma-dream-machine/ray-2-flash/image-to-video,image-to-video,image,video,,output seconds,0.04,
+fal-ai/luma-dream-machine/ray-2-flash/modify,video-to-video,video,video,,output seconds,0.12,
+fal-ai/luma-dream-machine/ray-2-flash/reframe,video-to-video,video,video,,output seconds,0.06,
+fal-ai/luma-dream-machine/ray-2/image-to-video,image-to-video,image,video,,output seconds,0.5,
+fal-ai/luma-dream-machine/ray-2/modify,video-to-video,video,video,,output seconds,0.35,
+fal-ai/luma-dream-machine/ray-2/reframe,video-to-video,video,video,,output seconds,0.2,
+fal-ai/luma-photon,text-to-image,text,image,,output mega pixels,0.019,
+fal-ai/luma-photon/flash,text-to-image,text,image,,output mega pixels,0.005,
+fal-ai/luma-photon/flash/modify,image-to-image,image,image,,mega pixels,0.005,
+fal-ai/luma-photon/flash/reframe,image-to-image,image,image,,mega pixels,0.005,
+fal-ai/luma-photon/modify,image-to-image,image,image,,mega pixels,0.019,
+fal-ai/luma-photon/reframe,image-to-image,image,image,,mega pixels,0.019,
+fal-ai/lumina-image/v2,text-to-image,text,image,,output mega pixels,0.075,
+fal-ai/lynx,image-to-video,image,video,,output seconds,0.6,
+fal-ai/lyria2,text-to-audio,text,audio,,output seconds,0.0034,
+fal-ai/magi,text-to-video,text,video,,output seconds,0.8,sigh...
+fal-ai/magi-distilled,text-to-video,text,video,,output seconds,0.32,
+fal-ai/magi-distilled/extend-video,video-to-video,video,video,,output seconds,0.08,24 fps
+fal-ai/magi-distilled/image-to-video,image-to-video,image,video,,output seconds,0.32,
+fal-ai/magi/extend-video,video-to-video,video,video,,output seconds,0.2,24 fps
+fal-ai/magi/image-to-video,image-to-video,image,video,,output seconds,0.2,sigh...
+fal-ai/minimax-music,text-to-audio,text,audio,,run,0.035,
+fal-ai/minimax-music/v1.5,text-to-audio,text,audio,,run,0.03,
+fal-ai/minimax/hailuo-02-fast/image-to-video,image-to-video,image,video,512p,output seconds,0.017*,not fixed?
+fal-ai/minimax/hailuo-02/pro/image-to-video,image-to-video,image,video,,output seconds,0.08,
+fal-ai/minimax/hailuo-02/pro/text-to-video,text-to-video,text,video,,output seconds,0.08,
+fal-ai/minimax/hailuo-02/standard/image-to-video,image-to-video,image,video,"512p
+768p",output seconds,"0.017
+0.045",
+fal-ai/minimax/hailuo-02/standard/text-to-video,text-to-video,text,video,,output seconds,0.045,
+fal-ai/minimax/image-01,text-to-image,text,image,,run,0.01,
+fal-ai/minimax/image-01/subject-reference,image-to-image,image,image,,run,0.01,
+fal-ai/minimax/preview/speech-2.5-hd,text-to-speech,text,audio,,input kilo tokens,0.1,
+fal-ai/minimax/preview/speech-2.5-turbo,text-to-speech,text,audio,,input kilo tokens,0.06,
+fal-ai/minimax/speech-02-hd,text-to-speech,text,audio,,input kilo tokens,0.1,
+fal-ai/minimax/speech-02-turbo,text-to-speech,text,audio,,input kilo tokens,0.06,
+fal-ai/minimax/video-01,text-to-video,text,video,,run,0.5,
+fal-ai/minimax/video-01-director,text-to-video,text,video,,run,0.5,
+fal-ai/minimax/video-01-director/image-to-video,image-to-video,image,video,,run,0.5,
+fal-ai/minimax/video-01-live,text-to-video,text,video,,run,0.5,
+fal-ai/minimax/video-01-live/image-to-video,image-to-video,image,video,,run,0.5,
+fal-ai/minimax/video-01-subject-reference,image-to-video,image,video,,run,0.5,
+fal-ai/minimax/video-01/image-to-video,image-to-video,image,video,,run,0.5,
+fal-ai/minimax/voice-clone,text-to-speech,text,audio,,run,1,
+fal-ai/minimax/voice-design,text-to-speech,text,audio,"preview
+create",input kilo tokens,"0.03
+1","kilochars?
+multiple units?"
+fal-ai/mix-dehaze-net,image-to-image,image,image,,mega pixels,0.025,
+fal-ai/mmaudio-v2,video-to-video,audio,video,,output seconds,0.001,
+fal-ai/mmaudio-v2/text-to-audio,text-to-audio,text,audio,,output seconds,0.001,
+fal-ai/mochi-v1,text-to-video,text,video,,run,0.4,
+fal-ai/moondream-next,vision,image,json,,compute seconds,0.0011,
+fal-ai/moondream-next/batch,vision,image,json,,compute seconds,0.0011,
+fal-ai/moondream-next/detection,image-to-image,image,image,,compute seconds,0.0011,compute seconds? or seconds??
+fal-ai/moondream/batched,vision,image,json,,compute seconds,0.00111,
+fal-ai/moondream2,vision,image,json,,output kilo tokens,0.01,why output why
+fal-ai/moondream2/object-detection,vision,image,json,,run,0.02,
+fal-ai/moondream2/point-object-detection,vision,image,json,,run,0.02,
+fal-ai/moondream2/visual-query,vision,image,json,,output kilo tokens,0.01,why output why
+fal-ai/musetalk,image-to-video,image,video,,compute seconds,0.00111,
+fal-ai/nafnet/deblur,image-to-image,image,image,,mega pixels,0.0225,
+fal-ai/nafnet/denoise,image-to-image,image,image,,mega pixels,0.0225,
+fal-ai/nano-banana,text-to-image,text,image,,run,0.039,
+fal-ai/nano-banana/edit,image-to-image,image,image,,run,0.039,
+fal-ai/nextstep-1,image-to-image,image,image,,run,0.1,
+fal-ai/object-removal,image-to-image,image,image,"low quality
+medium quality
+high quality
+best quality",run,"0.006
+0.012
+0.018
+0.024",
+fal-ai/object-removal/bbox,image-to-image,image,image,"low quality
+medium quality
+high quality
+best quality",run,"0.006
+0.012
+0.018
+0.024",
+fal-ai/object-removal/mask,image-to-image,image,image,"low quality
+medium quality
+high quality
+best quality",run,"0.006
+0.012
+0.018
+0.024",
+fal-ai/omni-zero,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/omnigen-v1,text-to-image,text,image,,output mega pixels,0.1,processed?
+fal-ai/omnigen-v2,text-to-image,text,image,,output mega pixels,0.15,
+fal-ai/orpheus-tts,text-to-speech,text,audio,,run,0.05,
+fal-ai/pasd,image-to-image,image,image,,mega pixels,0.03,
+fal-ai/photomaker,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/pika/v1.5/pikaffects,image-to-video,image,video,,run,0.465,
+fal-ai/pika/v2.1/image-to-video,image-to-video,image,video,,run,0.4,
+fal-ai/pika/v2.1/text-to-video,text-to-video,text,video,,run,0.4,
+fal-ai/pika/v2.2/image-to-video,image-to-video,image,video,"720p
+1080p",output seconds,"0.04
+0.09",
+fal-ai/pika/v2.2/pikascenes,image-to-video,image,video,"720p
+1080p",output seconds,"0.04
+0.09",
+fal-ai/pika/v2.2/text-to-video,text-to-video,text,video,"720p
+1080p",output seconds,"0.04
+0.09",
+fal-ai/pika/v2/turbo/image-to-video,image-to-video,image,video,,run,0.2,
+fal-ai/pika/v2/turbo/text-to-video,text-to-video,text,video,,run,0.2,
+fal-ai/pixart-sigma,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/pixverse/extend,video-to-video,video,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/extend/fast,video-to-video,video,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",
+fal-ai/pixverse/lipsync,video-to-video,video,video,,output seconds,,
+fal-ai/pixverse/sound-effects,video-to-video,video,video,,output seconds,0.02,
+fal-ai/pixverse/v3.5/effects,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v3.5/image-to-video,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v3.5/image-to-video/fast,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",
+fal-ai/pixverse/v3.5/text-to-video,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v3.5/text-to-video/fast,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",
+fal-ai/pixverse/v3.5/transition,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v4.5/effects,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v4.5/image-to-video,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v4.5/image-to-video/fast,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",
+fal-ai/pixverse/v4.5/text-to-video,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v4.5/text-to-video/fast,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",
+fal-ai/pixverse/v4.5/transition,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v4/effects,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v4/image-to-video,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v4/image-to-video/fast,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",
+fal-ai/pixverse/v4/text-to-video,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v4/text-to-video/fast,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",
+fal-ai/pixverse/v5/effects,image-to-video,image,video,,run,0.05,
+fal-ai/pixverse/v5/image-to-video,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v5/text-to-video,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/pixverse/v5/transition,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",
+fal-ai/playai/inpaint/diffusion,audio-to-audio,audio,audio,,input kilo tokens,0.1,
+fal-ai/playai/tts/dialog,text-to-audio,text,audio,,output minutes,0.05,
+fal-ai/playai/tts/v3,text-to-speech,text,audio,,output minutes,0.03,
+fal-ai/playground-v25,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/playground-v25/image-to-image,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/playground-v25/inpainting,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/plushify,image-to-image,image,image,,run,0.1,
+fal-ai/post-processing,image-to-image,image,image,,run,0.001,image?
+fal-ai/post-processing/blur,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/chromatic-aberration,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/color-correction,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/color-tint,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/desaturate,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/dissolve,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/dodge-burn,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/grain,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/parabolize,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/sharpen,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/solarize,image-to-image,image,image,,run,0.001,
+fal-ai/post-processing/vignette,image-to-image,image,image,,run,0.001,
+fal-ai/pshuman,image-to-3d,image,3d,,run,0.75,
+fal-ai/qwen-image,text-to-image,text,image,,output mega pixels,0.02,rounding up to nearest megapixel
+fal-ai/qwen-image-edit,image-to-image,image,image,,mega pixels,0.03,
+fal-ai/qwen-image-edit-lora,image-to-image,image,image,,mega pixels,0.035,
+fal-ai/qwen-image-edit-plus,image-to-image,image,image,,mega pixels,0.03,
+fal-ai/qwen-image-edit/image-to-image,image-to-image,image,image,,mega pixels,0.03,
+fal-ai/qwen-image-edit/inpaint,image-to-image,image,image,,mega pixels,0.03,
+fal-ai/qwen-image-trainer,training,,model,,steps,0.002,min 250 units
+fal-ai/qwen-image/image-to-image,image-to-image,image,image,,mega pixels,0.02,
+fal-ai/realistic-vision,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/recraft-20b,text-to-image,text,image,"pixels
+vectors",run,"0.022
+0.044",
+fal-ai/recraft/upscale/creative,image-to-image,image,image,,run,0.25,
+fal-ai/recraft/upscale/crisp,image-to-image,image,image,,run,0.004,
+fal-ai/recraft/v3/image-to-image,image-to-image,image,image,,run,0.04,
+fal-ai/recraft/v3/text-to-image,text-to-image,text,image,,run,0.04,
+fal-ai/recraft/vectorize,image-to-image,image,image,,run,0.01,
+fal-ai/retoucher,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/rife,image-to-image,image,image,,compute seconds,0.0013,
+fal-ai/rife/video,video-to-video,video,video,,compute seconds,0.0013,
+fal-ai/sa2va/4b/image,vision,image,text,,run,0.02,
+fal-ai/sa2va/4b/video,vision,video,text,,compute seconds,0.04,
+fal-ai/sa2va/8b/image,vision,image,text,,run,0.04,
+fal-ai/sa2va/8b/video,vision,video,text,,compute seconds,0.08,
+fal-ai/sadtalker,image-to-video,image,video,,compute seconds,0.00111,
+fal-ai/sadtalker/reference,image-to-video,image,video,,compute seconds,0.00111,
+fal-ai/sam2/auto-segment,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/sam2/image,image-to-image,image,image,,compute seconds,0.00125,
+fal-ai/sam2/video,video-to-video,video,video,,compute seconds,0.00125,
+fal-ai/sana,text-to-image,text,image,,output mega pixels,0.001,
+fal-ai/sana/sprint,text-to-image,text,image,,output mega pixels,0.0025,
+fal-ai/sana/v1.5/1.6b,text-to-image,text,image,,output mega pixels,0.0075,
+fal-ai/sana/v1.5/4.8b,text-to-image,text,image,,output mega pixels,0.01,
+fal-ai/sd15-depth-controlnet,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/sdxl-controlnet-union,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/sdxl-controlnet-union/image-to-image,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/sdxl-controlnet-union/inpainting,image-to-image,image,image,,compute seconds,0.00111,
+fal-ai/seedvr/upscale/image,image-to-image,image,image,,mega pixels,0.001,input or output?
+fal-ai/seedvr/upscale/video,video-to-video,video,video,,mega video tokens,0.001,?
+fal-ai/sky-raccoon,text-to-image,text,image,,output mega pixels,0.06,
+fal-ai/skyreels-i2v,image-to-video,image,video,,run,0.3,
+fal-ai/smart-turn,speech-to-text,audio,text,,compute seconds,0.00125,
+fal-ai/speech-to-text,speech-to-text,audio,text,,input seconds,0.0008,
+fal-ai/speech-to-text/stream,speech-to-text,audio,text,,input seconds,0.0008,
+fal-ai/speech-to-text/turbo,speech-to-text,audio,text,,input seconds,0.0008,
+fal-ai/speech-to-text/turbo/stream,speech-to-text,audio,text,,input seconds,0.0008,
+fal-ai/stable-audio,text-to-audio,text,audio,,compute seconds,0.000575,
+fal-ai/stable-audio-25/audio-to-audio,audio-to-audio,audio,audio,,run,0.2,
+fal-ai/stable-audio-25/inpaint,audio-to-audio,audio,audio,,run,0.2,
+fal-ai/stable-audio-25/text-to-audio,text-to-audio,text,audio,,run,0.2,
+fal-ai/stable-avatar,audio-to-video,audio,video,,output seconds,0.1,min 4 seconds
+fal-ai/stable-cascade,text-to-image,text,image,,compute seconds,0.000575,
+fal-ai/stable-cascade/sote-diffusion,text-to-image,text,image,,compute seconds,0.000575,
+fal-ai/stable-diffusion-v15,text-to-image,text,image,,compute seconds,0.00111,
+fal-ai/stable-diffusion-v3-medium,text-to-image,text,image,,run,0.035,
+fal-ai/stable-diffusion-v35-large,text-to-image,text,image,,output mega pixels,0.065,
+fal-ai/stable-diffusion-v35-medium,text-to-image,text,image,,output mega pixels,0.02,
+fal-ai/stable-video,image-to-video,image,video,,run,0.075,
+fal-ai/star-vector,image-to-image,image,image,,mega pixels,0.1,
+fal-ai/step1x-edit,image-to-image,image,image,,mega pixels,0.03,
+fal-ai/swin2sr,image-to-image,image,image,,mega pixels,0.025,
+fal-ai/switti,text-to-image,text,image,,compute seconds,0.00125,
+fal-ai/switti/512,text-to-image,text,image,,compute seconds,0.00125,
+fal-ai/sync-lipsync,video-to-video,audio,video,,output minutes,0.7,
+fal-ai/sync-lipsync/v2,video-to-video,audio,video,,output minutes,3,
+fal-ai/sync-lipsync/v2/pro,video-to-video,audio,video,,output minutes,5,
+fal-ai/t2v-turbo,text-to-video,text,video,,compute seconds,0.00125,
+fal-ai/thera,image-to-image,image,image,,mega pixels,0.0021,
+fal-ai/thinksound,video-to-video,video,video,,compute seconds,0.001,
+fal-ai/thinksound/audio,video-to-video,video,video,,compute seconds,0.001,
+fal-ai/topaz/upscale/image,image-to-image,image,image,,mega pixels,0.025,
+fal-ai/topaz/upscale/video,video-to-video,video,video,,output seconds,0.1,
+fal-ai/transpixar,text-to-video,text,video,,run,0.4,
+fal-ai/trellis,image-to-3d,image,3d,,run,0.02,
+fal-ai/trellis/multi,image-to-3d,image,3d,,run,0.02,
+fal-ai/triposr,image-to-3d,image,3d,,run,0.07,
+fal-ai/turbo-flux-trainer,training,,model,,kilo steps,2.4,
+fal-ai/uno,image-to-image,image,image,,mega pixels,0.05,
+fal-ai/uso,image-to-image,image,image,,mega pixels,0.1,
+fal-ai/veo2,text-to-video,text,video,,output seconds,0.5,min 5 units?
+fal-ai/veo2/image-to-video,image-to-video,image,video,,output seconds,0.5,min 5 units?
+fal-ai/veo3,text-to-video,text,video,"audio
+silent",output seconds,"0.2
+0.4",
+fal-ai/veo3/fast,text-to-video,text,video,"audio
+silent",output seconds,"0.1
+0.15",
+fal-ai/veo3/fast/image-to-video,image-to-video,image,video,"audio
+silent",output seconds,"0.1
+0.15",
+fal-ai/veo3/image-to-video,image-to-video,image,video,"audio
+silent",output seconds,"0.2
+0.4",
+fal-ai/vibevoice,text-to-speech,text,audio,,output seconds,0.04,rounded up to nearest 15 seconds
+fal-ai/vibevoice/7b,text-to-speech,text,audio,,output seconds,0.04,
+fal-ai/video-prompt-generator,llm,"text
+image?",text,"text
+text+image",run,"0.001
+0.0011",
+fal-ai/video-understanding,vision,video,text,,compute seconds,0.002,
+fal-ai/video-upscaler,video-to-video,video,video,,mega video tokens,0.0008,megapixel or megavideotokens or what?
+fal-ai/vidu/image-to-video,image-to-video,image,video,,output seconds,0.05,
+fal-ai/vidu/q1/image-to-video,image-to-video,image,video,,output seconds,0.08,min 5 units?
+fal-ai/vidu/q1/reference-to-video,image-to-video,image,video,,output seconds,0.08,min 5 units?
+fal-ai/vidu/q1/start-end-to-video,image-to-video,image,video,,output seconds,0.1,
+fal-ai/vidu/q1/text-to-video,text-to-video,text,video,,output seconds,0.08,min 5 units?
+fal-ai/vidu/reference-to-image,image-to-image,image,image,,run,0.1,
+fal-ai/vidu/reference-to-video,image-to-video,image,video,,output seconds,0.1,
+fal-ai/vidu/start-end-to-video,image-to-video,image,video,,output seconds,0.05,
+fal-ai/vidu/template-to-video,image-to-video,image,video,"standard
+premium
+advanced",run,"0.2
+0.3
+0.5",
+fal-ai/wan-22-image-trainer,training,,model,,run,0.0045,
+fal-ai/wan-22-vace-fun-a14b/depth,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps
+fal-ai/wan-22-vace-fun-a14b/inpainting,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps
+fal-ai/wan-22-vace-fun-a14b/outpainting,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps
+fal-ai/wan-22-vace-fun-a14b/pose,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps
+fal-ai/wan-22-vace-fun-a14b/reframe,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps
+fal-ai/wan-25-preview/image-to-image,image-to-image,image,image,,run,0.05,
+fal-ai/wan-25-preview/image-to-video,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.05
+0.1
+0.15",
+fal-ai/wan-25-preview/text-to-image,text-to-image,text,image,,run,0.05,
+fal-ai/wan-25-preview/text-to-video,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.05
+0.1
+0.15",
+fal-ai/wan-effects,image-to-video,image,video,,run,0.35,
+fal-ai/wan-flf2v,image-to-video,image,video,"512p
+720p",run,"0.2*
+0.4*",frames?
+fal-ai/wan-fun-control,video-to-video,video,video,,output seconds,0.1,16 fps
+fal-ai/wan-i2v,image-to-video,image,video,"512p
+720p",run,"0.2*
+0.4*",frames?
+fal-ai/wan-i2v-lora,image-to-video,image,video,,run,0.75,
+fal-ai/wan-pro/image-to-video,image-to-video,image,video,,run,0.16,what??
+fal-ai/wan-pro/text-to-video,text-to-video,text,video,,output seconds,0.8,
+fal-ai/wan-t2v,text-to-video,text,video,"480p
+720p",run,"0.2*
+0.4*",frames?
+fal-ai/wan-t2v-lora,text-to-video,text,video,,run,0.75,
+fal-ai/wan-vace,video-to-video,video,video,,run,0.2,
+fal-ai/wan-vace-1-3b,video-to-video,video,video,,run,0.2,
+fal-ai/wan-vace-14b,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/wan-vace-14b/depth,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/wan-vace-14b/inpainting,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/wan-vace-14b/outpainting,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/wan-vace-14b/pose,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/wan-vace-14b/reframe,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/wan-vace-apps/video-edit,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps
+fal-ai/wan/v2.2-14b/animate/move,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/wan/v2.2-14b/animate/replace,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/wan/v2.2-14b/speech-to-video,audio-to-video,audio,video,"480p
+580p
+720p",output seconds,"0.1
+0.15
+0.2",16 fps
+fal-ai/wan/v2.2-5b/image-to-video,image-to-video,image,video,,run,0.15,
+fal-ai/wan/v2.2-5b/text-to-image,text-to-image,text,image,,run,0.016,
+fal-ai/wan/v2.2-5b/text-to-video,text-to-video,text,video,,run,0.15,
+fal-ai/wan/v2.2-5b/text-to-video/distill,text-to-video,text,video,,run,0.08,
+fal-ai/wan/v2.2-5b/text-to-video/fast-wan,text-to-video,text,video,"480p
+580p
+720p",run,"0.0125
+0.01875
+0.025",
+fal-ai/wan/v2.2-a14b/image-to-image,image-to-image,image,image,,run,0.05,
+fal-ai/wan/v2.2-a14b/image-to-video,image-to-video,image,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/wan/v2.2-a14b/image-to-video/lora,image-to-video,image,video,,output seconds,0.1,
+fal-ai/wan/v2.2-a14b/image-to-video/turbo,image-to-video,image,video,"480p
+580p
+720p",run,"0.05
+0.075
+0.1",
+fal-ai/wan/v2.2-a14b/text-to-image,text-to-image,text,image,,run,0.025,
+fal-ai/wan/v2.2-a14b/text-to-image/lora,text-to-image,text,image,,run,0.05,
+fal-ai/wan/v2.2-a14b/text-to-video,text-to-video,text,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/wan/v2.2-a14b/text-to-video/lora,text-to-video,text,video,,output seconds,0.1,
+fal-ai/wan/v2.2-a14b/text-to-video/turbo,text-to-video,text,video,"480p
+580p
+720p",run,"0.05
+0.075
+0.1",
+fal-ai/wan/v2.2-a14b/video-to-video,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps
+fal-ai/whisper,speech-to-text,audio,text,,compute seconds,0.00125,
+fal-ai/wizper,speech-to-text,audio,text,,compute seconds,0.00125,
+fal-ai/x-ailab/nsfw,vision,image,json,,run,0.001,
+fal-ai/yue,text-to-audio,text,audio,,output seconds,0.05,
+fal-ai/zonos,text-to-audio,text,audio,,run,0.05,
+mirelo-ai/sfx-v1/video-to-audio,video-to-audio,video,audio,,output seconds,0.007,
+mirelo-ai/sfx-v1/video-to-video,video-to-video,video,video,,output seconds,0.007,
+moonvalley/marey/i2v,image-to-video,image,video,,output seconds,0.3,
+moonvalley/marey/motion-transfer,video-to-video,video,video,,run,2,
+moonvalley/marey/pose-transfer,video-to-video,video,video,,run,2,
+moonvalley/marey/t2v,text-to-video,text,video,,output seconds,1.5,
+perceptron/isaac-01,vision,image,text,,output mega tokens,0.26,
+resemble-ai/chatterboxhd/speech-to-speech,speech-to-speech,audio,audio,,output minutes,0.02,
+resemble-ai/chatterboxhd/text-to-speech,text-to-speech,text,audio,,input kilo tokens,0.04,
+rundiffusion-fal/juggernaut-flux-lora,text-to-image,text,image,,output mega pixels,0.045,
+rundiffusion-fal/juggernaut-flux-lora/inpainting,image-to-image,image,image,,mega pixels,0.045,
+rundiffusion-fal/juggernaut-flux/base,text-to-image,text,image,,output mega pixels,0.035,
+rundiffusion-fal/juggernaut-flux/base/image-to-image,image-to-image,image,image,,mega pixels,0.035,
+rundiffusion-fal/juggernaut-flux/lightning,text-to-image,text,image,,output mega pixels,0.006,
+rundiffusion-fal/juggernaut-flux/pro,text-to-image,text,image,,output mega pixels,0.055,
+rundiffusion-fal/juggernaut-flux/pro/image-to-image,image-to-image,image,image,,mega pixels,0.055,
+rundiffusion-fal/rundiffusion-photo-flux,text-to-image,text,image,,output mega pixels,0.045,
+smoretalk-ai/rembg-enhance,image-to-image,image,image,,run,0.006,
+sonauto/v2/extend,audio-to-audio,audio,audio,,run,0.075,
+sonauto/v2/inpaint,text-to-audio,text,audio,,run,0.075,
+sonauto/v2/text-to-music,text-to-audio,text,audio,,run,0.075,
+tripo3d/tripo/v2.5/image-to-3d,image-to-3d,image,3d,"no textures
+standard textures
+hd textures
+no textures + style
+standard textures + style
+hd textures + style
+no textures + quads
+standard textures + quads
+hd textures + quads
+no textures + style + quads
+standard textures + style + quads
+hd textures + style + quads",run,"0.2
+0.3
+0.4
+0.5
+0.25
+0.35
+0.45
+0.55
+0.25
+0.35
+0.45
+0.55
+0.3
+0.4
+0.5
+0.6",extra options*
+tripo3d/tripo/v2.5/multiview-to-3d,image-to-3d,image,3d,"no textures
+standard textures
+hd textures
+no textures + style
+standard textures + style
+hd textures + style
+no textures + quads
+standard textures + quads
+hd textures + quads
+no textures + style + quads
+standard textures + style + quads
+hd textures + style + quads",run,"0.2
+0.3
+0.4
+0.5
+0.25
+0.35
+0.45
+0.55
+0.25
+0.35
+0.45
+0.55
+0.3
+0.4
+0.5
+0.6",
+veed/avatars/audio-to-video,audio-to-video,audio,video,,output minutes,0.3,
+veed/avatars/text-to-video,text-to-video,text,video,,output minutes,0.35,
+veed/fabric-1.0,image-to-video,image,video,"480p
+720p",output seconds,"0.08
+0.15",
+veed/fabric-1.0/fast,image-to-video,image,video,"480p
+720p",output seconds,"0.1
+0.15",
+veed/lipsync,video-to-video,audio,video,,output minutes,0.4,

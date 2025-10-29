@@ -11,11 +11,11 @@ import pricesData from "@/data/prices.json"
 
 interface PriceModel {
   name: string
-  provider: string
-  inputPrice: number
-  outputPrice: number
+  creator: string
+  provider: string[]
+  type: string
+  inferenceFormula: string
   unit: string
-  contextWindow: string
   description: string
 }
 
@@ -44,25 +44,39 @@ export default function PriceTable() {
           <TableHeader>
             <TableRow>
               <TableHead>Model</TableHead>
+              <TableHead>Creator</TableHead>
               <TableHead>Provider</TableHead>
-              <TableHead>Input Price</TableHead>
-              <TableHead>Output Price</TableHead>
-              <TableHead>Context Window</TableHead>
+              <TableHead>Type</TableHead>
+              <TableHead>Pricing Formula</TableHead>
               <TableHead>Description</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {models.map((model) => (
-              <TableRow key={`${model.provider}-${model.name}`}>
+              <TableRow key={`${model.creator}-${model.name}`}>
                 <TableCell className="font-medium">{model.name}</TableCell>
-                <TableCell>{model.provider}</TableCell>
+                <TableCell>{model.creator}</TableCell>
                 <TableCell>
-                  {formatPrice(model.inputPrice)} {model.unit}
+                  <div className="flex flex-wrap gap-1">
+                    {model.provider.map((p, idx) => (
+                      <span
+                        key={idx}
+                        className="inline-flex items-center rounded-md bg-muted px-2 py-1 text-xs font-medium"
+                      >
+                        {p}
+                      </span>
+                    ))}
+                  </div>
                 </TableCell>
+                <TableCell>{model.type}</TableCell>
                 <TableCell>
-                  {formatPrice(model.outputPrice)} {model.unit}
+                  <code className="text-sm bg-muted px-2 py-1 rounded">
+                    {model.inferenceFormula}
+                  </code>
+                  <div className="text-xs text-muted-foreground mt-1">
+                    {model.unit}
+                  </div>
                 </TableCell>
-                <TableCell>{model.contextWindow}</TableCell>
                 <TableCell className="text-muted-foreground">
                   {model.description}
                 </TableCell>

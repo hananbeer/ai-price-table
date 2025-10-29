@@ -1,0 +1,1096 @@
+model_id,tag,inputs,output,options,bip_units,bip_price_usd,notes,description
+argil/avatars/audio-to-video,audio-to-video,audio,video,,input seconds,0.02,,"High-quality avatar videos that feel real, generated from your audio"
+argil/avatars/text-to-video,text-to-video,text,video,,output seconds,0.0225,"(video input is implicit, so I guess input & output video length is the same)","High-quality avatar videos that feel real, generated from your text"
+bria/reimagine/3.2,image-to-image,image,image,,run,0.04,,"Reimagine uses a structure reference for generating new images while preserving the structure of an input image, guided by text prompts. Perfect for transforming sketches, illustrations, or photos into new illustrations. Trained exclusively on licensed data"
+bria/text-to-image/3.2,text-to-image,text,image,,run,0.04,,"Bria’s Text-to-Image model, trained exclusively on licensed data for safe and risk-free commercial use. Excels in Text-Rendering and Aesthetics."
+bria/video/background-removal,video-to-video,video,video,,output seconds,0.14,,"Automatically remove backgrounds from videos -perfect for creating clean, professional content without a green screen."
+bria/video/increase-resolution,video-to-video,video,video,,output seconds,0.14,,Upscale videos up to 8K output resolution. Trained on fully licensed and commercially safe data.
+cassetteai/music-generator,text-to-audio,text,audio,,output minutes,0.02,,"CassetteAI’s model generates a 30-second sample in under 2 seconds and a full 3-minute track in under 10 seconds. At 44.1 kHz stereo audio, expect a level of professional consistency with no breaks, no squeaks, and no random interruptions in your creations."
+cassetteai/sound-effects-generator,text-to-audio,text,audio,,run,0.01,,Create stunningly realistic sound effects in seconds - CassetteAI's Sound Effects Model generates high-quality SFX up to 30 seconds long in just 1 second of processing time
+cassetteai/video-sound-effects-generator,video-to-video,audio,video,,output minutes,0.2,,Add sound effects to your videos
+creatify/lipsync,video-to-video,audio,video,,output minutes,1,,"Realistic lipsync video - optimized for speed, quality, and consistency."
+decart/lucy-14b/image-to-video,image-to-video,image,video,,output seconds,0.08,,Lucy-14B delivers lightning fast performance that redefines what's possible with image-to-video AI
+decart/lucy-edit/dev,video-to-video,video,video,720p,output seconds,0.03,,Lucy Edit Dev
+decart/lucy-edit/pro,video-to-video,video,video,"480p
+720p",output seconds,"0.15
+0.3",,Lucy Edit Pro
+easel-ai/advanced-face-swap,image-to-image,image,image,,run,0.05,,"Swap faces of one or two people at once, while preserving user and scene details!"
+easel-ai/easel-avatar,text-to-image,text,image,,run,0.05,,Create scenes with one or two people using just selfies and text prompt (without LoRAs)
+easel-ai/easel-gifswap,image-to-image,image,image,,run,0.05,,Swap faces on GIFs
+easel-ai/fashion-photoshoot,image-to-image,image,image,,run,0.07,,Instant fashion photoshoot with a selfie and an outfit
+easel-ai/fashion-tryon,image-to-image,image,image,,run,0.05,,Instant fashion try on with a full-body pic and an outfit
+easel-ai/product-photoshoot,image-to-image,image,image,,run,0.08,,Create product advertisements with an example image of the product
+fal-ai/ace-step,text-to-audio,text,audio,,output seconds,0.0002,,Generate music with lyrics from text using ACE-Step
+fal-ai/ace-step/audio-inpaint,audio-to-audio,audio,audio,,output seconds,0.0002,,Modify a portion of provided audio with lyrics and/or style using ACE-Step
+fal-ai/ace-step/audio-outpaint,audio-to-audio,audio,audio,,output seconds,0.0002,,Extend the beginning or end of provided audio with lyrics and/or style using ACE-Step
+fal-ai/ace-step/audio-to-audio,audio-to-audio,audio,audio,,output seconds,0.0002,,Generate music from a lyrics and example audio using ACE-Step
+fal-ai/ace-step/prompt-to-audio,text-to-audio,text,audio,,output seconds,0.0002,,Generate music from a simple prompt using ACE-Step
+fal-ai/ai-avatar,image-to-video,image,video,"480p
+720p",output seconds,"0.3
+0.6",,MultiTalk model generates a talking avatar video from an image and audio file. The avatar lip-syncs to the provided audio with natural facial expressions.
+fal-ai/ai-avatar/multi,image-to-video,image,video,"480p
+720p",output seconds,"0.3
+0.6",,MultiTalk model generates a multi-person conversation video from an image and audio files. Creates a realistic scene where multiple people speak in sequence.
+fal-ai/ai-avatar/multi-text,image-to-video,image,video,"480p
+720p",output seconds,"0.3
+0.6",,"MultiTalk model generates a multi-person conversation video from an image and text inputs. Converts text to speech for each person, generating a realistic conversation scene."
+fal-ai/ai-avatar/single-text,image-to-video,image,video,"480p
+720p",output seconds,"0.3
+0.6",,"MultiTalk model generates a talking avatar video from an image and text. Converts text to speech automatically, then generates the avatar speaking with lip-sync."
+fal-ai/amt-interpolation,video-to-video,video,video,,compute seconds,0.00111,,Interpolate between video frames
+fal-ai/amt-interpolation/frame-interpolation,image-to-video,image,video,,compute seconds,0.00111,,Interpolate between image frames
+fal-ai/animatediff-sparsectrl-lcm,text-to-video,text,video,,compute seconds,0.00111,,Animate Your Drawings with Latent Consistency Models!
+fal-ai/any-llm,llm,text,text,,run,0.001,,Use any large language model from our selected catalogue (powered by OpenRouter)
+fal-ai/any-llm/enterprise,llm,text,text,,run,0.001,,"Run any large language model with fal, powered by OpenRouter. This endpoint only supports models that do not train on private data. Read more in OpenRouter's Privacy and Logging documentation."
+fal-ai/any-llm/vision,vision,image,text,,run,0.01,,Use any vision language model from our selected catalogue (powered by OpenRouter)
+fal-ai/aura-flow,text-to-image,text,image,,compute seconds,0.00125,,AuraFlow v0.3 is an open-source flow-based text-to-image generation model that achieves state-of-the-art results on GenEval. The model is currently in beta.
+fal-ai/aura-sr,image-to-image,image,image,,compute seconds,0.00125,,Upscale your images with AuraSR.
+fal-ai/auto-caption,video-to-video,video,video,,run,0.1,,Automatically generates text captions for your videos from the audio as per text colour/font specifications
+fal-ai/bagel,text-to-image,text,image,,run,0.1,,Bagel is a 7B parameter from Bytedance-Seed multimodal model that can generate both text and images.
+fal-ai/bagel/edit,image-to-image,image,image,,run,0.1,,Bagel is a 7B parameter multimodal model from Bytedance-Seed that can generate both images and text.
+fal-ai/bagel/understand,image-to-json,image,json,,run,0.05,,Bagel is a 7B parameter multimodal model from Bytedance-Seed that can generate both text and images.
+fal-ai/ben/v2/image,image-to-image,image,image,,mega pixels,0.025,,A fast and high quality model for image background removal.
+fal-ai/ben/v2/video,video-to-video,video,video,,mega pixels,0.001,megapixel or mega video tokens?,A model for high quality and smooth background removal for videos.
+fal-ai/birefnet,image-to-image,image,image,,compute seconds,0.00111,,bilateral reference framework (BiRefNet) for high-resolution dichotomous image segmentation (DIS)
+fal-ai/birefnet/v2,image-to-image,image,image,,compute seconds,0.00111,,bilateral reference framework (BiRefNet) for high-resolution dichotomous image segmentation (DIS)
+fal-ai/bria/background/remove,image-to-image,image,image,,run,0.018,,"Bria RMBG 2.0 enables seamless removal of backgrounds from images, ideal for professional editing tasks. Trained exclusively on licensed data for safe and risk-free commercial use. Model weights for commercial use are available here: https://share-eu1.hsforms.com/2GLpEVQqJTI2Lj7AMYwgfIwf4e04"
+fal-ai/bria/background/replace,image-to-image,image,image,,run,0.04,,"Bria Background Replace allows for efficient swapping of backgrounds in images via text prompts or reference image, delivering realistic and polished results. Trained exclusively on licensed data for safe and risk-free commercial use"
+fal-ai/bria/eraser,image-to-image,image,image,,run,0.04,,Bria Eraser enables precise removal of unwanted objects from images while maintaining high-quality outputs. Trained exclusively on licensed data for safe and risk-free commercial use. Access the model's source code and weights: https://bria.ai/contact-us
+fal-ai/bria/expand,image-to-image,image,image,,run,0.04,,Bria Expand expands images beyond their borders in high quality. Trained exclusively on licensed data for safe and risk-free commercial use. Access the model's source code and weights: https://bria.ai/contact-us
+fal-ai/bria/genfill,image-to-image,image,image,,run,0.04,,Bria GenFill enables high-quality object addition or visual transformation. Trained exclusively on licensed data for safe and risk-free commercial use. Access the model's source code and weights: https://bria.ai/contact-us
+fal-ai/bria/product-shot,image-to-image,image,image,,run,0.04,,Place any product in any scenery with just a prompt or reference image while maintaining high integrity of the product. Trained exclusively on licensed data for safe and risk-free commercial use and optimized for eCommerce.
+fal-ai/bria/reimagine,image-to-image,image,image,,run,0.04,,"Structure Reference allows generating new images while preserving the structure of an input image, guided by text prompts. Perfect for transforming sketches, illustrations, or photos into new illustrations. Trained exclusively on licensed data for safe and risk-free commercial use."
+fal-ai/bria/text-to-image/base,text-to-image,text,image,,run,0.04,,"Bria's Text-to-Image model, trained exclusively on licensed data for safe and risk-free commercial use. Available also as source code and weights. For access to weights: https://bria.ai/contact-us"
+fal-ai/bria/text-to-image/fast,text-to-image,text,image,,run,0.028,,Bria's Text-to-Image model with perfect harmony of latency and quality. Trained exclusively on licensed data for safe and risk-free commercial use. Available also as source code and weights. For access to weights: https://bria.ai/contact-us
+fal-ai/bria/text-to-image/hd,text-to-image,text,image,,run,0.04,,Bria's Text-to-Image model for HD images. Trained exclusively on licensed data for safe and risk-free commercial use. Available also as source code and weights. For access to weights: https://bria.ai/contact-us
+fal-ai/bytedance/dreamina/v3.1/text-to-image,text-to-image,text,image,,run,0.03,,"Dreamina showcases superior picture effects, with significant improvements in picture aesthetics, precise and diverse styles, and rich details."
+fal-ai/bytedance/omnihuman,image-to-video,image,video,,output seconds,0.14,,"OmniHuman generates video using an image of a human figure paired with an audio file. It produces vivid, high-quality videos where the character’s emotions and movements maintain a strong correlation with the audio."
+fal-ai/bytedance/omnihuman/v1.5,image-to-video,image,video,,output seconds,0.16,,"Omnihuman v1.5 is a new and improved version of Omnihuman. It generates video using an image of a human figure paired with an audio file. It produces vivid, high-quality videos where the character’s emotions and movements maintain a strong correlation with the audio."
+fal-ai/bytedance/seedance/v1/lite/image-to-video,image-to-video,image,video,,mega video tokens,0.036,,Seedance 1.0 Lite
+fal-ai/bytedance/seedance/v1/lite/reference-to-video,image-to-video,image,video,,mega video tokens,0.036,,Seedance lite reference-to-video allows the use of 1 to 4 images as reference to create a high-quality video.
+fal-ai/bytedance/seedance/v1/lite/text-to-video,text-to-video,text,video,,mega video tokens,0.036,,Seedance 1.0 Lite
+fal-ai/bytedance/seedance/v1/pro/image-to-video,image-to-video,image,video,,mega video tokens,2.5,,"Seedance 1.0 Pro, a high quality video generation model developed by Bytedance."
+fal-ai/bytedance/seedance/v1/pro/text-to-video,text-to-video,text,video,,mega video tokens,2.5,,"Seedance 1.0 Pro, a high quality video generation model developed by Bytedance."
+fal-ai/bytedance/seededit/v3/edit-image,image-to-image,image,image,,run,0.03,,"SeedEdit 3.0 is an image editing model independently developed by ByteDance. It excels in accurately following editing instructions and effectively preserving image content, especially excelling in handling real images"
+fal-ai/bytedance/seedream/v3/text-to-image,text-to-image,text,image,,run,0.03,,Seedream 3.0 is a bilingual (Chinese and English) text-to-image model that excels at text-to-image generation.
+fal-ai/bytedance/seedream/v4/edit,image-to-image,image,image,,run,0.03,,"A new-generation image creation model ByteDance, Seedream 4.0 integrates image generation and image editing capabilities into a single, unified architecture."
+fal-ai/bytedance/seedream/v4/text-to-image,text-to-image,text,image,,run,0.03,,"A new-generation image creation model ByteDance, Seedream 4.0 integrates image generation and image editing capabilities into a single, unified architecture."
+fal-ai/bytedance/video-stylize,image-to-video,image,video,,run,0.23,,Transform your images into stylized videos using this workflow.
+fal-ai/calligrapher,image-to-image,image,image,,mega pixels,0.2,,"Use the text and font retaining capabilities of calligrapher to modify texts on your books, clothes and many more."
+fal-ai/cartoonify,image-to-image,image,image,,run,0.1,,Transform images into 3D cartoon artwork using an AI model that applies cartoon stylization while preserving the original image's composition and details.
+fal-ai/cat-vton,image-to-image,image,image,,compute seconds,0.00111,,Image based high quality Virtual Try-On
+fal-ai/ccsr,image-to-image,image,image,,compute seconds,0.00125,,SOTA Image Upscaler
+fal-ai/chain-of-zoom,image-to-image,image,image,,run,0.025,,Extreme Super-Resolution via Scale Autoregression and Preference Alignment
+fal-ai/chatterbox/speech-to-speech,speech-to-speech,audio,audio,,output minutes,0.015,,"Whether you're working on memes, videos, games, or AI agents, Chatterbox brings your content to life. Use the first tts from resemble ai."
+fal-ai/chatterbox/text-to-speech,text-to-speech,text,audio,,input kilo tokens,0.025,,"Whether you're working on memes, videos, games, or AI agents, Chatterbox brings your content to life. Use the first tts from resemble ai."
+fal-ai/chatterbox/text-to-speech/multilingual,text-to-speech,text,audio,,input kilo tokens,0.025,,"Whether you're working on memes, videos, games, or AI agents, Chatterbox brings your content to life. Use the first tts from resemble ai."
+fal-ai/clarity-upscaler,image-to-image,image,image,,mega pixels,0.03,,Clarity upscaler for upscaling images with high very fidelity.
+fal-ai/codeformer,image-to-image,image,image,,mega pixels,0.0021,input or output?,Fix distorted or blurred photos of people with CodeFormer.
+fal-ai/cogvideox-5b,text-to-video,text,video,,run,0.2,,Generate videos from prompts using CogVideoX-5B
+fal-ai/cogvideox-5b/image-to-video,image-to-video,image,video,,run,0.2,,Generate videos from images and prompts using CogVideoX-5B
+fal-ai/cogvideox-5b/video-to-video,video-to-video,video,video,,run,0.2,,Generate videos from videos and prompts using CogVideoX-5B
+fal-ai/cogview4,text-to-image,text,image,,output mega pixels,0.1,,Generate high quality images from text prompts using CogView4. Longer text prompts will result in better quality images.
+fal-ai/controlnext,video-to-video,video,video,,compute seconds,0.00111,,Animate a reference image with a driving video using ControlNeXt.
+fal-ai/creative-upscaler,image-to-image,image,image,,compute seconds,0.00125,,Create creative upscaled images.
+fal-ai/csm-1b,text-to-audio,text,audio,,input kilo tokens,0.03,,CSM (Conversational Speech Model) is a speech generation model from Sesame that generates RVQ audio codes from text and audio inputs.
+fal-ai/ddcolor,image-to-image,image,image,,mega pixels,0.001,input or output?,Bring colors into old or new black and white photos with DDColor.
+fal-ai/decart/lucy-5b/image-to-video,image-to-video,image,video,,run,0.15,,"Lucy-5B is a model that can create 5-second I2V videos in under 5 seconds, achieving >1x RTF end-to-end"
+fal-ai/dia-tts,text-to-speech,text,audio,,input kilo tokens,0.04,,Dia directly generates realistic dialogue from transcripts. Audio conditioning enables emotion control. Produces natural nonverbals like laughter and throat clearing.
+fal-ai/dia-tts/voice-clone,audio-to-audio,audio,audio,,input kilo tokens,0.04,,Clone dialog voices from a sample audio and generate dialogs from text prompts using the Dia TTS which leverages advanced AI techniques to create high-quality text-to-speech.
+fal-ai/diffrhythm,text-to-audio,text,audio,,output seconds,0.001,,DiffRhythm is a blazing fast model for transforming lyrics into full songs. It boasts the capability to generate full songs in less than 30 seconds.
+fal-ai/diffusion-edge,text-to-image,text,image,,compute seconds,0.00111,,Diffusion based high quality edge detection
+fal-ai/docres,image-to-image,image,image,,mega pixels,0.025,,"Enhance low-resolution, blur, shadowed documents with the superior quality of docres for sharper, clearer results."
+fal-ai/docres/dewarp,image-to-image,image,image,,mega pixels,0.03,,"Enhance wraped, folded documents with the superior quality of docres for sharper, clearer results."
+fal-ai/drct-super-resolution,image-to-image,image,image,,mega pixels,0.0045,,Upscale your images with DRCT-Super-Resolution.
+fal-ai/dreamo,text-to-image,text,image,,output mega pixels,0.05,,DreamO is an image customization framework designed to support a wide range of tasks while facilitating seamless integration of multiple conditions.
+fal-ai/dreamshaper,text-to-image,text,image,,compute seconds,0.00111,,Dreamshaper model.
+fal-ai/dubbing,video-to-video,audio,video,,output minutes,1,,"This endpoint delivers seamlessly localized videos by generating lip-synced dubs in multiple languages, ensuring natural and immersive multilingual experiences"
+fal-ai/dwpose,image-to-image,image,image,,compute seconds,0.0006,,Predict poses from images.
+fal-ai/dwpose/video,video-to-video,video,video,,compute seconds,0.0006,,Predict poses from videos.
+fal-ai/echomimic-v3,audio-to-video,audio,video,,output seconds,0.2,,"EchoMimic V3 generates a talking avatar model from a picture, audio and text prompt."
+fal-ai/elevenlabs/audio-isolation,audio-to-audio,audio,audio,,output minutes,0.1,,Isolate audio tracks using ElevenLabs advanced audio isolation technology.
+fal-ai/elevenlabs/sound-effects,text-to-audio,text,audio,,output seconds,0.002,,Generate sound effects using ElevenLabs advanced sound effects model.
+fal-ai/elevenlabs/sound-effects/v2,text-to-audio,text,audio,,output seconds,0.002,,Generate sound effects using ElevenLabs advanced sound effects model.
+fal-ai/elevenlabs/speech-to-text,speech-to-text,audio,text,,output minutes,0.03,,Generate text from speech using ElevenLabs advanced speech-to-text model.
+fal-ai/elevenlabs/text-to-dialogue/eleven-v3,text-to-audio,text,audio,,input kilo tokens,0.1,,Generate realistic audio dialogues using Eleven-v3 from ElevenLabs.
+fal-ai/elevenlabs/tts/eleven-v3,text-to-audio,text,audio,,input kilo tokens,0.1,,Generate text-to-speech audio using Eleven-v3 from ElevenLabs.
+fal-ai/elevenlabs/tts/multilingual-v2,text-to-audio,text,audio,,input kilo tokens,0.1,,Generate multilingual text-to-speech audio using ElevenLabs TTS Multilingual v2.
+fal-ai/elevenlabs/tts/turbo-v2.5,text-to-speech,text,audio,,run,0.05,,Generate high-speed text-to-speech audio using ElevenLabs TTS Turbo v2.5.
+fal-ai/era-3d,image-to-image,image,image,,compute seconds,0.00111,,A powerful image to novel multiview model with normals.
+fal-ai/esrgan,image-to-image,image,image,,compute seconds,0.00111,,Upscale images by a given factor.
+fal-ai/evf-sam,image-to-image,image,image,"positive prompt
+positive + negative prompts",run,"0.005
+0.01",,"EVF-SAM2 combines natural language understanding with advanced segmentation capabilities, allowing you to precisely mask image regions using intuitive positive and negative text prompts."
+fal-ai/f-lite/standard,text-to-image,text,image,,output mega pixels,0.025,,"F Lite is a 10B parameter diffusion model created by Fal and Freepik, trained exclusively on copyright-safe and SFW content."
+fal-ai/f-lite/texture,text-to-image,text,image,,output mega pixels,0.025,,"F Lite is a 10B parameter diffusion model created by Fal and Freepik, trained exclusively on copyright-safe and SFW content. This is a high texture density variant of the model."
+fal-ai/f5-tts,text-to-audio,text,audio,,run,0.05,,F5 TTS
+fal-ai/face-to-sticker,image-to-image,image,image,,compute seconds,0.00111,,Create stickers from faces.
+fal-ai/fashn/tryon/v1.5,image-to-image,image,image,,run,0.075,,"FASHN v1.5 delivers precise virtual try-on capabilities, accurately rendering garment details like text and patterns at 576x864 resolution from both on-model and flat-lay photo references."
+fal-ai/fashn/tryon/v1.6,image-to-image,image,image,,run,0.075,,"FASHN v1.6 delivers precise virtual try-on capabilities, accurately rendering garment details like text and patterns at 864x1296 resolution from both on-model and flat-lay photo references."
+fal-ai/fast-animatediff/text-to-video,text-to-video,text,video,,compute seconds,0.00111,,Animate your ideas!
+fal-ai/fast-animatediff/turbo/text-to-video,text-to-video,text,video,,compute seconds,0.00111,,Animate your ideas in lightning speed!
+fal-ai/fast-animatediff/turbo/video-to-video,video-to-video,video,video,,compute seconds,0.00111,,Re-animate your videos in lightning speed!
+fal-ai/fast-animatediff/video-to-video,video-to-video,video,video,,compute seconds,0.00111,,Re-animate your videos!
+fal-ai/fast-fooocus-sdxl,text-to-image,text,image,,compute seconds,0.00111,,Fooocus extreme speed mode as a standalone app.
+fal-ai/fast-fooocus-sdxl/image-to-image,text-to-image,text,image,,compute seconds,0.00111,,Fooocus extreme speed mode as a standalone app.
+fal-ai/fast-lcm-diffusion,text-to-image,text,image,,compute seconds,0.000575,,Run SDXL at the speed of light
+fal-ai/fast-lcm-diffusion/image-to-image,image-to-image,image,image,,compute seconds,0.000575,,Run SDXL at the speed of light
+fal-ai/fast-lcm-diffusion/inpainting,image-to-image,image,image,,compute seconds,0.000575,,Run SDXL at the speed of light
+fal-ai/fast-lightning-sdxl,text-to-image,text,image,,compute seconds,0.00125,,Run SDXL at the speed of light
+fal-ai/fast-lightning-sdxl/image-to-image,image-to-image,image,image,,compute seconds,0.00125,,Run SDXL at the speed of light
+fal-ai/fast-lightning-sdxl/inpainting,image-to-image,image,image,,compute seconds,0.00125,,Run SDXL at the speed of light
+fal-ai/fast-sdxl,text-to-image,text,image,,compute seconds,0.00111,,Run SDXL at the speed of light
+fal-ai/fast-sdxl-controlnet-canny,text-to-image,text,image,,compute seconds,0.00111,,Generate Images with ControlNet.
+fal-ai/fast-sdxl-controlnet-canny/image-to-image,image-to-image,image,image,,compute seconds,0.00111,,Generate Images with ControlNet.
+fal-ai/fast-sdxl-controlnet-canny/inpainting,image-to-image,image,image,,compute seconds,0.00111,,Generate Images with ControlNet.
+fal-ai/fast-sdxl/image-to-image,image-to-image,image,image,,compute seconds,0.00111,,Run SDXL at the speed of light
+fal-ai/fast-sdxl/inpainting,image-to-image,image,image,,compute seconds,0.00111,,Run SDXL at the speed of light
+fal-ai/fast-svd-lcm/text-to-video,text-to-video,text,video,,compute seconds,0.00111,,Generate short video clips from your images using SVD v1.1 at Lightning Speed
+fal-ai/fast-svd/text-to-video,text-to-video,text,video,,compute seconds,0.00111,,Generate short video clips from your prompts using SVD v1.1
+fal-ai/ffmpeg-api/compose,video-to-video,audio,video,,output seconds,0.0002,,Compose videos from multiple media sources using FFmpeg API.
+fal-ai/ffmpeg-api/extract-frame,image-to-image,image,image,,output seconds,0.0002,,"ffmpeg endpoint for first, middle and last frame extraction from videos"
+fal-ai/ffmpeg-api/loudnorm,json,audio,json,,compute seconds,0.00017,,Get EBU R128 loudness normalization from audio files using FFmpeg API.
+fal-ai/ffmpeg-api/merge-audio-video,video-to-video,audio,video,,output seconds,0.0002,,Merge videos with standalone audio files or audio from video files.
+fal-ai/ffmpeg-api/merge-videos,video-to-video,video,video,,compute seconds,0.00017,,Use ffmpeg capabilities to merge 2 or more videos.
+fal-ai/ffmpeg-api/metadata,json,audio,json,,compute seconds,0.00017,,Get encoding metadata from video and audio files using FFmpeg API.
+fal-ai/ffmpeg-api/waveform,json,audio,json,,compute seconds,0.00017,,Get waveform data from audio files using FFmpeg API.
+fal-ai/film,image-to-image,image,image,,compute seconds,0.0013,,Interpolate images with FILM - Frame Interpolation for Large Motion
+fal-ai/film/video,video-to-video,video,video,,compute seconds,0.0013,,Interpolate videos with FILM - Frame Interpolation for Large Motion
+fal-ai/finegrain-eraser,image-to-image,image,image,"express
+standard
+premium",run,"0.18
+0.27
+0.36",,"Finegrain Eraser removes objects—along with their shadows, reflections, and lighting artifacts—using only natural language, seamlessly filling the scene with contextually accurate content."
+fal-ai/finegrain-eraser/bbox,image-to-image,"express
+standard
+premium",image,,run,"0.09
+0.18
+0.27",express price is wrong?,"Finegrain Eraser removes any object selected with a bounding box—along with its shadows, reflections, and lighting artifacts—seamlessly reconstructing the scene with contextually accurate content."
+fal-ai/finegrain-eraser/mask,image-to-image,image,image,"express
+premium",run,"0.04
+0.13",,"Finegrain Eraser removes any object selected with a mask—along with its shadows, reflections, and lighting artifacts—seamlessly reconstructing the scene with contextually accurate content."
+fal-ai/florence-2-large/caption,vision,image,json,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/caption-to-phrase-grounding,image-to-image,image,image,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/dense-region-caption,image-to-image,image,image,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/detailed-caption,vision,image,json,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/more-detailed-caption,vision,image,json,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/object-detection,image-to-image,image,image,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/ocr,vision,image,json,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/ocr-with-region,image-to-image,image,image,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/open-vocabulary-detection,image-to-image,image,image,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/referring-expression-segmentation,image-to-image,image,image,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/region-proposal,image-to-image,image,image,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/region-to-category,vision,image,json,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/region-to-description,vision,image,json,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/florence-2-large/region-to-segmentation,image-to-image,image,image,,compute seconds,0.00125,,Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks
+fal-ai/flowedit,image-to-image,image,image,,compute seconds,0.00125,,The model provides you high quality image editing capabilities.
+fal-ai/flux-1/dev,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 [dev] is a 12 billion parameter flow transformer that generates high-quality images from text. It is suitable for personal and commercial use.
+fal-ai/flux-1/dev/image-to-image,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 [dev] is a 12 billion parameter flow transformer that generates high-quality images from text. It is suitable for personal and commercial use.
+fal-ai/flux-1/dev/redux,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,"FLUX.1 [dev] Redux is a high-performance endpoint for the FLUX.1 [dev] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux-1/krea,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 Krea [dev] is a 12 billion parameter flow transformer that generates high-quality images from text with incredible aesthetics. It is suitable for personal and commercial use.
+fal-ai/flux-1/krea/image-to-image,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 Krea [dev] is a 12 billion parameter flow transformer that generates high-quality images from text with incredible aesthetics. It is suitable for personal and commercial use.
+fal-ai/flux-1/krea/redux,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,"FLUX.1 Krea [dev] Redux is a high-performance endpoint for the FLUX.1 Krea [dev] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux-1/schnell,text-to-image,text,image,,output mega pixels,0.003,rounding up to nearest megapixel,Fastest inference in the world for the 12 billion parameter FLUX.1 [schnell] text-to-image model.
+fal-ai/flux-1/schnell/redux,image-to-image,image,image,,mega pixels,0.003,,"FLUX.1 [schnell] Redux is a high-performance endpoint for the FLUX.1 [schnell] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux-1/srpo,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 SRPO [dev] is a 12 billion parameter flow transformer that generates high-quality images from text with incredible aesthetics. It is suitable for personal and commercial use.
+fal-ai/flux-1/srpo/image-to-image,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 SRPO [dev] is a 12 billion parameter flow transformer that generates high-quality images from text with incredible aesthetics. It is suitable for personal and commercial use.
+fal-ai/flux-control-lora-canny,text-to-image,text,image,,output mega pixels,0.04,rounding up to nearest megapixel,"FLUX Control LoRA Canny is a high-performance endpoint that uses a control image to transfer structure to the generated image, using a Canny edge map."
+fal-ai/flux-control-lora-canny/image-to-image,image-to-image,image,image,,mega pixels,0.04,rounding up to nearest megapixel,FLUX Control LoRA Canny is a high-performance endpoint that uses a control image using a Canny edge map to transfer structure to the generated image and another initial image to guide color.
+fal-ai/flux-control-lora-depth,text-to-image,text,image,,output mega pixels,0.04,rounding up to nearest megapixel,"FLUX Control LoRA Depth is a high-performance endpoint that uses a control image to transfer structure to the generated image, using a depth map."
+fal-ai/flux-control-lora-depth/image-to-image,image-to-image,image,image,,mega pixels,0.04,rounding up to nearest megapixel,FLUX Control LoRA Depth is a high-performance endpoint that uses a control image using a depth map to transfer structure to the generated image and another initial image to guide color.
+fal-ai/flux-differential-diffusion,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel,"FLUX.1 Differential Diffusion is a rapid endpoint that enables swift, granular control over image transformations through change maps, delivering fast and precise region-specific modifications while maintaining FLUX.1 [dev]'s high-quality output."
+fal-ai/flux-general,text-to-image,text,image,,output mega pixels,0.075,rounding up to nearest megapixel,"A versatile endpoint for the FLUX.1 [dev] model that supports multiple AI extensions including LoRA, ControlNet conditioning, and IP-Adapter integration, enabling comprehensive control over image generation through various guidance methods."
+fal-ai/flux-general/differential-diffusion,image-to-image,image,image,,compute seconds,0.00125,,"A specialized FLUX endpoint combining differential diffusion control with LoRA, ControlNet, and IP-Adapter support, enabling precise, region-specific image transformations through customizable change maps."
+fal-ai/flux-general/image-to-image,image-to-image,image,image,,mega pixels,0.075,rounding up to nearest megapixel,"FLUX General Image-to-Image is a versatile endpoint that transforms existing images with support for LoRA, ControlNet, and IP-Adapter extensions, enabling precise control over style transfer, modifications, and artistic variations through multiple guidance methods."
+fal-ai/flux-general/inpainting,image-to-image,image,image,,mega pixels,0.075,rounding up to nearest megapixel,"FLUX General Inpainting is a versatile endpoint that enables precise image editing and completion, supporting multiple AI extensions including LoRA, ControlNet, and IP-Adapter for enhanced control over inpainting results and sophisticated image modifications."
+fal-ai/flux-general/rf-inversion,image-to-image,image,image,,compute seconds,0.00125,,"A general purpose endpoint for the FLUX.1 [dev] model, implementing the RF-Inversion pipeline. This can be used to edit a reference image based on a prompt."
+fal-ai/flux-kontext-lora,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel,"Fast endpoint for the FLUX.1 Kontext [dev] model with LoRA support, enabling rapid and high-quality image editing using pre-trained LoRA adaptations for specific styles, brand identities, and product-specific outputs."
+fal-ai/flux-kontext-lora/inpaint,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel,"Fast inpainting endpoint for the FLUX.1 Kontext [dev] model with LoRA support, enabling rapid and high-quality image inpainting with reference images, while using pre-trained LoRA adaptations for specific styles, brand identities, and product-specific outputs."
+fal-ai/flux-kontext-lora/text-to-image,text-to-image,text,image,,output mega pixels,0.035,,"Super fast text-to-image endpoint for the FLUX.1 Kontext [dev] model with LoRA support, enabling rapid and high-quality image generation using pre-trained LoRA adaptations for personalization, specific styles, brand identities, and product-specific outputs."
+fal-ai/flux-kontext-trainer,training,,model,,kilo steps,2.5,,LoRA trainer for FLUX.1 Kontext [dev]
+fal-ai/flux-kontext/dev,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,Frontier image editing model.
+fal-ai/flux-krea-lora,text-to-image,text,image,,output mega pixels,0.035,rounding up to nearest megapixel,"Super fast endpoint for the FLUX.1 [dev] model with LoRA support, enabling rapid and high-quality image generation using pre-trained LoRA adaptations for personalization, specific styles, brand identities, and product-specific outputs."
+fal-ai/flux-krea-lora/image-to-image,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel,"FLUX LoRA Image-to-Image is a high-performance endpoint that transforms existing images using FLUX models, leveraging LoRA adaptations to enable rapid and precise image style transfer, modifications, and artistic variations."
+fal-ai/flux-krea-lora/inpainting,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel,"Super fast endpoint for the FLUX.1 [dev] inpainting model with LoRA support, enabling rapid and high-quality image inpaingting using pre-trained LoRA adaptations for personalization, specific styles, brand identities, and product-specific outputs."
+fal-ai/flux-krea-lora/stream,text-to-image,text,image,,output mega pixels,0.035,,"Super fast endpoint for the FLUX.1 [dev] model with LoRA support, enabling rapid and high-quality image generation using pre-trained LoRA adaptations for personalization, specific styles, brand identities, and product-specific outputs."
+fal-ai/flux-krea-trainer,training,,model,,run,2,,"Train styles, people and other subjects at blazing speeds using the FLUX.1 Krea [dev] base model."
+fal-ai/flux-lora,text-to-image,text,image,,output mega pixels,0.035,rounding up to nearest megapixel,"Super fast endpoint for the FLUX.1 [dev] model with LoRA support, enabling rapid and high-quality image generation using pre-trained LoRA adaptations for personalization, specific styles, brand identities, and product-specific outputs."
+fal-ai/flux-lora-canny,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel,"Utilize Flux.1 [dev] Controlnet to generate high-quality images with precise control over composition, style, and structure through advanced edge detection and guidance mechanisms."
+fal-ai/flux-lora-depth,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel,Generate high-quality images from depth maps using Flux.1 [dev] depth estimation model. The model produces accurate depth representations for scene understanding and 3D visualization.
+fal-ai/flux-lora-fast-training,training,,model,,run,2,,"Train styles, people and other subjects at blazing speeds."
+fal-ai/flux-lora-fill,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel,"FLUX.1 [dev] Fill is a high-performance endpoint for the FLUX.1 [pro] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux-lora-portrait-trainer,training,,model,,steps,0.0024,min 1000 units,"FLUX LoRA training optimized for portrait generation, with bright highlights, excellent prompt following and highly detailed results."
+fal-ai/flux-lora/image-to-image,image-to-image,image,image,,mega pixels,0.035,rounding up to nearest megapixel,"FLUX LoRA Image-to-Image is a high-performance endpoint that transforms existing images using FLUX models, leveraging LoRA adaptations to enable rapid and precise image style transfer, modifications, and artistic variations."
+fal-ai/flux-lora/inpainting,text-to-image,text,image,,output mega pixels,0.035,rounding up to nearest megapixel,"Super fast endpoint for the FLUX.1 [dev] inpainting model with LoRA support, enabling rapid and high-quality image inpaingting using pre-trained LoRA adaptations for personalization, specific styles, brand identities, and product-specific outputs."
+fal-ai/flux-lora/stream,text-to-image,text,image,,output mega pixels,0.035,,"Super fast endpoint for the FLUX.1 [dev] model with LoRA support, enabling rapid and high-quality image generation using pre-trained LoRA adaptations for personalization, specific styles, brand identities, and product-specific outputs."
+fal-ai/flux-pro-trainer,training,,model,"<150
+150-500
+>500",iterations,"2
+4
+6",,FLUX LoRA for Pro endpoints.
+fal-ai/flux-pro/kontext,image-to-image,image,image,,run,0.04,,"FLUX.1 Kontext [pro] handles both text and reference images as inputs, seamlessly enabling targeted, local edits and complex transformations of entire scenes."
+fal-ai/flux-pro/kontext/max,image-to-image,image,image,,run,0.08,,FLUX.1 Kontext [max] is a model with greatly improved prompt adherence and typography generation meet premium consistency for editing without compromise on speed.
+fal-ai/flux-pro/kontext/max/multi,image-to-image,image,image,,run,0.08,,Experimental version of FLUX.1 Kontext [max] with multi image handling capabilities
+fal-ai/flux-pro/kontext/max/text-to-image,text-to-image,text,image,,run,0.08,,FLUX.1 Kontext [max] text-to-image is a new premium model brings maximum performance across all aspects – greatly improved prompt adherence.
+fal-ai/flux-pro/kontext/multi,image-to-image,image,image,,run,0.04,,Experimental version of FLUX.1 Kontext [pro] with multi image handling capabilities
+fal-ai/flux-pro/kontext/text-to-image,text-to-image,text,image,,run,0.04,,"The FLUX.1 Kontext [pro] text-to-image delivers state-of-the-art image generation results with unprecedented prompt following, photorealistic rendering, and flawless typography."
+fal-ai/flux-pro/new,text-to-image,text,image,,output mega pixels,0.05,rounding up to nearest megapixel,"FLUX.1 [pro] new is an accelerated version of FLUX.1 [pro], maintaining professional-grade image quality while delivering significantly faster generation speeds."
+fal-ai/flux-pro/v1.1,text-to-image,text,image,,output mega pixels,0.04,rounding up to nearest megapixel,"FLUX1.1 [pro] is an enhanced version of FLUX.1 [pro], improved image generation capabilities, delivering superior composition, detail, and artistic fidelity compared to its predecessor."
+fal-ai/flux-pro/v1.1-ultra,text-to-image,text,image,,output mega pixels,0.06,,"FLUX1.1 [pro] ultra is the newest version of FLUX1.1 [pro], maintaining professional-grade image quality while delivering up to 2K resolution with improved photo realism."
+fal-ai/flux-pro/v1.1-ultra-finetuned,text-to-image,text,image,,output mega pixels,0.07,rounding up to nearest megapixel,"FLUX1.1 [pro] ultra fine-tuned is the newest version of FLUX1.1 [pro] with a fine-tuned LoRA, maintaining professional-grade image quality while delivering up to 2K resolution with improved photo realism."
+fal-ai/flux-pro/v1.1-ultra/redux,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel,"FLUX1.1 [pro] ultra Redux is a high-performance endpoint for the FLUX1.1 [pro] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux-pro/v1.1/redux,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel,"FLUX1.1 [pro] Redux is a high-performance endpoint for the FLUX1.1 [pro] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux-pro/v1/canny,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel,"Utilize Flux.1 [pro] Controlnet to generate high-quality images with precise control over composition, style, and structure through advanced edge detection and guidance mechanisms."
+fal-ai/flux-pro/v1/canny-finetuned,image-to-image,image,image,,mega pixels,0.06,,"Utilize Flux.1 [pro] Controlnet with a fine-tuned LoRA to generate high-quality images with precise control over composition, style, and structure through advanced edge detection and guidance mechanisms."
+fal-ai/flux-pro/v1/depth,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel,Generate high-quality images from depth maps using Flux.1 [pro] depth estimation model. The model produces accurate depth representations for scene understanding and 3D visualization.
+fal-ai/flux-pro/v1/depth-finetuned,image-to-image,image,image,,mega pixels,0.06,,Generate high-quality images from depth maps using Flux.1 [pro] depth estimation model with a fine-tuned LoRA. The model produces accurate depth representations for scene understanding and 3D visualization.
+fal-ai/flux-pro/v1/fill,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel,"FLUX.1 [pro] Fill is a high-performance endpoint for the FLUX.1 [pro] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux-pro/v1/fill-finetuned,image-to-image,image,image,,mega pixels,0.06,,"FLUX.1 [pro] Fill Fine-tuned is a high-performance endpoint for the FLUX.1 [pro] model with a fine-tuned LoRA that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux-pro/v1/redux,image-to-image,image,image,,mega pixels,0.05,rounding up to nearest megapixel,"FLUX.1 [pro] Redux is a high-performance endpoint for the FLUX.1 [pro] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux-pulid,image-to-image,image,image,,mega pixels,0.0333,rounding up to nearest megapixel,An endpoint for personalized image generation using Flux as per given description.
+fal-ai/flux-subject,text-to-image,text,image,,output mega pixels,0.04,rounding up to nearest megapixel,"Super fast endpoint for the FLUX.1 [schnell] model with subject input capabilities, enabling rapid and high-quality image generation for personalization, specific styles, brand identities, and product-specific outputs."
+fal-ai/flux/dev,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 [dev] is a 12 billion parameter flow transformer that generates high-quality images from text. It is suitable for personal and commercial use.
+fal-ai/flux/dev/image-to-image,image-to-image,image,image,,mega pixels,0.03,rounding up to nearest megapixel,"FLUX.1 Image-to-Image is a high-performance endpoint for the FLUX.1 [dev] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux/dev/redux,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,"FLUX.1 [dev] Redux is a high-performance endpoint for the FLUX.1 [dev] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux/krea,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 Krea [dev] is a 12 billion parameter flow transformer that generates high-quality images from text with incredible aesthetics. It is suitable for personal and commercial use.
+fal-ai/flux/krea/image-to-image,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 Krea [dev] is a 12 billion parameter flow transformer that generates high-quality images from text with incredible aesthetics. It is suitable for personal and commercial use.
+fal-ai/flux/krea/redux,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,"FLUX.1 Krea [dev] Redux is a high-performance endpoint for the FLUX.1 Krea [dev] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux/schnell,text-to-image,text,image,,output mega pixels,0.003,rounding up to nearest megapixel,"FLUX.1 [schnell] is a 12 billion parameter flow transformer that generates high-quality images from text in 1 to 4 steps, suitable for personal and commercial use."
+fal-ai/flux/schnell/redux,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,"FLUX.1 [schnell] Redux is a high-performance endpoint for the FLUX.1 [schnell] model that enables rapid transformation of existing images, delivering high-quality style transfers and image modifications with the core FLUX capabilities."
+fal-ai/flux/srpo,text-to-image,text,image,,output mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 SRPO [dev] is a 12 billion parameter flow transformer that generates high-quality images from text with incredible aesthetics. It is suitable for personal and commercial use.
+fal-ai/flux/srpo/image-to-image,image-to-image,image,image,,mega pixels,0.025,rounding up to nearest megapixel,FLUX.1 SRPO [dev] is a 12 billion parameter flow transformer that generates high-quality images from text with incredible aesthetics. It is suitable for personal and commercial use.
+fal-ai/fooocus,text-to-image,text,image,,compute seconds,0.00111,,Default parameters with automated optimizations and quality improvements.
+fal-ai/fooocus/image-prompt,text-to-image,text,image,,compute seconds,0.00111,,Default parameters with automated optimizations and quality improvements.
+fal-ai/fooocus/inpaint,text-to-image,text,image,,compute seconds,0.00111,,Default parameters with automated optimizations and quality improvements.
+fal-ai/fooocus/upscale-or-vary,text-to-image,text,image,,compute seconds,0.00111,,Default parameters with automated optimizations and quality improvements.
+fal-ai/framepack,image-to-video,image,video,,output seconds,0.0333,,Framepack is an efficient Image-to-video model that autoregressively generates videos.
+fal-ai/framepack/f1,image-to-video,image,video,,output seconds,0.0333,,Framepack is an efficient Image-to-video model that autoregressively generates videos.
+fal-ai/framepack/flf2v,image-to-video,image,video,,output seconds,0.0333,,Framepack is an efficient Image-to-video model that autoregressively generates videos.
+fal-ai/gemini-25-flash-image,text-to-image,text,image,,run,0.039,,Nano Banana is Google's state-of-the-art image generation and editing model
+fal-ai/gemini-25-flash-image/edit,image-to-image,image,image,,run,0.039,,Gemini 2.5 Flash Image is Google's state-of-the-art image generation and editing model
+fal-ai/gemini-flash-edit,image-to-image,image,image,,run,0.04,,Gemini Flash Edit is a model that can edit single image using a text prompt and a reference image.
+fal-ai/gemini-flash-edit/multi,image-to-image,image,image,,run,0.04,,Gemini Flash Edit Multi Image is a model that can edit multiple images using a text prompt and a reference image.
+fal-ai/ghiblify,image-to-image,image,image,,run,0.05,,Reimagine and transform your ordinary photos into enchanting Studio Ghibli style artwork
+fal-ai/got-ocr/v2,vision,image,json,,run,0.05,,"GOT-OCR2 works on a wide range of tasks, including plain document OCR, scene text OCR, formatted document OCR, and even OCR for tables, charts, mathematical formulas, geometric shapes, molecular formulas and sheet music."
+fal-ai/hidream-e1-1,image-to-image,image,image,,run,0.06,,Edit images with natural language
+fal-ai/hidream-i1-dev,text-to-image,text,image,,output mega pixels,0.03,,HiDream-I1 dev is a new open-source image generative foundation model with 17B parameters that achieves state-of-the-art image generation quality within seconds.
+fal-ai/hidream-i1-fast,text-to-image,text,image,,output mega pixels,0.01,,HiDream-I1 fast is a new open-source image generative foundation model with 17B parameters that achieves state-of-the-art image generation quality within 16 steps.
+fal-ai/hidream-i1-full,text-to-image,text,image,,output mega pixels,0.05,,HiDream-I1 full is a new open-source image generative foundation model with 17B parameters that achieves state-of-the-art image generation quality within seconds.
+fal-ai/hidream-i1-full/image-to-image,image-to-image,image,image,,mega pixels,0.05,,HiDream-I1 full is a new open-source image generative foundation model with 17B parameters that achieves state-of-the-art image generation quality within seconds.
+fal-ai/hunyuan_world,image-to-image,image,image,,run,0.15,,"Hunyuan World 1.0 turns a single image into a panorama or a 3D world. It creates realistic scenes from the image, allowing you to explore and view it from different angles."
+fal-ai/hunyuan_world/image-to-world,image-to-3d,image,3d,,run,0.3,,"Hunyuan World 1.0 turns a single image into a panorama or a 3D world. It creates realistic scenes from the image, allowing you to explore and view it from different angles."
+fal-ai/hunyuan-avatar,image-to-video,image,video,,output seconds,0.28,min 5 units?,HunyuanAvatar is a High-Fidelity Audio-Driven Human Animation model for Multiple Characters .
+fal-ai/hunyuan-custom,image-to-video,image,video,"512p
+720p",run,"0.8
+2.4",,"HunyuanCustom revolutionizes video generation with unmatched identity consistency across multiple input types. Its innovative fusion modules and alignment networks outperform competitors, maintaining subject integrity while responding flexibly to text, image, audio, and video conditions."
+fal-ai/hunyuan-image/v2.1/text-to-image,text-to-image,text,image,,output mega pixels,0.1,,Use the amazing capabilities of hunyuan image 2.1 to generate images that express the feelings of your text.
+fal-ai/hunyuan-image/v3/text-to-image,text-to-image,text,image,,output mega pixels,0.1,,Leverage the state-of-the-art capabilities of Hunyuan Image 3.0 to generate visual content that effectively conveys the messaging of your written material.
+fal-ai/hunyuan-portrait,image-to-video,image,video,,output seconds,0.08,"minimum 5 units? also price per second appears wrong, either 0.8 or 0.18 or 0.08??","HunyuanPortrait is a diffusion-based framework for generating lifelike, temporally consistent portrait animations."
+fal-ai/hunyuan-video,text-to-video,text,video,,run,0.4,,"Hunyuan Video is an Open video generation model with high visual quality, motion diversity, text-video alignment, and generation stability. This endpoint generates videos from text descriptions."
+fal-ai/hunyuan-video-foley,video-to-video,video,video,,output seconds,0.01,,Use the capabilities of the hunyuan foley model to bring life to your videos by adding sound effect to them.
+fal-ai/hunyuan-video-image-to-video,image-to-video,image,video,,run,0.4,,Image to Video for the high-quality Hunyuan Video I2V model.
+fal-ai/hunyuan-video-img2vid-lora,image-to-video,image,video,,run,0.3,,Image to Video for the Hunyuan Video model using a custom trained LoRA.
+fal-ai/hunyuan-video-lora,text-to-video,text,video,,run,0.4,,"Hunyuan Video is an Open video generation model with high visual quality, motion diversity, text-video alignment, and generation stability"
+fal-ai/hunyuan-video-lora-training,training,,model,,kilo steps,5,kilosteps or unit or what?,"Train Hunyuan Video lora on people, objects, characters and more!"
+fal-ai/hunyuan-video-lora/video-to-video,video-to-video,video,video,,compute seconds,0.00125,,"Hunyuan Video is an Open video generation model with high visual quality, motion diversity, text-video alignment, and generation stability. Use this endpoint to generate videos from videos."
+fal-ai/hunyuan-video/video-to-video,video-to-video,video,video,,compute seconds,0.00125,,"Hunyuan Video is an Open video generation model with high visual quality, motion diversity, text-video alignment, and generation stability. Use this endpoint to generate videos from videos."
+fal-ai/hunyuan3d-v21,image-to-3d,image,3d,,run,0.3,,Hunyuan3D-2.1 is a scalable 3D asset creation system that advances state-of-the-art 3D generation through Physically-Based Rendering (PBR).
+fal-ai/hunyuan3d/v2,image-to-3d,image,3d,,run,0.16,,Generate 3D models from your images using Hunyuan 3D. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+fal-ai/hunyuan3d/v2/mini,image-to-3d,image,3d,,run,0.1,,Generate 3D models from your images using Hunyuan 3D. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+fal-ai/hunyuan3d/v2/mini/turbo,image-to-3d,image,3d,,run,0.08,,Generate 3D models from your images using Hunyuan 3D. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+fal-ai/hunyuan3d/v2/multi-view,image-to-3d,image,3d,,run,0.017,,Generate 3D models from your images using Hunyuan 3D. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+fal-ai/hunyuan3d/v2/multi-view/turbo,image-to-3d,image,3d,,run,0.015,,Generate 3D models from your images using Hunyuan 3D. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+fal-ai/hunyuan3d/v2/turbo,image-to-3d,image,3d,,run,0.14,,Generate 3D models from your images using Hunyuan 3D. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+fal-ai/hyper-sdxl,text-to-image,text,image,,compute seconds,0.00111,,Hyper-charge SDXL's performance and creativity.
+fal-ai/hyper-sdxl/image-to-image,image-to-image,image,image,,compute seconds,0.00111,,Hyper-charge SDXL's performance and creativity.
+fal-ai/hyper-sdxl/inpainting,image-to-image,image,image,,compute seconds,0.00111,,Hyper-charge SDXL's performance and creativity.
+fal-ai/hyper3d/rodin,image-to-3d,image,3d,,run,0.4,,Rodin by Hyper3D generates realistic and production ready 3D models from text or images.
+fal-ai/hyper3d/rodin/v2,image-to-3d,image,3d,,run,0.4,,Rodin by Hyper3D generates realistic and production ready 3D models from text or images.
+fal-ai/iclight-v2,image-to-image,image,image,,mega pixels,0.1,,An endpoint for re-lighting photos and changing their backgrounds per a given description
+fal-ai/ideogram/character,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.1
+0.15
+0.2",,"Generate consistent character appearances across multiple images. Maintain facial features, proportions, and distinctive traits for cohesive storytelling and branding"
+fal-ai/ideogram/character/edit,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.1
+0.15
+0.2",,"Modify consistent characters while preserving their core identity. Edit poses, expressions, or clothing without losing recognizable character features"
+fal-ai/ideogram/character/remix,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.1
+0.15
+0.2",,"Transform your consistent character into different art styles, settings, or scenarios while maintaining their distinctive appearance and identity"
+fal-ai/ideogram/upscale,image-to-image,image,image,,run,0.06,,Ideogram Upscale enhances the resolution of the reference image by up to 2X and might enhance the reference image too. Optionally refine outputs with a prompt for guided improvements.
+fal-ai/ideogram/v2,text-to-image,text,image,,run,0.08,,"Generate high-quality images, posters, and logos with Ideogram V2. Features exceptional typography handling and realistic outputs optimized for commercial and creative use."
+fal-ai/ideogram/v2/edit,image-to-image,image,image,,run,0.08,,"Transform existing images with Ideogram V2's editing capabilities. Modify, adjust, and refine images while maintaining high fidelity and realistic outputs with precise prompt control."
+fal-ai/ideogram/v2/remix,image-to-image,image,image,,run,0.08,,Reimagine existing images with Ideogram V2's remix feature. Create variations and adaptations while preserving core elements and adding new creative directions through prompt guidance.
+fal-ai/ideogram/v2/turbo,text-to-image,text,image,,run,0.05,,"Accelerated image generation with Ideogram V2 Turbo. Create high-quality visuals, posters, and logos with enhanced speed while maintaining Ideogram's signature quality."
+fal-ai/ideogram/v2/turbo/edit,image-to-image,image,image,,run,0.05,,Edit images faster with Ideogram V2 Turbo. Quick modifications and adjustments while preserving the high-quality standards and realistic outputs of Ideogram.
+fal-ai/ideogram/v2/turbo/remix,image-to-image,image,image,,run,0.05,,Rapidly create image variations with Ideogram V2 Turbo Remix. Fast and efficient reimagining of existing images while maintaining creative control through prompt guidance.
+fal-ai/ideogram/v2a,text-to-image,text,image,,run,0.04,,"Generate high-quality images, posters, and logos with Ideogram V2A. Features exceptional typography handling and realistic outputs optimized for commercial and creative use."
+fal-ai/ideogram/v2a/remix,image-to-image,image,image,,run,0.04,,Create variations of existing images with Ideogram V2A Remix while maintaining creative control through prompt guidance.
+fal-ai/ideogram/v2a/turbo,text-to-image,text,image,,run,0.025,,"Accelerated image generation with Ideogram V2A Turbo. Create high-quality visuals, posters, and logos with enhanced speed while maintaining Ideogram's signature quality."
+fal-ai/ideogram/v2a/turbo/remix,image-to-image,image,image,,run,0.025,,Rapidly create image variations with Ideogram V2A Turbo Remix. Fast and efficient reimagining of existing images while maintaining creative control through prompt guidance.
+fal-ai/ideogram/v3,text-to-image,text,image,"turbo
+balanced
+quality",run,"0.03
+0.06
+0.09",,"Generate high-quality images, posters, and logos with Ideogram V3. Features exceptional typography handling and realistic outputs optimized for commercial and creative use."
+fal-ai/ideogram/v3/edit,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.03
+0.06
+0.09",,"Transform existing images with Ideogram V3's editing capabilities. Modify, adjust, and refine images while maintaining high fidelity and realistic outputs with precise prompt control."
+fal-ai/ideogram/v3/reframe,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.03
+0.06
+0.09",,Extend existing images with Ideogram V3's reframe feature. Create expanded versions and adaptations while preserving main image and adding new creative directions through prompt guidance.
+fal-ai/ideogram/v3/remix,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.03
+0.06
+0.09",,Reimagine existing images with Ideogram V3's remix feature. Create variations and adaptations while preserving core elements and adding new creative directions through prompt guidance.
+fal-ai/ideogram/v3/replace-background,image-to-image,image,image,"turbo
+balanced
+quality",run,"0.03
+0.06
+0.09",,Replace backgrounds existing images with Ideogram V3's replace background feature. Create variations and adaptations while preserving core elements and adding new creative directions through prompt guidance.
+fal-ai/illusion-diffusion,text-to-image,text,image,,compute seconds,0.00111,,Create illusions conditioned on image.
+fal-ai/image-apps-v2/age-modify,image-to-image,image,image,,run,0.04,,Modify a face to look younger or older while keeping identity realistic.
+fal-ai/image-apps-v2/city-teleport,image-to-image,image,image,,run,0.04,,Place a person’s photo into iconic cities worldwide.
+fal-ai/image-apps-v2/expression-change,image-to-image,image,image,,run,0.04,,Change facial expressions in photos with realistic results.
+fal-ai/image-apps-v2/hair-change,image-to-image,image,image,,run,0.04,,Change hairstyles and hair colors in photos realistically.
+fal-ai/image-apps-v2/headshot-photo,image-to-image,image,image,,run,0.04,,Generate professional headshot photos with customizable backgrounds.
+fal-ai/image-apps-v2/makeup-application,image-to-image,image,image,,run,0.04,,Apply realistic makeup styles with adjustable intensity.
+fal-ai/image-apps-v2/object-removal,image-to-image,image,image,,run,0.04,,Remove unwanted objects seamlessly from any image.
+fal-ai/image-apps-v2/perspective,image-to-image,image,image,,run,0.04,,Easily adjust the perspective of any image to different angles.
+fal-ai/image-apps-v2/photo-restoration,image-to-image,image,image,,run,0.04,,"Restore old or damaged photos by fixing colors, scratches, and resolution."
+fal-ai/image-apps-v2/photography-effects,image-to-image,image,image,,run,0.4,,Apply diverse photography styles and effects to transform your images.
+fal-ai/image-apps-v2/portrait-enhance,image-to-image,image,image,,run,0.4,,Enhance and refine portrait photos with improved clarity and detail.
+fal-ai/image-apps-v2/product-holding,image-to-image,image,image,,run,0.04,,Place products naturally in a person’s hands for realistic marketing visuals.
+fal-ai/image-apps-v2/product-photography,image-to-image,image,image,,run,0.04,,Generate professional product photography with realistic lighting and backgrounds.
+fal-ai/image-apps-v2/relighting,image-to-image,image,image,,run,0.04,,Adjust and enhance images with different lighting styles.
+fal-ai/image-apps-v2/style-transfer,image-to-image,image,image,,run,0.04,,"Apply artistic styles like impressionism, cubism, or surrealism to your images."
+fal-ai/image-apps-v2/texture-transform,image-to-image,image,image,,run,0.04,,"Transform objects with different surface textures like marble, wood, or fabric."
+fal-ai/image-apps-v2/virtual-try-on,image-to-image,image,image,,run,0.04,,Try on clothes virtually by combining person and clothing images.
+fal-ai/image-editing/age-progression,image-to-image,image,image,,run,0.04,,"See how you or others might look at different ages, from younger to older, while preserving core facial features."
+fal-ai/image-editing/baby-version,image-to-image,image,image,,run,0.04,,"Transform any person into their baby version, while preserving the original pose and expression with childlike features."
+fal-ai/image-editing/background-change,image-to-image,image,image,,run,0.04,,"Replace your photo's background with any scene you desire, from beach sunsets to urban landscapes, with perfect lighting and shadows"
+fal-ai/image-editing/broccoli-haircut,image-to-image,image,image,,run,0.04,,Transform your character's hair into broccoli style while keeping the original characters likeness
+fal-ai/image-editing/cartoonify,image-to-image,image,image,,run,0.04,,Transform your photos into vibrant cool cartoons with bold outlines and rich colors.
+fal-ai/image-editing/color-correction,image-to-image,image,image,,run,0.04,,"Perfect your photos with professional color grading, balanced tones, and vibrant yet natural colors"
+fal-ai/image-editing/expression-change,image-to-image,image,image,,run,0.04,,"Change facial expressions in photos to any emotion you desire, from smiles to serious looks."
+fal-ai/image-editing/face-enhancement,image-to-image,image,image,,run,0.04,,"Enhance facial features with professional retouching while maintaining a natural, realistic look"
+fal-ai/image-editing/hair-change,image-to-image,image,image,,run,0.04,,"Experiment with different hairstyles, from bald to any style you can imagine, while maintaining natural lighting and realistic results."
+fal-ai/image-editing/object-removal,image-to-image,image,image,,run,0.04,,Remove unwanted objects or people from your photos while seamlessly blending the background.
+fal-ai/image-editing/photo-restoration,image-to-image,image,image,,run,0.04,,"Restore and enhance old or damaged photos by removing imperfections, adding color while preserving the original character and details of the image."
+fal-ai/image-editing/plushie-style,image-to-image,image,image,,run,0.04,,Transform your photos into cool plushies while keeping the original characters likeness
+fal-ai/image-editing/professional-photo,image-to-image,image,image,,run,0.04,,Turn your casual photos into stunning professional studio portraits with perfect lighting and high-end photography style.
+fal-ai/image-editing/realism,image-to-image,image,image,,run,0.04,,"Add details to faces, enhance face features, remove blur."
+fal-ai/image-editing/reframe,image-to-image,image,image,,run,0.04,,"The reframe endpoint intelligently adjusts an image's aspect ratio while preserving the main subject's position, composition, pose, and perspective"
+fal-ai/image-editing/retouch,image-to-image,image,image,,run,0.04,,Retouch photos of faces. Remove blemishes and improve the skin.
+fal-ai/image-editing/scene-composition,image-to-image,image,image,,run,0.04,,"Place your subject in any scene you imagine, from enchanted forests to urban settings, with professional composition and lighting"
+fal-ai/image-editing/style-transfer,image-to-image,image,image,,run,0.04,,Transform your photos into artistic masterpieces inspired by famous styles like Van Gogh's Starry Night or any artistic style you choose.
+fal-ai/image-editing/text-removal,image-to-image,image,image,,run,0.04,,Remove all text and writing from images while preserving the background and natural appearance.
+fal-ai/image-editing/time-of-day,image-to-image,image,image,,run,0.04,,"Transform your photos to any time of day, from golden hour to midnight, with appropriate lighting and atmosphere."
+fal-ai/image-editing/weather-effect,image-to-image,image,image,,run,0.04,,"Add realistic weather effects like snowfall, rain, or fog to your photos while maintaining the scene's mood."
+fal-ai/image-editing/wojak-style,image-to-image,image,image,,run,0.04,,Transform your photos into wojak style while keeping the original characters likeness
+fal-ai/image-editing/youtube-thumbnails,image-to-image,image,image,,run,0.04,,Generate YouTube thumbnails with custom text
+fal-ai/image-preprocessors/depth-anything/v2,image-to-image,image,image,,compute seconds,0.00111,,Depth Anything v2 preprocessor.
+fal-ai/image-preprocessors/hed,image-to-image,image,image,,compute seconds,0.00111,,Holistically-Nested Edge Detection (HED) preprocessor.
+fal-ai/image-preprocessors/lineart,image-to-image,image,image,,compute seconds,0.00111,,Line art preprocessor.
+fal-ai/image-preprocessors/midas,image-to-image,image,image,,compute seconds,0.00111,,MiDaS depth estimation preprocessor.
+fal-ai/image-preprocessors/mlsd,image-to-image,image,image,,compute seconds,0.00111,,M-LSD line segment detection preprocessor.
+fal-ai/image-preprocessors/pidi,image-to-image,image,image,,compute seconds,0.00111,,PIDI (Pidinet) preprocessor.
+fal-ai/image-preprocessors/sam,image-to-image,image,image,,compute seconds,0.00111,,Segment Anything Model (SAM) preprocessor.
+fal-ai/image-preprocessors/scribble,image-to-image,image,image,,compute seconds,0.00111,,Scribble preprocessor.
+fal-ai/image-preprocessors/teed,image-to-image,image,image,,compute seconds,0.00111,,TEED (Temporal Edge Enhancement Detection) preprocessor.
+fal-ai/image-preprocessors/zoe,image-to-image,image,image,,compute seconds,0.00111,,ZoeDepth preprocessor.
+fal-ai/image2svg,image-to-image,image,image,,run,0.005,,"Image2SVG transforms raster images into clean vector graphics, preserving visual quality while enabling scalable, customizable SVG outputs with precise control over detail levels."
+fal-ai/imagen3,text-to-image,text,image,,run,0.05,,Imagen3 is a high-quality text-to-image model that generates realistic images from text prompts.
+fal-ai/imagen3/fast,text-to-image,text,image,,run,0.025,,Imagen3 Fast is a high-quality text-to-image model that generates realistic images from text prompts.
+fal-ai/imagen4/preview,text-to-image,text,image,,run,0.04,,Google’s highest quality image generation model
+fal-ai/imagen4/preview/fast,text-to-image,text,image,,run,0.02,,Google’s highest quality image generation model
+fal-ai/imagen4/preview/ultra,text-to-image,text,image,,run,0.06,,Google’s highest quality image generation model
+fal-ai/imageutils/depth,image-to-image,image,image,,compute seconds,0.000167,,Create depth maps using Midas depth estimation.
+fal-ai/imageutils/marigold-depth,image-to-image,image,image,,compute seconds,0.000167,,Create depth maps using Marigold depth estimation.
+fal-ai/imageutils/nsfw,vision,image,json,,run,0.001,,Predict the probability of an image being NSFW.
+fal-ai/imageutils/rembg,image-to-image,image,image,,compute seconds,0.000167,,Remove the background from an image.
+fal-ai/infinitalk,image-to-video,image,video,,output seconds,0.3,,Infinitalk model generates a talking avatar video from an image and audio file. The avatar lip-syncs to the provided audio with natural facial expressions.
+fal-ai/infinitalk/single-text,text-to-video,text,video,,output seconds,0.3,,Infinitalk model generates a talking avatar video from a text and audio file. The avatar lip-syncs to the provided audio with natural facial expressions.
+fal-ai/infinitalk/video-to-video,video-to-video,video,video,"480p
+720p",output seconds,"0.3
+0.6",,Infinitalk model generates a talking avatar video from an image and audio file. The avatar lip-syncs to the provided audio with natural facial expressions.
+fal-ai/inpaint,image-to-image,image,image,,compute seconds,0.000575,,Inpaint images with SD and SDXL
+fal-ai/instant-character,image-to-image,image,image,,mega pixels,0.1,,"InstantCharacter creates high-quality, consistent characters from text prompts, supporting diverse poses, styles, and appearances with strong identity control."
+fal-ai/invisible-watermark,image-to-image,image,image,,compute seconds,0.00017,,Invisible Watermark is a model that can add an invisible watermark to an image.
+fal-ai/ip-adapter-face-id,image-to-image,image,image,,compute seconds,0.00111,,High quality zero-shot personalization
+fal-ai/janus,text-to-image,text,image,,compute seconds,0.00111,,DeepSeek Janus-Pro is a novel text-to-image model that unifies multimodal understanding and generation through an autoregressive framework
+fal-ai/kling-video/lipsync/audio-to-video,text-to-video,text,video,,run,0.14,,Kling LipSync is an audio-to-video model that generates realistic lip movements from audio input.
+fal-ai/kling-video/lipsync/text-to-video,text-to-video,text,video,,run,0.14,,Kling LipSync is a text-to-video model that generates realistic lip movements from text input.
+fal-ai/kling-video/v1.5/pro/effects,text-to-video,text,video,,output seconds,0.1,,Generate video clips from your prompts using Kling 1.5 (pro)
+fal-ai/kling-video/v1.5/pro/image-to-video,image-to-video,image,video,,output seconds,0.1,,Generate video clips from your images using Kling 1.5 (pro)
+fal-ai/kling-video/v1.5/pro/text-to-video,text-to-video,text,video,,output seconds,0.1,,Generate video clips from your prompts using Kling 1.5 (pro)
+fal-ai/kling-video/v1.6/pro/effects,text-to-video,text,video,,output seconds,0.095,,Generate video clips from your prompts using Kling 1.6 (pro)
+fal-ai/kling-video/v1.6/pro/elements,image-to-video,image,video,,output seconds,0.095,,Generate video clips from your multiple image references using Kling 1.6 (pro)
+fal-ai/kling-video/v1.6/pro/image-to-video,image-to-video,image,video,,output seconds,0.095,,Generate video clips from your images using Kling 1.6 (pro)
+fal-ai/kling-video/v1.6/pro/text-to-video,text-to-video,text,video,,output seconds,0.095,,Generate video clips from your prompts using Kling 1.6 (pro)
+fal-ai/kling-video/v1.6/standard/effects,text-to-video,text,video,,output seconds,0.045,,Generate video clips from your prompts using Kling 1.6 (std)
+fal-ai/kling-video/v1.6/standard/elements,image-to-video,image,video,,output seconds,0.045,,Generate video clips from your multiple image references using Kling 1.6 (standard)
+fal-ai/kling-video/v1.6/standard/image-to-video,image-to-video,image,video,,output seconds,0.045,,Generate video clips from your images using Kling 1.6 (std)
+fal-ai/kling-video/v1.6/standard/text-to-video,text-to-video,text,video,,output seconds,0.045,,Generate video clips from your prompts using Kling 1.6 (std)
+fal-ai/kling-video/v1/pro/ai-avatar,image-to-video,image,video,,output seconds,0.115,,"Kling AI Avatar Pro: The premium endpoint for creating avatar videos with realistic humans, animals, cartoons, or stylized characters"
+fal-ai/kling-video/v1/standard/ai-avatar,image-to-video,image,video,,output seconds,0.0562,,"Kling AI Avatar Standard: Endpoint for creating avatar videos with realistic humans, animals, cartoons, or stylized characters"
+fal-ai/kling-video/v1/standard/effects,text-to-video,text,video,,output seconds,0.045,,Generate video clips from your prompts using Kling 1.0
+fal-ai/kling-video/v1/standard/image-to-video,image-to-video,image,video,,output seconds,0.045,,Generate video clips from your images using Kling 1.0
+fal-ai/kling-video/v1/standard/text-to-video,text-to-video,text,video,,output seconds,0.045,,Generate video clips from your prompts using Kling 1.0
+fal-ai/kling-video/v1/tts,text-to-speech,text,audio,,run,0.007,,"Generate speech from text prompts and different voices using the Kling TTS model, which leverages advanced AI techniques to create high-quality text-to-speech."
+fal-ai/kling-video/v2.1/master/image-to-video,image-to-video,image,video,,output seconds,0.28,min 5 units?,"Kling 2.1 Master: The premium endpoint for Kling 2.1, designed for top-tier image-to-video generation with unparalleled motion fluidity, cinematic visuals, and exceptional prompt precision."
+fal-ai/kling-video/v2.1/master/text-to-video,text-to-video,text,video,,output seconds,0.28,min 5 units?,"Kling 2.1 Master: The premium endpoint for Kling 2.1, designed for top-tier text-to-video generation with unparalleled motion fluidity, cinematic visuals, and exceptional prompt precision."
+fal-ai/kling-video/v2.1/pro/image-to-video,image-to-video,image,video,,output seconds,0.09,min 5 units?,"Kling 2.1 Pro is an advanced endpoint for the Kling 2.1 model, offering professional-grade videos with enhanced visual fidelity, precise camera movements, and dynamic motion control, perfect for cinematic storytelling."
+fal-ai/kling-video/v2.1/standard/image-to-video,image-to-video,image,video,,output seconds,0.05,min 5 units?,"Kling 2.1 Standard is a cost-efficient endpoint for the Kling 2.1 model, delivering high-quality image-to-video generation"
+fal-ai/kling-video/v2.5-turbo/pro/image-to-video,image-to-video,image,video,,output seconds,0.07,min 5 units?,"Kling 2.5 Turbo Pro: Top-tier image-to-video generation with unparalleled motion fluidity, cinematic visuals, and exceptional prompt precision."
+fal-ai/kling-video/v2.5-turbo/pro/text-to-video,text-to-video,text,video,,output seconds,0.07,min 5 units?,"Kling 2.5 Turbo Pro: Top-tier text-to-video generation with unparalleled motion fluidity, cinematic visuals, and exceptional prompt precision."
+fal-ai/kling-video/v2/master/image-to-video,image-to-video,image,video,,output seconds,0.28,min 5 units?,Generate video clips from your images using Kling 2.0 Master
+fal-ai/kling-video/v2/master/text-to-video,text-to-video,text,video,,output seconds,0.28,min 5 units?,Generate video clips from your prompts using Kling 2.0 Master
+fal-ai/kling/v1-5/kolors-virtual-try-on,image-to-image,image,image,,run,0.07,,Kling Kolors Virtual TryOn v1.5 is a high quality image based Try-On endpoint which can be used for commercial try on.
+fal-ai/kokoro/american-english,text-to-audio,text,audio,,input kilo tokens,0.02,,Kokoro is a lightweight text-to-speech model that delivers comparable quality to larger models while being significantly faster and more cost-efficient.
+fal-ai/kokoro/brazilian-portuguese,text-to-audio,text,audio,,input kilo tokens,0.02,,A natural and expressive Brazilian Portuguese text-to-speech model optimized for clarity and fluency.
+fal-ai/kokoro/british-english,text-to-audio,text,audio,,input kilo tokens,0.02,,A high-quality British English text-to-speech model offering natural and expressive voice synthesis.
+fal-ai/kokoro/french,text-to-audio,text,audio,,input kilo tokens,0.02,,An expressive and natural French text-to-speech model for both European and Canadian French.
+fal-ai/kokoro/hindi,text-to-audio,text,audio,,input kilo tokens,0.02,,A fast and expressive Hindi text-to-speech model with clear pronunciation and accurate intonation.
+fal-ai/kokoro/italian,text-to-audio,text,audio,,input kilo tokens,0.02,,A high-quality Italian text-to-speech model delivering smooth and expressive speech synthesis.
+fal-ai/kokoro/japanese,text-to-audio,text,audio,,input kilo tokens,0.02,,A fast and natural-sounding Japanese text-to-speech model optimized for smooth pronunciation.
+fal-ai/kokoro/mandarin-chinese,text-to-audio,text,audio,,input kilo tokens,0.02,,A highly efficient Mandarin Chinese text-to-speech model that captures natural tones and prosody.
+fal-ai/kokoro/spanish,text-to-audio,text,audio,,input kilo tokens,0.02,,A natural-sounding Spanish text-to-speech model optimized for Latin American and European Spanish.
+fal-ai/kolors,text-to-image,text,image,,compute seconds,0.00111,,Photorealistic Text-to-Image
+fal-ai/kolors/image-to-image,image-to-image,image,image,,compute seconds,0.00111,,Photorealistic Image-to-Image
+fal-ai/latentsync,video-to-video,video,video,,output seconds,0.005,minimum 40 units?,LatentSync is a video-to-video model that generates lip sync animations from audio using advanced algorithms for high-quality synchronization.
+fal-ai/layer-diffusion,text-to-image,text,image,,compute seconds,0.00111,,SDXL with an alpha channel.
+fal-ai/lcm,text-to-image,text,image,,compute seconds,0.00111,,Produce high-quality images with minimal inference steps.
+fal-ai/lcm-sd15-i2i,image-to-image,image,image,,compute seconds,0.000575,,Produce high-quality images with minimal inference steps. Optimized for 512x512 input image size.
+fal-ai/leffa/pose-transfer,image-to-image,image,image,,run,0.1,,Leffa Pose Transfer is an endpoint for changing pose of an image with a reference image.
+fal-ai/leffa/virtual-tryon,image-to-image,image,image,,run,0.1,,Leffa Virtual TryOn is a high quality image based Try-On endpoint which can be used for commercial try on.
+fal-ai/lightning-models,text-to-image,text,image,,compute seconds,0.000575,,Collection of SDXL Lightning models.
+fal-ai/live-portrait,image-to-video,image,video,,compute seconds,0.00125,,Transfer expression from a video to a portrait.
+fal-ai/live-portrait/image,image-to-image,image,image,,compute seconds,0.00125,,Transfer expression from a video to a portrait.
+fal-ai/llava-next,vision,image,text,,compute seconds,0.00125,,Vision
+fal-ai/lora,text-to-image,text,image,,compute seconds,0.00111,,Run Any Stable Diffusion model with customizable LoRA weights.
+fal-ai/lora/image-to-image,image-to-image,image,image,,compute seconds,0.00111,,Run Any Stable Diffusion model with customizable LoRA weights.
+fal-ai/lora/inpaint,image-to-image,image,image,,compute seconds,0.00111,,Run Any Stable Diffusion model with customizable LoRA weights.
+fal-ai/ltx-video,text-to-video,text,video,,run,0.02,,Generate videos from prompts using LTX Video
+fal-ai/ltx-video-13b-dev,text-to-video,text,video,,run,0.2,,Generate videos from prompts using LTX Video-0.9.7 13B and custom LoRA
+fal-ai/ltx-video-13b-dev/extend,video-to-video,video,video,,run,0.2,,Extend videos using LTX Video-0.9.7 13B and custom LoRA
+fal-ai/ltx-video-13b-dev/image-to-video,image-to-video,image,video,,run,0.2,,Generate videos from prompts and images using LTX Video-0.9.7 13B and custom LoRA
+fal-ai/ltx-video-13b-dev/multiconditioning,video-to-video,video,video,,run,0.2,,"Generate videos from prompts, images, and videos using LTX Video-0.9.7 13B and custom LoRA"
+fal-ai/ltx-video-13b-distilled,text-to-video,text,video,,run,0.04,,Generate videos from prompts using LTX Video-0.9.7 13B Distilled and custom LoRA
+fal-ai/ltx-video-13b-distilled/extend,video-to-video,video,video,,run,0.04,,Extend videos using LTX Video-0.9.7 13B Distilled and custom LoRA
+fal-ai/ltx-video-13b-distilled/image-to-video,image-to-video,image,video,,run,0.04,,Generate videos from prompts and images using LTX Video-0.9.7 13B Distilled and custom LoRA
+fal-ai/ltx-video-13b-distilled/multiconditioning,video-to-video,video,video,,run,0.04,,"Generate videos from prompts, images, and videos using LTX Video-0.9.7 13B Distilled and custom LoRA"
+fal-ai/ltx-video-lora/image-to-video,image-to-video,image,video,,run,0.2,,Generate videos from prompts and images using LTX Video-0.9.7 and custom LoRA
+fal-ai/ltx-video-lora/multiconditioning,video-to-video,video,video,,run,0.2,,"Generate videos from prompts, images, and videos using LTX Video-0.9.7 and custom LoRA"
+fal-ai/ltx-video-trainer,training,,model,,steps,0.002,,Train LTX Video 0.9.7 for custom styles and effects.
+fal-ai/ltx-video-v095,text-to-video,text,video,,run,0.04,,Generate videos from prompts using LTX Video-0.9.5
+fal-ai/ltx-video-v095/extend,video-to-video,video,video,,run,0.04,,Generate videos from prompts and videos using LTX Video-0.9.5
+fal-ai/ltx-video-v095/multiconditioning,video-to-video,video,video,,run,0.04,,"Generate videos from prompts,images, and videos using LTX Video-0.9.5"
+fal-ai/ltx-video/image-to-video,image-to-video,image,video,,run,0.02,,Generate videos from images using LTX Video
+fal-ai/ltxv-13b-098-distilled,text-to-video,text,video,,output seconds,0.02,24 fps,Generate long videos from prompts using LTX Video-0.9.8 13B Distilled and custom LoRA
+fal-ai/ltxv-13b-098-distilled/extend,video-to-video,audio,video,,output seconds,0.02,24 fps,Extend videos using LTX Video-0.9.8 13B Distilled and custom LoRA
+fal-ai/ltxv-13b-098-distilled/image-to-video,image-to-video,image,video,,output seconds,0.02,24 fps,Generate long videos from prompts and images using LTX Video-0.9.8 13B Distilled and custom LoRA
+fal-ai/ltxv-13b-098-distilled/multiconditioning,video-to-video,audio,video,,output seconds,0.02,24 fps,"Generate long videos from prompts, images, and videos using LTX Video-0.9.8 13B Distilled and custom LoRA"
+fal-ai/luma-dream-machine,text-to-video,text,video,,run,0.5,,Generate video clips from your prompts using Luma Dream Machine v1.5
+fal-ai/luma-dream-machine/image-to-video,image-to-video,image,video,,run,0.5,,Generate video clips from your images using Luma Dream Machine v1.5
+fal-ai/luma-dream-machine/ray-2,text-to-video,text,video,,output seconds,0.5,,"Ray2 is a large-scale video generative model capable of creating realistic visuals with natural, coherent motion."
+fal-ai/luma-dream-machine/ray-2-flash,text-to-video,text,video,,output seconds,0.04,,"Ray2 Flash is a fast video generative model capable of creating realistic visuals with natural, coherent motion."
+fal-ai/luma-dream-machine/ray-2-flash/image-to-video,image-to-video,image,video,,output seconds,0.04,,"Ray2 Flash is a fast video generative model capable of creating realistic visuals with natural, coherent motion."
+fal-ai/luma-dream-machine/ray-2-flash/modify,video-to-video,video,video,,output seconds,0.12,,"Ray2 Flash Modify is a video generative model capable of restyling or retexturing the entire shot, from turning live-action into CG or stylized animation, to changing wardrobe, props, or the overall aesthetic and swap environments or time periods, giving you control over background, location, or even weather."
+fal-ai/luma-dream-machine/ray-2-flash/reframe,video-to-video,video,video,,output seconds,0.06,,"Adjust and enhance videos with Ray-2 Reframe. This advanced tool seamlessly reframes videos to your desired aspect ratio, intelligently inpainting missing regions to ensure realistic visuals and coherent motion, delivering exceptional quality and creative flexibility."
+fal-ai/luma-dream-machine/ray-2/image-to-video,image-to-video,image,video,,output seconds,0.5,,"Ray2 is a large-scale video generative model capable of creating realistic visuals with natural, coherent motion."
+fal-ai/luma-dream-machine/ray-2/modify,video-to-video,video,video,,output seconds,0.35,,"Ray2 Modify is a video generative model capable of restyling or retexturing the entire shot, from turning live-action into CG or stylized animation, to changing wardrobe, props, or the overall aesthetic and swap environments or time periods, giving you control over background, location, or even weather."
+fal-ai/luma-dream-machine/ray-2/reframe,video-to-video,video,video,,output seconds,0.2,,"Adjust and enhance videos with Ray-2 Reframe. This advanced tool seamlessly reframes videos to your desired aspect ratio, intelligently inpainting missing regions to ensure realistic visuals and coherent motion, delivering exceptional quality and creative flexibility."
+fal-ai/luma-photon,text-to-image,text,image,,output mega pixels,0.019,,"Generate images from your prompts using Luma Photon. Photon is the most creative, personalizable, and intelligent visual models for creatives, bringing a step-function change in the cost of high-quality image generation."
+fal-ai/luma-photon/flash,text-to-image,text,image,,output mega pixels,0.005,,"Generate images from your prompts using Luma Photon Flash. Photon Flash is the most creative, personalizable, and intelligent visual models for creatives, bringing a step-function change in the cost of high-quality image generation."
+fal-ai/luma-photon/flash/modify,image-to-image,image,image,,mega pixels,0.005,,"Edit images from your prompts using Luma Photon. Photon is the most creative, personalizable, and intelligent visual models for creatives, bringing a step-function change in the cost of high-quality image generation."
+fal-ai/luma-photon/flash/reframe,image-to-image,image,image,,mega pixels,0.005,,"This advanced tool intelligently expands your visuals, seamlessly blending new content to enhance creativity and adaptability, offering unmatched speed and quality for creators at a fraction of the cost."
+fal-ai/luma-photon/modify,image-to-image,image,image,,mega pixels,0.019,,"Edit images from your prompts using Luma Photon. Photon is the most creative, personalizable, and intelligent visual models for creatives, bringing a step-function change in the cost of high-quality image generation."
+fal-ai/luma-photon/reframe,image-to-image,image,image,,mega pixels,0.019,,"Extend and reframe images with Luma Photon Reframe. This advanced tool intelligently expands your visuals, seamlessly blending new content to enhance creativity and adaptability, offering unmatched personalization and quality for creators at a fraction of the cost."
+fal-ai/lumina-image/v2,text-to-image,text,image,,output mega pixels,0.075,,"Lumina-Image-2.0 is a 2 billion parameter flow-based diffusion transforer which features improved performance in image quality, typography, complex prompt understanding, and resource-efficiency."
+fal-ai/lynx,image-to-video,image,video,,output seconds,0.6,,Generate subject consistent videos using Lynx from ByteDance!
+fal-ai/lyria2,text-to-audio,text,audio,,output seconds,0.0034,,"Lyria 2 is Google's latest music generation model, you can generate any type of music with this model."
+fal-ai/magi,text-to-video,text,video,,output seconds,0.8,sigh...,MAGI-1 is a video generation model with exceptional understanding of physical interactions and cinematic prompts
+fal-ai/magi-distilled,text-to-video,text,video,,output seconds,0.32,,MAGI-1 distilled is a faster video generation model with exceptional understanding of physical interactions and cinematic prompts
+fal-ai/magi-distilled/extend-video,video-to-video,video,video,,output seconds,0.08,24 fps,MAGI-1 distilled extends videos faster with an exceptional understanding of physical interactions and prompts
+fal-ai/magi-distilled/image-to-video,image-to-video,image,video,,output seconds,0.32,,MAGI-1 distilled generates videos faster from images with exceptional understanding of physical interactions and prompting
+fal-ai/magi/extend-video,video-to-video,video,video,,output seconds,0.2,24 fps,MAGI-1 extends videos with an exceptional understanding of physical interactions and prompts
+fal-ai/magi/image-to-video,image-to-video,image,video,,output seconds,0.2,sigh...,MAGI-1 generates videos from images with exceptional understanding of physical interactions and prompting
+fal-ai/minimax-music,text-to-audio,text,audio,,run,0.035,,"Generate music from text prompts using the MiniMax model, which leverages advanced AI techniques to create high-quality, diverse musical compositions."
+fal-ai/minimax-music/v1.5,text-to-audio,text,audio,,run,0.03,,"Generate music from text prompts using the MiniMax model, which leverages advanced AI techniques to create high-quality, diverse musical compositions."
+fal-ai/minimax/hailuo-02-fast/image-to-video,image-to-video,image,video,512p,output seconds,0.017*,not fixed?,Create blazing fast and economical videos with MiniMax Hailuo-02 Image To Video API at 512p resolution
+fal-ai/minimax/hailuo-02/pro/image-to-video,image-to-video,image,video,,output seconds,0.08,,"MiniMax Hailuo-02 Image To Video API (Pro, 1080p): Advanced image-to-video generation model with 1080p resolution"
+fal-ai/minimax/hailuo-02/pro/text-to-video,text-to-video,text,video,,output seconds,0.08,,"MiniMax Hailuo-02 Text To Video API (Pro, 1080p): Advanced video generation model with 1080p resolution"
+fal-ai/minimax/hailuo-02/standard/image-to-video,image-to-video,image,video,"512p
+768p",output seconds,"0.017
+0.045",,"MiniMax Hailuo-02 Image To Video API (Standard, 768p, 512p): Advanced image-to-video generation model with 768p and 512p resolutions"
+fal-ai/minimax/hailuo-02/standard/text-to-video,text-to-video,text,video,,output seconds,0.045,,"MiniMax Hailuo-02 Text To Video API (Standard, 768p): Advanced video generation model with 768p resolution"
+fal-ai/minimax/image-01,text-to-image,text,image,,run,0.01,,Generate high quality images from text prompts using MiniMax Image-01. Longer text prompts will result in better quality images.
+fal-ai/minimax/image-01/subject-reference,image-to-image,image,image,,run,0.01,,Generate images from text and a reference image using MiniMax Image-01 for consistent character appearance.
+fal-ai/minimax/preview/speech-2.5-hd,text-to-speech,text,audio,,input kilo tokens,0.1,,"Generate speech from text prompts and different voices using the MiniMax Speech-02 HD model, which leverages advanced AI techniques to create high-quality text-to-speech."
+fal-ai/minimax/preview/speech-2.5-turbo,text-to-speech,text,audio,,input kilo tokens,0.06,,"Generate fast speech from text prompts and different voices using the MiniMax Speech-02 Turbo model, which leverages advanced AI techniques to create high-quality text-to-speech."
+fal-ai/minimax/speech-02-hd,text-to-speech,text,audio,,input kilo tokens,0.1,,"Generate speech from text prompts and different voices using the MiniMax Speech-02 HD model, which leverages advanced AI techniques to create high-quality text-to-speech."
+fal-ai/minimax/speech-02-turbo,text-to-speech,text,audio,,input kilo tokens,0.06,,"Generate fast speech from text prompts and different voices using the MiniMax Speech-02 Turbo model, which leverages advanced AI techniques to create high-quality text-to-speech."
+fal-ai/minimax/video-01,text-to-video,text,video,,run,0.5,,Generate video clips from your prompts using MiniMax model
+fal-ai/minimax/video-01-director,text-to-video,text,video,,run,0.5,,Generate video clips more accurately with respect to natural language descriptions and using camera movement instructions for shot control.
+fal-ai/minimax/video-01-director/image-to-video,image-to-video,image,video,,run,0.5,,"Generate video clips more accurately with respect to initial image, natural language descriptions, and using camera movement instructions for shot control."
+fal-ai/minimax/video-01-live,text-to-video,text,video,,run,0.5,,Generate video clips from your prompts using MiniMax model
+fal-ai/minimax/video-01-live/image-to-video,image-to-video,image,video,,run,0.5,,Generate video clips from your images using MiniMax Video model
+fal-ai/minimax/video-01-subject-reference,image-to-video,image,video,,run,0.5,,"Generate video clips maintaining consistent, realistic facial features and identity across dynamic video content"
+fal-ai/minimax/video-01/image-to-video,image-to-video,image,video,,run,0.5,,Generate video clips from your images using MiniMax Video model
+fal-ai/minimax/voice-clone,text-to-speech,text,audio,,run,1,,"Clone a voice from a sample audio and generate speech from text prompts using the MiniMax model, which leverages advanced AI techniques to create high-quality text-to-speech."
+fal-ai/minimax/voice-design,text-to-speech,text,audio,"preview
+create",input kilo tokens,"0.03
+1","kilochars?
+multiple units?","Design a personalized voice from a text description, and generate speech from text prompts using the MiniMax model, which leverages advanced AI techniques to create high-quality text-to-speech."
+fal-ai/mix-dehaze-net,image-to-image,image,image,,mega pixels,0.025,,"An advanced dehaze model to remove atmospheric haze, restoring clarity and detail in images through intelligent neural network processing."
+fal-ai/mmaudio-v2,video-to-video,audio,video,,output seconds,0.001,,MMAudio generates synchronized audio given video and/or text inputs. It can be combined with video models to get videos with audio.
+fal-ai/mmaudio-v2/text-to-audio,text-to-audio,text,audio,,output seconds,0.001,,MMAudio generates synchronized audio given text inputs. It can generate sounds described by a prompt.
+fal-ai/mochi-v1,text-to-video,text,video,,run,0.4,,Mochi 1 preview is an open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence in preliminary evaluation.
+fal-ai/moondream-next,vision,image,json,,compute seconds,0.0011,,"MoonDreamNext is a multimodal vision-language model for captioning, gaze detection, bbox detection, point detection, and more."
+fal-ai/moondream-next/batch,vision,image,json,,compute seconds,0.0011,,MoonDreamNext Batch is a multimodal vision-language model for batch captioning.
+fal-ai/moondream-next/detection,image-to-image,image,image,,compute seconds,0.0011,compute seconds? or seconds??,"MoonDreamNext Detection is a multimodal vision-language model for gaze detection, bbox detection, point detection, and more."
+fal-ai/moondream/batched,vision,image,json,,compute seconds,0.00111,,Answer questions from the images.
+fal-ai/moondream2,vision,image,json,,output kilo tokens,0.01,why output why,Moondream2 is a highly efficient open-source vision language model that combines powerful image understanding capabilities with a remarkably small footprint.
+fal-ai/moondream2/object-detection,vision,image,json,,run,0.02,,Moondream2 is a highly efficient open-source vision language model that combines powerful image understanding capabilities with a remarkably small footprint.
+fal-ai/moondream2/point-object-detection,vision,image,json,,run,0.02,,Moondream2 is a highly efficient open-source vision language model that combines powerful image understanding capabilities with a remarkably small footprint.
+fal-ai/moondream2/visual-query,vision,image,json,,output kilo tokens,0.01,why output why,Moondream2 is a highly efficient open-source vision language model that combines powerful image understanding capabilities with a remarkably small footprint.
+fal-ai/musetalk,image-to-video,image,video,,compute seconds,0.00111,,MuseTalk is a real-time high quality audio-driven lip-syncing model. Use MuseTalk to animate a face with your own audio.
+fal-ai/nafnet/deblur,image-to-image,image,image,,mega pixels,0.0225,,Use NAFNet to fix issues like blurriness and noise in your images. This model specializes in image restoration and can help enhance the overall quality of your photography.
+fal-ai/nafnet/denoise,image-to-image,image,image,,mega pixels,0.0225,,Use NAFNet to fix issues like blurriness and noise in your images. This model specializes in image restoration and can help enhance the overall quality of your photography.
+fal-ai/nano-banana,text-to-image,text,image,,run,0.039,,Google's state-of-the-art image generation and editing model
+fal-ai/nano-banana/edit,image-to-image,image,image,,run,0.039,,Google's state-of-the-art image generation and editing model
+fal-ai/nextstep-1,image-to-image,image,image,,run,0.1,,Endpoint for NextStep-1 Autoregressive Image Editing model.
+fal-ai/object-removal,image-to-image,image,image,"low quality
+medium quality
+high quality
+best quality",run,"0.006
+0.012
+0.018
+0.024",,"Removes objects and their visual effects using natural language, replacing them with contextually appropriate content"
+fal-ai/object-removal/bbox,image-to-image,image,image,"low quality
+medium quality
+high quality
+best quality",run,"0.006
+0.012
+0.018
+0.024",,"Removes box-selected objects and their visual effects, seamlessly reconstructing the scene with contextually appropriate content."
+fal-ai/object-removal/mask,image-to-image,image,image,"low quality
+medium quality
+high quality
+best quality",run,"0.006
+0.012
+0.018
+0.024",,"Removes mask-selected objects and their visual effects, seamlessly reconstructing the scene with contextually appropriate content."
+fal-ai/omni-zero,image-to-image,image,image,,compute seconds,0.00111,,"Any pose, any style, any identity"
+fal-ai/omnigen-v1,text-to-image,text,image,,output mega pixels,0.1,processed?,"OmniGen is a unified image generation model that can generate a wide range of images from multi-modal prompts. It can be used for various tasks such as Image Editing, Personalized Image Generation, Virtual Try-On, Multi Person Generation and more!"
+fal-ai/omnigen-v2,text-to-image,text,image,,output mega pixels,0.15,,"OmniGen is a unified image generation model that can generate a wide range of images from multi-modal prompts. It can be used for various tasks such as Image Editing, Personalized Image Generation, Virtual Try-On, Multi Person Generation and more!"
+fal-ai/orpheus-tts,text-to-speech,text,audio,,run,0.05,,"Orpheus TTS is a state-of-the-art, Llama-based Speech-LLM designed for high-quality, empathetic text-to-speech generation. This model has been finetuned to deliver human-level speech synthesis, achieving exceptional clarity, expressiveness, and real-time performances."
+fal-ai/pasd,image-to-image,image,image,,mega pixels,0.03,,Pixel-Aware Diffusion Model for Realistic Image Super-Resolution and Personalized Stylization
+fal-ai/photomaker,image-to-image,image,image,,compute seconds,0.00111,,Customizing Realistic Human Photos via Stacked ID Embedding
+fal-ai/pika/v1.5/pikaffects,image-to-video,image,video,,run,0.465,,"Pika Effects are AI-powered video effects designed to modify objects, characters, and environments in a fun, engaging, and visually compelling manner."
+fal-ai/pika/v2.1/image-to-video,image-to-video,image,video,,run,0.4,,Pika v2.1 creates videos from images with high quality output.
+fal-ai/pika/v2.1/text-to-video,text-to-video,text,video,,run,0.4,,Pika v2.1 creates videos from a text prompt with high quality output.
+fal-ai/pika/v2.2/image-to-video,image-to-video,image,video,"720p
+1080p",output seconds,"0.04
+0.09",,Pika v2.2 creates videos from images with high quality output.
+fal-ai/pika/v2.2/pikascenes,image-to-video,image,video,"720p
+1080p",output seconds,"0.04
+0.09",,Pika Scenes v2.2 creates videos from a images with high quality output.
+fal-ai/pika/v2.2/text-to-video,text-to-video,text,video,"720p
+1080p",output seconds,"0.04
+0.09",,Pika v2.2 creates videos from a text prompt with high quality output.
+fal-ai/pika/v2/turbo/image-to-video,image-to-video,image,video,,run,0.2,,Pika v2 Turbo creates videos from images with high quality output.
+fal-ai/pika/v2/turbo/text-to-video,text-to-video,text,video,,run,0.2,,Pika v2 Turbo creates videos from a text prompt with high quality output.
+fal-ai/pixart-sigma,text-to-image,text,image,,compute seconds,0.00111,,Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation
+fal-ai/pixverse/extend,video-to-video,video,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,PixVerse Extend model is a video extending tool for your videos using with high-quality video extending techniques
+fal-ai/pixverse/extend/fast,video-to-video,video,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",,PixVerse Extend model is a video extending tool for your videos using with high-quality video extending techniques
+fal-ai/pixverse/lipsync,video-to-video,video,video,,output seconds,,,Generate realistic lipsync animations from audio using advanced algorithms for high-quality synchronization with PixVerse Lipsync model
+fal-ai/pixverse/sound-effects,video-to-video,video,video,,output seconds,0.02,,Add immersive sound effects and background music to your videos using PixVerse sound effects generation
+fal-ai/pixverse/v3.5/effects,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips with different effects using PixVerse v3.5
+fal-ai/pixverse/v3.5/image-to-video,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips from text and image prompts using PixVerse v3.5
+fal-ai/pixverse/v3.5/image-to-video/fast,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",,Generate high quality video clips from text and image prompts quickly using PixVerse v3.5 Fast
+fal-ai/pixverse/v3.5/text-to-video,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips from text prompts using PixVerse v3.5
+fal-ai/pixverse/v3.5/text-to-video/fast,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",,Generate high quality video clips quickly from text prompts using PixVerse v3.5 Fast
+fal-ai/pixverse/v3.5/transition,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Create seamless transition between images using PixVerse v3.5
+fal-ai/pixverse/v4.5/effects,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips with different effects using PixVerse v4.5
+fal-ai/pixverse/v4.5/image-to-video,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips from text and image prompts using PixVerse v4.5
+fal-ai/pixverse/v4.5/image-to-video/fast,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",,Generate fast high quality video clips from text and image prompts using PixVerse v4.5
+fal-ai/pixverse/v4.5/text-to-video,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips from text and image prompts using PixVerse v4.5
+fal-ai/pixverse/v4.5/text-to-video/fast,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",,Generate high quality and fast video clips from text and image prompts using PixVerse v4.5 fast
+fal-ai/pixverse/v4.5/transition,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Create seamless transition between images using PixVerse v4.5
+fal-ai/pixverse/v4/effects,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips with different effects using PixVerse v4
+fal-ai/pixverse/v4/image-to-video,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips from text and image prompts using PixVerse v4
+fal-ai/pixverse/v4/image-to-video/fast,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",,Generate fast high quality video clips from text and image prompts using PixVerse v4
+fal-ai/pixverse/v4/text-to-video,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips from text and image prompts using PixVerse v4
+fal-ai/pixverse/v4/text-to-video/fast,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.06
+0.08
+0.16",,Generate high quality and fast video clips from text and image prompts using PixVerse v4 fast
+fal-ai/pixverse/v5/effects,image-to-video,image,video,,run,0.05,,Generate high quality video clips with different effects using PixVerse v5
+fal-ai/pixverse/v5/image-to-video,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips from text and image prompts using PixVerse v5
+fal-ai/pixverse/v5/text-to-video,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Generate high quality video clips from text and image prompts using PixVerse v5
+fal-ai/pixverse/v5/transition,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.03
+0.04
+0.08",,Create seamless transition between images using PixVerse v5
+fal-ai/playai/inpaint/diffusion,audio-to-audio,audio,audio,,input kilo tokens,0.1,,"A novel way to perform audio editing, ensuring smooth transitions and consistent speaker characteristics for edits."
+fal-ai/playai/tts/dialog,text-to-audio,text,audio,,output minutes,0.05,,"Generate natural-sounding multi-speaker dialogues, and audio. Perfect for expressive outputs, storytelling, games, animations, and interactive media."
+fal-ai/playai/tts/v3,text-to-speech,text,audio,,output minutes,0.03,,Blazing-fast text-to-speech. Generate audio with improved emotional tones and extensive multilingual support. Ideal for high-volume processing and efficient workflows.
+fal-ai/playground-v25,text-to-image,text,image,,compute seconds,0.00111,,State-of-the-art open-source model in aesthetic quality
+fal-ai/playground-v25/image-to-image,image-to-image,image,image,,compute seconds,0.00111,,State-of-the-art open-source model in aesthetic quality
+fal-ai/playground-v25/inpainting,image-to-image,image,image,,compute seconds,0.00111,,State-of-the-art open-source model in aesthetic quality
+fal-ai/plushify,image-to-image,image,image,,run,0.1,,Turn any image into a cute plushie!
+fal-ai/post-processing,image-to-image,image,image,,run,0.001,image?,"Post Processing is an endpoint that can enhance images using a variety of techniques including grain, blur, sharpen, and more."
+fal-ai/post-processing/blur,image-to-image,image,image,,run,0.001,,Apply Gaussian or Kuwahara blur effects with adjustable radius and sigma parameters
+fal-ai/post-processing/chromatic-aberration,image-to-image,image,image,,run,0.001,,"Create chromatic aberration by shifting red, green, and blue channels horizontally or vertically with customizable shift amounts."
+fal-ai/post-processing/color-correction,image-to-image,image,image,,run,0.001,,"Adjust color temperature, brightness, contrast, saturation, and gamma values for color correction."
+fal-ai/post-processing/color-tint,image-to-image,image,image,,run,0.001,,"Apply various color tints (sepia, red, green, blue, cyan, magenta, yellow, purple, orange, warm, cool, lime, navy, vintage, rose, teal, maroon, peach, lavender, olive) with adjustable strength."
+fal-ai/post-processing/desaturate,image-to-image,image,image,,run,0.001,,"Reduce color saturation using different methods (luminance Rec.709, luminance Rec.601, average, lightness) with adjustable factor."
+fal-ai/post-processing/dissolve,image-to-image,image,image,,run,0.001,,Blend two images together using smooth linear interpolation with a configurable blend factor.
+fal-ai/post-processing/dodge-burn,image-to-image,image,image,,run,0.001,,Apply dodge and burn effects with multiple modes and adjustable intensity.
+fal-ai/post-processing/grain,image-to-image,image,image,,run,0.001,,"Apply film grain effect with different styles (modern, analog, kodak, fuji, cinematic, newspaper) and customizable intensity and scale"
+fal-ai/post-processing/parabolize,image-to-image,image,image,,run,0.001,,Apply a parabolic distortion effect with configurable coefficient and vertex position.
+fal-ai/post-processing/sharpen,image-to-image,image,image,,run,0.001,,"Apply sharpening effects with three modes: basic unsharp mask, smart sharpening with edge preservation, and Contrast Adaptive Sharpening (CAS)."
+fal-ai/post-processing/solarize,image-to-image,image,image,,run,0.001,,Apply solarization effect by inverting pixel values above a threshold
+fal-ai/post-processing/vignette,image-to-image,image,image,,run,0.001,,Add a darkening vignette effect around the edges of the image with adjustable strength
+fal-ai/pshuman,image-to-3d,image,3d,,run,0.75,,Use the 6D pose estimation capabilities of PSHuman to generate 3D files from single image.
+fal-ai/qwen-image,text-to-image,text,image,,output mega pixels,0.02,rounding up to nearest megapixel,Qwen-Image is an image generation foundation model in the Qwen series that achieves significant advances in complex text rendering and precise image editing.
+fal-ai/qwen-image-edit,image-to-image,image,image,,mega pixels,0.03,,Endpoint for Qwen's Image Editing model. Has superior text editing capabilities.
+fal-ai/qwen-image-edit-lora,image-to-image,image,image,,mega pixels,0.035,,LoRA inference endpoint for the Qwen Image Editing model.
+fal-ai/qwen-image-edit-plus,image-to-image,image,image,,mega pixels,0.03,,Endpoint for Qwen's Image Editing Plus model. Has superior text editing capabilities and multi-image support.
+fal-ai/qwen-image-edit/image-to-image,image-to-image,image,image,,mega pixels,0.03,,Image to Image Endpoint for Qwen's Image Editing model. Has superior text editing capabilities.
+fal-ai/qwen-image-edit/inpaint,image-to-image,image,image,,mega pixels,0.03,,Inpainting Endpoint for the Qwen Edit Image editing model.
+fal-ai/qwen-image-trainer,training,,model,,steps,0.002,min 250 units,Qwen Image LoRA training
+fal-ai/qwen-image/image-to-image,image-to-image,image,image,,mega pixels,0.02,,"Qwen-Image (Image-to-Image) transforms and edits input images with high fidelity, enabling precise style transfer, enhancement, and creative modification."
+fal-ai/realistic-vision,text-to-image,text,image,,compute seconds,0.00111,,Generate realistic images.
+fal-ai/recraft-20b,text-to-image,text,image,"pixels
+vectors",run,"0.022
+0.044",,Recraft 20b is a new and affordable text-to-image model.
+fal-ai/recraft/upscale/creative,image-to-image,image,image,,run,0.25,,"Enhances a given raster image using the 'creative upscale' tool, increasing image resolution, making the image sharper and cleaner."
+fal-ai/recraft/upscale/crisp,image-to-image,image,image,,run,0.004,,"Enhances a given raster image using 'crisp upscale' tool, boosting resolution with a focus on refining small details and faces."
+fal-ai/recraft/v3/image-to-image,image-to-image,image,image,,run,0.04,,"Recraft V3 is a text-to-image model with the ability to generate long texts, vector art, images in brand style, and much more. As of today, it is SOTA in image generation, proven by Hugging Face's industry-leading Text-to-Image Benchmark by Artificial Analysis."
+fal-ai/recraft/v3/text-to-image,text-to-image,text,image,,run,0.04,,"Recraft V3 is a text-to-image model with the ability to generate long texts, vector art, images in brand style, and much more. As of today, it is SOTA in image generation, proven by Hugging Face's industry-leading Text-to-Image Benchmark by Artificial Analysis."
+fal-ai/recraft/vectorize,image-to-image,image,image,,run,0.01,,Converts a given raster image to SVG format using Recraft model.
+fal-ai/retoucher,image-to-image,image,image,,compute seconds,0.00125,,Automatically retouches faces to smooth skin and remove blemishes.
+fal-ai/rife,image-to-image,image,image,,compute seconds,0.0013,,Interpolate images with RIFE - Real-Time Intermediate Flow Estimation
+fal-ai/rife/video,video-to-video,video,video,,compute seconds,0.0013,,Interpolate videos with RIFE - Real-Time Intermediate Flow Estimation
+fal-ai/sa2va/4b/image,vision,image,text,,run,0.02,,"Sa2VA is an MLLM capable of question answering, visual prompt understanding, and dense object segmentation at both image and video levels"
+fal-ai/sa2va/4b/video,vision,video,text,,compute seconds,0.04,,"Sa2VA is an MLLM capable of question answering, visual prompt understanding, and dense object segmentation at both image and video levels"
+fal-ai/sa2va/8b/image,vision,image,text,,run,0.04,,"Sa2VA is an MLLM capable of question answering, visual prompt understanding, and dense object segmentation at both image and video levels"
+fal-ai/sa2va/8b/video,vision,video,text,,compute seconds,0.08,,"Sa2VA is an MLLM capable of question answering, visual prompt understanding, and dense object segmentation at both image and video levels"
+fal-ai/sadtalker,image-to-video,image,video,,compute seconds,0.00111,,Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation
+fal-ai/sadtalker/reference,image-to-video,image,video,,compute seconds,0.00111,,Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation
+fal-ai/sam2/auto-segment,image-to-image,image,image,,compute seconds,0.00125,,SAM 2 is a model for segmenting images automatically. It can return individual masks or a single mask for the entire image.
+fal-ai/sam2/image,image-to-image,image,image,,compute seconds,0.00125,,SAM 2 is a model for segmenting images and videos in real-time.
+fal-ai/sam2/video,video-to-video,video,video,,compute seconds,0.00125,,SAM 2 is a model for segmenting images and videos in real-time.
+fal-ai/sana,text-to-image,text,image,,output mega pixels,0.001,,"Sana can synthesize high-resolution, high-quality images with strong text-image alignment at a remarkably fast speed, with the ability to generate 4K images in less than a second."
+fal-ai/sana/sprint,text-to-image,text,image,,output mega pixels,0.0025,,Sana Sprint is a text-to-image model capable of generating 4K images with exceptional speed.
+fal-ai/sana/v1.5/1.6b,text-to-image,text,image,,output mega pixels,0.0075,,Sana v1.5 1.6B is a lightweight text-to-image model that delivers 4K image generation with impressive efficiency.
+fal-ai/sana/v1.5/4.8b,text-to-image,text,image,,output mega pixels,0.01,,Sana v1.5 4.8B is a powerful text-to-image model that generates ultra-high quality 4K images with remarkable detail.
+fal-ai/sd15-depth-controlnet,image-to-image,image,image,,compute seconds,0.00111,,SD 1.5 ControlNet
+fal-ai/sdxl-controlnet-union,text-to-image,text,image,,compute seconds,0.00111,,An efficent SDXL multi-controlnet text-to-image model.
+fal-ai/sdxl-controlnet-union/image-to-image,image-to-image,image,image,,compute seconds,0.00111,,An efficent SDXL multi-controlnet image-to-image model.
+fal-ai/sdxl-controlnet-union/inpainting,image-to-image,image,image,,compute seconds,0.00111,,An efficent SDXL multi-controlnet inpainting model.
+fal-ai/seedvr/upscale/image,image-to-image,image,image,,mega pixels,0.001,input or output?,Use SeedVR2 to upscale your images
+fal-ai/seedvr/upscale/video,video-to-video,video,video,,mega video tokens,0.001,?,Upscale your videos using SeedVR2 with temporal consistency!
+fal-ai/sky-raccoon,text-to-image,text,image,,output mega pixels,0.06,,Generate images from a text prompt.
+fal-ai/skyreels-i2v,image-to-video,image,video,,run,0.3,,SkyReels V1 is the first and most advanced open-source human-centric video foundation model. By fine-tuning HunyuanVideo on O(10M) high-quality film and television clips
+fal-ai/smart-turn,speech-to-text,audio,text,,compute seconds,0.00125,,"An open source, community-driven and native audio turn detection model by Pipecat AI."
+fal-ai/speech-to-text,speech-to-text,audio,text,,input seconds,0.0008,,Leverage the rapid processing capabilities of AI models to enable accurate and efficient real-time speech-to-text transcription.
+fal-ai/speech-to-text/stream,speech-to-text,audio,text,,input seconds,0.0008,,Leverage the rapid processing capabilities of AI models to enable accurate and efficient real-time speech-to-text transcription.
+fal-ai/speech-to-text/turbo,speech-to-text,audio,text,,input seconds,0.0008,,Leverage the rapid processing capabilities of AI models to enable accurate and efficient real-time speech-to-text transcription.
+fal-ai/speech-to-text/turbo/stream,speech-to-text,audio,text,,input seconds,0.0008,,Leverage the rapid processing capabilities of AI models to enable accurate and efficient real-time speech-to-text transcription.
+fal-ai/stable-audio,text-to-audio,text,audio,,compute seconds,0.000575,,Open source text-to-audio model.
+fal-ai/stable-audio-25/audio-to-audio,audio-to-audio,audio,audio,,run,0.2,,Generate high quality music and sound effects using Stable Audio 2.5 from StabilityAI
+fal-ai/stable-audio-25/inpaint,audio-to-audio,audio,audio,,run,0.2,,Generate high quality music and sound effects using Stable Audio 2.5 from StabilityAI
+fal-ai/stable-audio-25/text-to-audio,text-to-audio,text,audio,,run,0.2,,Generate high quality music and sound effects using Stable Audio 2.5 from StabilityAI
+fal-ai/stable-avatar,audio-to-video,audio,video,,output seconds,0.1,min 4 seconds,Stable Avatar generates audio-driven video avatars up to five minutes long
+fal-ai/stable-cascade,text-to-image,text,image,,compute seconds,0.000575,,Stable Cascade: Image generation on a smaller & cheaper latent space.
+fal-ai/stable-cascade/sote-diffusion,text-to-image,text,image,,compute seconds,0.000575,,Anime finetune of Würstchen V3.
+fal-ai/stable-diffusion-v15,text-to-image,text,image,,compute seconds,0.00111,,Stable Diffusion v1.5
+fal-ai/stable-diffusion-v3-medium,text-to-image,text,image,,run,0.035,,"Stable Diffusion 3 Medium (Text to Image) is a Multimodal Diffusion Transformer (MMDiT) model that improves image quality, typography, prompt understanding, and efficiency."
+fal-ai/stable-diffusion-v35-large,text-to-image,text,image,,output mega pixels,0.065,,"Stable Diffusion 3.5 Large is a Multimodal Diffusion Transformer (MMDiT) text-to-image model that features improved performance in image quality, typography, complex prompt understanding, and resource-efficiency."
+fal-ai/stable-diffusion-v35-medium,text-to-image,text,image,,output mega pixels,0.02,,"Stable Diffusion 3.5 Medium is a Multimodal Diffusion Transformer (MMDiT) text-to-image model that features improved performance in image quality, typography, complex prompt understanding, and resource-efficiency."
+fal-ai/stable-video,image-to-video,image,video,,run,0.075,,Generate short video clips from your images using SVD v1.1
+fal-ai/star-vector,image-to-image,image,image,,mega pixels,0.1,,"AI vectorization model that transforms raster images into scalable SVG graphics, preserving visual details while enabling infinite scaling and easy editing capabilities."
+fal-ai/step1x-edit,image-to-image,image,image,,mega pixels,0.03,,"Step1X-Edit transforms your photos with simple instructions into stunning, professional-quality edits—rivaling top proprietary tools."
+fal-ai/swin2sr,image-to-image,image,image,,mega pixels,0.025,,"Enhance low-resolution images with the superior quality of Swin2SR for sharper, clearer results."
+fal-ai/switti,text-to-image,text,image,,compute seconds,0.00125,,Switti is a scale-wise transformer for fast text-to-image generation that outperforms existing T2I AR models and competes with state-of-the-art T2I diffusion models while being faster than distilled diffusion models.
+fal-ai/switti/512,text-to-image,text,image,,compute seconds,0.00125,,Switti is a scale-wise transformer for fast text-to-image generation that outperforms existing T2I AR models and competes with state-of-the-art T2I diffusion models while being faster than distilled diffusion models.
+fal-ai/sync-lipsync,video-to-video,audio,video,,output minutes,0.7,,Generate realistic lipsync animations from audio using advanced algorithms for high-quality synchronization.
+fal-ai/sync-lipsync/v2,video-to-video,audio,video,,output minutes,3,,Generate realistic lipsync animations from audio using advanced algorithms for high-quality synchronization with Sync Lipsync 2.0 model
+fal-ai/sync-lipsync/v2/pro,video-to-video,audio,video,,output minutes,5,,Generate high-quality realistic lipsync animations from audio while preserving unique details like natural teeth and unique facial features using the state-of-the-art Sync Lipsync 2 Pro model.
+fal-ai/t2v-turbo,text-to-video,text,video,,compute seconds,0.00125,,Generate short video clips from your prompts
+fal-ai/thera,image-to-image,image,image,,mega pixels,0.0021,,Fix low resolution images with fast speed and quality of thera.
+fal-ai/thinksound,video-to-video,video,video,,compute seconds,0.001,,Generate realistic audio for a video with an optional text prompt and combine
+fal-ai/thinksound/audio,video-to-video,video,video,,compute seconds,0.001,,Generate realistic audio from a video with an optional text prompt
+fal-ai/topaz/upscale/image,image-to-image,image,image,,mega pixels,0.025,,Use the powerful and accurate topaz image enhancer to enhance your images.
+fal-ai/topaz/upscale/video,video-to-video,video,video,,output seconds,0.1,,Professional-grade video upscaling using Topaz technology. Enhance your videos with high-quality upscaling.
+fal-ai/transpixar,text-to-video,text,video,,run,0.4,,"Transform text into stunning videos with TransPixar - an AI model that generates both RGB footage and alpha channels, enabling seamless compositing and creative video effects."
+fal-ai/trellis,image-to-3d,image,3d,,run,0.02,,Generate 3D models from your images using Trellis. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+fal-ai/trellis/multi,image-to-3d,image,3d,,run,0.02,,Generate 3D models from multiple images using Trellis. A native 3D generative model enabling versatile and high-quality 3D asset creation.
+fal-ai/triposr,image-to-3d,image,3d,,run,0.07,,State of the art Image to 3D Object generation
+fal-ai/turbo-flux-trainer,training,,model,,kilo steps,2.4,,A blazing fast FLUX dev LoRA trainer for subjects and styles.
+fal-ai/uno,image-to-image,image,image,,mega pixels,0.05,,"An AI model that transforms input images into new ones based on text prompts, blending reference visuals with your creative directions."
+fal-ai/uso,image-to-image,image,image,,mega pixels,0.1,,Use USO to perform subject driven generations using reference image.
+fal-ai/veo2,text-to-video,text,video,,output seconds,0.5,min 5 units?,Veo 2 creates videos with realistic motion and high quality output. Explore different styles and find your own with extensive camera controls.
+fal-ai/veo2/image-to-video,image-to-video,image,video,,output seconds,0.5,min 5 units?,Veo 2 creates videos from images with realistic motion and very high quality output.
+fal-ai/veo3,text-to-video,text,video,"audio
+silent",output seconds,"0.2
+0.4",,"Veo 3 by Google, the most advanced AI video generation model in the world. With sound on!"
+fal-ai/veo3/fast,text-to-video,text,video,"audio
+silent",output seconds,"0.1
+0.15",,Faster and more cost effective version of Google's Veo 3!
+fal-ai/veo3/fast/image-to-video,image-to-video,image,video,"audio
+silent",output seconds,"0.1
+0.15",,Now with a 50% price drop. Generate videos from your image prompts using Veo 3 fast.
+fal-ai/veo3/image-to-video,image-to-video,image,video,"audio
+silent",output seconds,"0.2
+0.4",,Veo 3 is the latest state-of-the art video generation model from Google DeepMind
+fal-ai/vibevoice,text-to-speech,text,audio,,output seconds,0.04,rounded up to nearest 15 seconds,"Generate long, expressive multi-voice speech using Microsoft's powerful TTS"
+fal-ai/vibevoice/7b,text-to-speech,text,audio,,output seconds,0.04,,"Generate long, expressive multi-voice speech using Microsoft's powerful TTS"
+fal-ai/video-prompt-generator,llm,"text
+image?",text,"text
+text+image",run,"0.001
+0.0011",,"Generate video prompts using a variety of techniques including camera direction, style, pacing, special effects and more."
+fal-ai/video-understanding,vision,video,text,,compute seconds,0.002,,A video understanding model to analyze video content and answer questions about what's happening in the video based on user prompts.
+fal-ai/video-upscaler,video-to-video,video,video,,mega video tokens,0.0008,megapixel or megavideotokens or what?,The video upscaler endpoint uses RealESRGAN on each frame of the input video to upscale the video to a higher resolution.
+fal-ai/vidu/image-to-video,image-to-video,image,video,,output seconds,0.05,,Vidu Image to Video generates high-quality videos with exceptional visual quality and motion diversity from a single image
+fal-ai/vidu/q1/image-to-video,image-to-video,image,video,,output seconds,0.08,min 5 units?,Vidu Q1 Image to Video generates high-quality 1080p videos with exceptional visual quality and motion diversity from a single image
+fal-ai/vidu/q1/reference-to-video,image-to-video,image,video,,output seconds,0.08,min 5 units?,Generate video clips from your multiple image references using Vidu Q1
+fal-ai/vidu/q1/start-end-to-video,image-to-video,image,video,,output seconds,0.1,,Vidu Q1 Start-End to Video generates smooth transition 1080p videos between specified start and end images.
+fal-ai/vidu/q1/text-to-video,text-to-video,text,video,,output seconds,0.08,min 5 units?,Vidu Q1 Text to Video generates high-quality 1080p videos with exceptional visual quality and motion diversity
+fal-ai/vidu/reference-to-image,image-to-image,image,image,,run,0.1,,Vidu Reference-to-Image creates images by using a reference images and combining them with a prompt.
+fal-ai/vidu/reference-to-video,image-to-video,image,video,,output seconds,0.1,,Vidu Reference to Video creates videos by using a reference images and combining them with a prompt.
+fal-ai/vidu/start-end-to-video,image-to-video,image,video,,output seconds,0.05,,Vidu Start-End to Video generates smooth transition videos between specified start and end images.
+fal-ai/vidu/template-to-video,image-to-video,image,video,"standard
+premium
+advanced",run,"0.2
+0.3
+0.5",,Vidu Template to Video lets you create different effects by applying motion templates to your images.
+fal-ai/wan-22-image-trainer,training,,model,,run,0.0045,,Wan 2.2 text to image LoRA trainer. Fine-tune Wan 2.2 for subjects and styles with unprecedented detail.
+fal-ai/wan-22-vace-fun-a14b/depth,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps,VACE Fun for Wan 2.2 A14B from Alibaba-PAI
+fal-ai/wan-22-vace-fun-a14b/inpainting,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps,VACE Fun for Wan 2.2 A14B from Alibaba-PAI
+fal-ai/wan-22-vace-fun-a14b/outpainting,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps,VACE Fun for Wan 2.2 A14B from Alibaba-PAI
+fal-ai/wan-22-vace-fun-a14b/pose,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps,VACE Fun for Wan 2.2 A14B from Alibaba-PAI
+fal-ai/wan-22-vace-fun-a14b/reframe,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps,VACE Fun for Wan 2.2 A14B from Alibaba-PAI
+fal-ai/wan-25-preview/image-to-image,image-to-image,image,image,,run,0.05,,Wan 2.5 image-to-image model.
+fal-ai/wan-25-preview/image-to-video,image-to-video,image,video,"480p
+720p
+1080p",output seconds,"0.05
+0.1
+0.15",,Wan 2.5 image-to-video model.
+fal-ai/wan-25-preview/text-to-image,text-to-image,text,image,,run,0.05,,Wan 2.5 text-to-image model.
+fal-ai/wan-25-preview/text-to-video,text-to-video,text,video,"480p
+720p
+1080p",output seconds,"0.05
+0.1
+0.15",,Wan 2.5 text-to-video model.
+fal-ai/wan-effects,image-to-video,image,video,,run,0.35,,Wan Effects generates high-quality videos with popular effects from images
+fal-ai/wan-flf2v,image-to-video,image,video,"512p
+720p",run,"0.2*
+0.4*",frames?,"Wan-2.1 flf2v generates dynamic videos by intelligently bridging a given first frame to a desired end frame through smooth, coherent motion sequences."
+fal-ai/wan-fun-control,video-to-video,video,video,,output seconds,0.1,16 fps,Generate pose or depth controlled video using Alibaba-PAI's Wan 2.2 Fun
+fal-ai/wan-i2v,image-to-video,image,video,"512p
+720p",run,"0.2*
+0.4*",frames?,Wan-2.1 is a image-to-video model that generates high-quality videos with high visual quality and motion diversity from images
+fal-ai/wan-i2v-lora,image-to-video,image,video,,run,0.75,,Add custom LoRAs to Wan-2.1 is a image-to-video model that generates high-quality videos with high visual quality and motion diversity from images
+fal-ai/wan-pro/image-to-video,image-to-video,image,video,,run,0.16,what??,"Wan-2.1 Pro is a premium image-to-video model that generates high-quality 1080p videos at 30fps with up to 6 seconds duration, delivering exceptional visual quality and motion diversity from images"
+fal-ai/wan-pro/text-to-video,text-to-video,text,video,,output seconds,0.8,,"Wan-2.1 Pro is a premium text-to-video model that generates high-quality 1080p videos at 30fps with up to 6 seconds duration, delivering exceptional visual quality and motion diversity from text prompts"
+fal-ai/wan-t2v,text-to-video,text,video,"480p
+720p",run,"0.2*
+0.4*",frames?,Wan-2.1 is a text-to-video model that generates high-quality videos with high visual quality and motion diversity from text prompts
+fal-ai/wan-t2v-lora,text-to-video,text,video,,run,0.75,,Add custom LoRAs to Wan-2.1 is a text-to-video model that generates high-quality videos with high visual quality and motion diversity from images
+fal-ai/wan-vace,video-to-video,video,video,,run,0.2,,"Vace a video generation model that uses a source image, mask, and video to create prompted videos with controllable sources."
+fal-ai/wan-vace-1-3b,video-to-video,video,video,,run,0.2,,"Vace a video generation model that uses a source image, mask, and video to create prompted videos with controllable sources."
+fal-ai/wan-vace-14b,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,"VACE is a video generation model that uses a source image, mask, and video to create prompted videos with controllable sources."
+fal-ai/wan-vace-14b/depth,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,"VACE is a video generation model that uses a source image, mask, and video to create prompted videos with controllable sources."
+fal-ai/wan-vace-14b/inpainting,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,"VACE is a video generation model that uses a source image, mask, and video to create prompted videos with controllable sources."
+fal-ai/wan-vace-14b/outpainting,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,"VACE is a video generation model that uses a source image, mask, and video to create prompted videos with controllable sources."
+fal-ai/wan-vace-14b/pose,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,"VACE is a video generation model that uses a source image, mask, and video to create prompted videos with controllable sources."
+fal-ai/wan-vace-14b/reframe,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,"VACE is a video generation model that uses a source image, mask, and video to create prompted videos with controllable sources."
+fal-ai/wan-vace-apps/video-edit,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.05
+0.075
+0.1",16 fps,Edit videos using plain language and Wan VACE
+fal-ai/wan/v2.2-14b/animate/move,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,Wan-Animate is a video model that generates high-fidelity character videos by replicating the expressions and movements of characters from reference videos.
+fal-ai/wan/v2.2-14b/animate/replace,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,"Wan-Animate Replace is a model that can integrate animated characters into reference videos, replacing the original character while preserving the scene’s lighting and color tone for seamless environmental integration."
+fal-ai/wan/v2.2-14b/speech-to-video,audio-to-video,audio,video,"480p
+580p
+720p",output seconds,"0.1
+0.15
+0.2",16 fps,"Wan-S2V is a video model that generates high-quality videos from static images and audio, with realistic facial expressions, body movements, and professional camera work for film and television applications"
+fal-ai/wan/v2.2-5b/image-to-video,image-to-video,image,video,,run,0.15,,Wan 2.2's 5B model produces up to 5 seconds of video 720p at 24FPS with fluid motion and powerful prompt understanding
+fal-ai/wan/v2.2-5b/text-to-image,text-to-image,text,image,,run,0.016,,"Wan 2.2's 5B model generates high-resolution, photorealistic images with powerful prompt understanding and fine-grained visual detail"
+fal-ai/wan/v2.2-5b/text-to-video,text-to-video,text,video,,run,0.15,,Wan 2.2's 5B model produces up to 5 seconds of video 720p at 24FPS with fluid motion and powerful prompt understanding
+fal-ai/wan/v2.2-5b/text-to-video/distill,text-to-video,text,video,,run,0.08,,Wan 2.2's 5B distill model produces up to 5 seconds of video 720p at 24FPS with fluid motion and powerful prompt understanding
+fal-ai/wan/v2.2-5b/text-to-video/fast-wan,text-to-video,text,video,"480p
+580p
+720p",run,"0.0125
+0.01875
+0.025",,Wan 2.2's 5B FastVideo model produces up to 5 seconds of video 720p at 24FPS with fluid motion and powerful prompt understanding
+fal-ai/wan/v2.2-a14b/image-to-image,image-to-image,image,image,,run,0.05,,"Wan 2.2's 14B model edit high-resolution, photorealistic images with powerful prompt understanding and fine-grained visual detail"
+fal-ai/wan/v2.2-a14b/image-to-video,image-to-video,image,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,fal-ai/wan/v2.2-A14B/image-to-video
+fal-ai/wan/v2.2-a14b/image-to-video/lora,image-to-video,image,video,,output seconds,0.1,,Wan-2.2 image-to-video is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts and images. This endpoint supports LoRAs made for Wan 2.2
+fal-ai/wan/v2.2-a14b/image-to-video/turbo,image-to-video,image,video,"480p
+580p
+720p",run,"0.05
+0.075
+0.1",,Wan-2.2 Turbo image-to-video is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts.
+fal-ai/wan/v2.2-a14b/text-to-image,text-to-image,text,image,,run,0.025,,"Wan 2.2's 14B model generates high-resolution, photorealistic images with powerful prompt understanding and fine-grained visual detail"
+fal-ai/wan/v2.2-a14b/text-to-image/lora,text-to-image,text,image,,run,0.05,,"Wan 2.2's 14B model with LoRA support generates high-fidelity images with enhanced prompt alignment, style adaptability."
+fal-ai/wan/v2.2-a14b/text-to-video,text-to-video,text,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,Wan-2.2 text-to-video is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts.
+fal-ai/wan/v2.2-a14b/text-to-video/lora,text-to-video,text,video,,output seconds,0.1,,Wan-2.2 text-to-video is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts. This endpoint supports LoRAs made for Wan 2.2.
+fal-ai/wan/v2.2-a14b/text-to-video/turbo,text-to-video,text,video,"480p
+580p
+720p",run,"0.05
+0.075
+0.1",,Wan-2.2 turbo text-to-video is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts.
+fal-ai/wan/v2.2-a14b/video-to-video,video-to-video,video,video,"480p
+580p
+720p",output seconds,"0.04
+0.06
+0.08",16 fps,Wan-2.2 video-to-video is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts and source videos.
+fal-ai/whisper,speech-to-text,audio,text,,compute seconds,0.00125,,Whisper is a model for speech transcription and translation.
+fal-ai/wizper,speech-to-text,audio,text,,compute seconds,0.00125,,"[Experimental] Whisper v3 Large -- but optimized by our inference wizards. Same WER, double the performance!"
+fal-ai/x-ailab/nsfw,vision,image,json,,run,0.001,,Predict whether an image is NSFW or SFW.
+fal-ai/yue,text-to-audio,text,audio,,output seconds,0.05,,"YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs."
+fal-ai/zonos,text-to-audio,text,audio,,run,0.05,,Clone voice of any person and speak anything in their voice using zonos' voice cloning.
+mirelo-ai/sfx-v1/video-to-audio,video-to-audio,video,audio,,output seconds,0.007,,"Generate synced sounds for any video, and return the new sound track (like MMAudio)"
+mirelo-ai/sfx-v1/video-to-video,video-to-video,video,video,,output seconds,0.007,,"Generate synced sounds for any video, and return it with its new sound track (like MMAudio)"
+moonvalley/marey/i2v,image-to-video,image,video,,output seconds,0.3,,"Generate a video starting from an image as the first frame with Marey, a generative video model trained exclusively on fully licensed data."
+moonvalley/marey/motion-transfer,video-to-video,video,video,,run,2,,Pull motion from a reference video and apply it to new subjects or scenes.
+moonvalley/marey/pose-transfer,video-to-video,video,video,,run,2,,"Ideal for matching human movement. Your input video determines human poses, gestures, and body movements that will appear in the generated video."
+moonvalley/marey/t2v,text-to-video,text,video,,output seconds,1.5,,"Generate a video from a text prompt with Marey, a generative video model trained exclusively on fully licensed data."
+perceptron/isaac-01,vision,image,text,,output mega tokens,0.26,,Isaac-01 is a multimodal vision-language model from Perceptron for various vision language tasks.
+resemble-ai/chatterboxhd/speech-to-speech,speech-to-speech,audio,audio,,output minutes,0.02,,"Transform voices using Resemble AI's Chatterbox. Convert audio to new voices or your own samples, with expressive results and built-in perceptual watermarking."
+resemble-ai/chatterboxhd/text-to-speech,text-to-speech,text,audio,,input kilo tokens,0.04,,"Generate expressive, natural speech with Resemble AI's Chatterbox. Features unique emotion control, instant voice cloning from short audio, and built-in watermarking."
+rundiffusion-fal/juggernaut-flux-lora,text-to-image,text,image,,output mega pixels,0.045,,"Juggernaut Base Flux LoRA by RunDiffusion is a drop-in replacement for Flux [Dev] that delivers sharper details, richer colors, and enhanced realism to all your LoRAs and LyCORIS with full compatibility."
+rundiffusion-fal/juggernaut-flux-lora/inpainting,image-to-image,image,image,,mega pixels,0.045,,"Juggernaut Base Flux LoRA Inpainting by RunDiffusion is a drop-in replacement for Flux [Dev] inpainting that delivers sharper details, richer colors, and enhanced realism to all your LoRAs and LyCORIS with full compatibility."
+rundiffusion-fal/juggernaut-flux/base,text-to-image,text,image,,output mega pixels,0.035,,"Juggernaut Base Flux by RunDiffusion is a drop-in replacement for Flux [Dev] that delivers sharper details, richer colors, and enhanced realism, while instantly boosting LoRAs and LyCORIS with full compatibility."
+rundiffusion-fal/juggernaut-flux/base/image-to-image,image-to-image,image,image,,mega pixels,0.035,,"Juggernaut Base Flux by RunDiffusion is a drop-in replacement for Flux [Dev] that delivers sharper details, richer colors, and enhanced realism, while instantly boosting LoRAs and LyCORIS with full compatibility."
+rundiffusion-fal/juggernaut-flux/lightning,text-to-image,text,image,,output mega pixels,0.006,,"Juggernaut Lightning Flux by RunDiffusion provides blazing-fast, high-quality images rendered at five times the speed of Flux. Perfect for mood boards and mass ideation, this model excels in both realism and prompt adherence."
+rundiffusion-fal/juggernaut-flux/pro,text-to-image,text,image,,output mega pixels,0.055,,"Juggernaut Pro Flux by RunDiffusion is the flagship Juggernaut model rivaling some of the most advanced image models available, often surpassing them in realism. It combines Juggernaut Base with RunDiffusion Photo and features enhancements like reduced background blurriness."
+rundiffusion-fal/juggernaut-flux/pro/image-to-image,image-to-image,image,image,,mega pixels,0.055,,"Juggernaut Pro Flux by RunDiffusion is the flagship Juggernaut model rivaling some of the most advanced image models available, often surpassing them in realism. It combines Juggernaut Base with RunDiffusion Photo and features enhancements like reduced background blurriness."
+rundiffusion-fal/rundiffusion-photo-flux,text-to-image,text,image,,output mega pixels,0.045,,"RunDiffusion Photo Flux provides insane realism. With this enhancer, textures and skin details burst to life, turning your favorite prompts into vivid, lifelike creations. Recommended to keep it at 0.65 to 0.80 weight. Supports resolutions up to 1536x1536."
+smoretalk-ai/rembg-enhance,image-to-image,image,image,,run,0.006,,"Rembg-enhance is optimized for 2D vector images, 3D graphics, and photos by leveraging matting technology."
+sonauto/v2/extend,audio-to-audio,audio,audio,,run,0.075,,Extend an existing song
+sonauto/v2/inpaint,text-to-audio,text,audio,,run,0.075,,Replace sections of an existing audio with newly generated content
+sonauto/v2/text-to-music,text-to-audio,text,audio,,run,0.075,,Create full songs in any style
+tripo3d/tripo/v2.5/image-to-3d,image-to-3d,image,3d,"no textures
+standard textures
+hd textures
+no textures + style
+standard textures + style
+hd textures + style
+no textures + quads
+standard textures + quads
+hd textures + quads
+no textures + style + quads
+standard textures + style + quads
+hd textures + style + quads",run,"0.2
+0.3
+0.4
+0.5
+0.25
+0.35
+0.45
+0.55
+0.25
+0.35
+0.45
+0.55
+0.3
+0.4
+0.5
+0.6",extra options*,State of the art Image to 3D Object generation. Generate 3D model from a single image!
+tripo3d/tripo/v2.5/multiview-to-3d,image-to-3d,image,3d,"no textures
+standard textures
+hd textures
+no textures + style
+standard textures + style
+hd textures + style
+no textures + quads
+standard textures + quads
+hd textures + quads
+no textures + style + quads
+standard textures + style + quads
+hd textures + style + quads",run,"0.2
+0.3
+0.4
+0.5
+0.25
+0.35
+0.45
+0.55
+0.25
+0.35
+0.45
+0.55
+0.3
+0.4
+0.5
+0.6",,State of the art Multiview to 3D Object generation. Generate 3D models from multiple images!
+veed/avatars/audio-to-video,audio-to-video,audio,video,,output minutes,0.3,,Generate high-quality videos with UGC-like avatars from audio
+veed/avatars/text-to-video,text-to-video,text,video,,output minutes,0.35,,Generate high-quality videos with UGC-like avatars from text
+veed/fabric-1.0,image-to-video,image,video,"480p
+720p",output seconds,"0.08
+0.15",,VEED Fabric 1.0 is an image-to-video API that turns any image into a talking video
+veed/fabric-1.0/fast,image-to-video,image,video,"480p
+720p",output seconds,"0.1
+0.15",,VEED Fabric 1.0 is an image-to-video API that turns any image into a talking video
+veed/lipsync,video-to-video,audio,video,,output minutes,0.4,,Generate realistic lipsync from any audio using VEED's latest model
