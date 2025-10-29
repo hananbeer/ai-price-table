@@ -19,14 +19,14 @@ interface PriceModel {
   description: string
 }
 
-function formatPrice(price: number): string {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: price < 0.01 ? 4 : 2,
-    maximumFractionDigits: price < 0.01 ? 4 : 2,
-  }).format(price)
-}
+// function formatPrice(price: number): string {
+//   return new Intl.NumberFormat("en-US", {
+//     style: "currency",
+//     currency: "USD",
+//     minimumFractionDigits: price < 0.01 ? 4 : 2,
+//     maximumFractionDigits: price < 0.01 ? 4 : 2,
+//   }).format(price)
+// }
 
 export default function PriceTable() {
   const models = pricesData.models as PriceModel[]

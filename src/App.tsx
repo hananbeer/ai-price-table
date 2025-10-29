@@ -9,16 +9,16 @@ function App() {
   return (
     <div className="min-h-screen bg-background py-12 px-4">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          {/* <h1 className="text-4xl font-bold tracking-tight mb-4">
+        <div className="text-center mb-12 hidden">
+          <h1 className="text-4xl font-bold tracking-tight mb-4">
             AI Inference Price Table
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             Calculate exact inference costs
-          </p> */}
+          </p>
           
           {/* Table Navigation */}
-          {/* <div className="flex justify-center space-x-2">
+          <div className="flex justify-center space-x-2">
             <button
               onClick={() => setActiveTable('v1')}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -39,7 +39,7 @@ function App() {
             >
               Standard Models (v2)
             </button>
-          </div> */}
+          </div>
         </div>
         
         {activeTable === 'v1' ? <PriceTableV1 /> : <PriceTable />}
