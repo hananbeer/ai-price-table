@@ -1,0 +1,95 @@
+{
+  "models": [
+    {
+      "name": "GPT-4 Turbo",
+      "provider": "OpenAI",
+      "inputPrice": 0.01,
+      "outputPrice": 0.03,
+      "unit": "per 1K tokens",
+      "contextWindow": "128K tokens",
+      "description": "Most capable model for complex tasks"
+    },
+    {
+      "name": "GPT-4",
+      "provider": "OpenAI",
+      "inputPrice": 0.03,
+      "outputPrice": 0.06,
+      "unit": "per 1K tokens",
+      "contextWindow": "8K tokens",
+      "description": "High-performance model for advanced reasoning"
+    },
+    {
+      "name": "GPT-3.5 Turbo",
+      "provider": "OpenAI",
+      "inputPrice": 0.0005,
+      "outputPrice": 0.0015,
+      "unit": "per 1K tokens",
+      "contextWindow": "16K tokens",
+      "description": "Fast and cost-effective for most tasks"
+    },
+    {
+      "name": "Claude 3 Opus",
+      "provider": "Anthropic",
+      "inputPrice": 0.015,
+      "outputPrice": 0.075,
+      "unit": "per 1K tokens",
+      "contextWindow": "200K tokens",
+      "description": "Most intelligent model for complex reasoning"
+    },
+    {
+      "name": "Claude 3 Sonnet",
+      "provider": "Anthropic",
+      "inputPrice": 0.003,
+      "outputPrice": 0.015,
+      "unit": "per 1K tokens",
+      "contextWindow": "200K tokens",
+      "description": "Balanced performance and cost"
+    },
+    {
+      "name": "Claude 3 Haiku",
+      "provider": "Anthropic",
+      "inputPrice": 0.00025,
+      "outputPrice": 0.00125,
+      "unit": "per 1K tokens",
+      "contextWindow": "200K tokens",
+      "description": "Fast and affordable for simple tasks"
+    },
+    {
+      "name": "Gemini Pro",
+      "provider": "Google",
+      "inputPrice": 0.0005,
+      "outputPrice": 0.0015,
+      "unit": "per 1K tokens",
+      "contextWindow": "32K tokens",
+      "description": "Google's advanced language model"
+    },
+    {
+      "name": "Gemini Ultra",
+      "provider": "Google",
+      "inputPrice": 0.0125,
+      "outputPrice": 0.05,
+      "unit": "per 1K tokens",
+      "contextWindow": "32K tokens",
+      "description": "Google's most capable model"
+    },
+    {
+      "name": "Llama 3 70B",
+      "provider": "Meta",
+      "inputPrice": 0.00065,
+      "outputPrice": 0.00065,
+      "unit": "per 1K tokens",
+      "contextWindow": "8K tokens",
+      "description": "Open-source large language model"
+    },
+    {
+      "name": "Mixtral 8x7B",
+      "provider": "Mistral AI",
+      "inputPrice": 0.00027,
+      "outputPrice": 0.00027,
+      "unit": "per 1K tokens",
+      "contextWindow": "32K tokens",
+      "description": "Efficient mixture-of-experts model"
+    }
+  ]
+}
+
