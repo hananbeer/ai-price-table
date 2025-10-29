@@ -240,7 +240,12 @@ export default function PriceTableV1() {
   }
 
   return (
-    <Card className="w-full max-w-7xl mx-auto">
+    <Card className="w-full max-w-7xl mx-auto" onClick={() => {
+      setShowTypeMenu(false)
+      setShowInputMenu(false)
+      setShowOutputMenu(false)
+      setShowUnitsMenu(false)
+    }}>
       <CardHeader>
         <CardTitle>AI Inference Price Table</CardTitle>
         <CardDescription>
@@ -572,7 +577,13 @@ export default function PriceTableV1() {
                 
               </TableRow>
             </TableHeader>
-            <TableBody>
+          </Table>
+        </div>
+
+        <div className="rounded-md border border-t-0 max-h-[70vh] overflow-y-auto">
+          <Table>
+
+          <TableBody>
               {sortedModels.map((model, index) => (
                 <TableRow key={`${model.model_id}-${index}`}>
                   <TableCell className="font-medium max-w-[200px] truncate">
