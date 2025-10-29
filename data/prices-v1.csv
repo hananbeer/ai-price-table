@@ -66,9 +66,9 @@ fal-ai/bria/text-to-image/hd,text-to-image,text,image,,run,0.04,,Bria's Text-to-
 fal-ai/bytedance/dreamina/v3.1/text-to-image,text-to-image,text,image,,run,0.03,,"Dreamina showcases superior picture effects, with significant improvements in picture aesthetics, precise and diverse styles, and rich details."
 fal-ai/bytedance/omnihuman,image-to-video,image,video,,output seconds,0.14,,"OmniHuman generates video using an image of a human figure paired with an audio file. It produces vivid, high-quality videos where the character’s emotions and movements maintain a strong correlation with the audio."
 fal-ai/bytedance/omnihuman/v1.5,image-to-video,image,video,,output seconds,0.16,,"Omnihuman v1.5 is a new and improved version of Omnihuman. It generates video using an image of a human figure paired with an audio file. It produces vivid, high-quality videos where the character’s emotions and movements maintain a strong correlation with the audio."
-fal-ai/bytedance/seedance/v1/lite/image-to-video,image-to-video,image,video,,mega video tokens,0.036,,Seedance 1.0 Lite
-fal-ai/bytedance/seedance/v1/lite/reference-to-video,image-to-video,image,video,,mega video tokens,0.036,,Seedance lite reference-to-video allows the use of 1 to 4 images as reference to create a high-quality video.
-fal-ai/bytedance/seedance/v1/lite/text-to-video,text-to-video,text,video,,mega video tokens,0.036,,Seedance 1.0 Lite
+fal-ai/bytedance/seedance/v1/lite/image-to-video,image-to-video,image,video,,mega video tokens,1.8,,Seedance 1.0 Lite
+fal-ai/bytedance/seedance/v1/lite/reference-to-video,image-to-video,image,video,,mega video tokens,1.8,,Seedance lite reference-to-video allows the use of 1 to 4 images as reference to create a high-quality video.
+fal-ai/bytedance/seedance/v1/lite/text-to-video,text-to-video,text,video,,mega video tokens,1.8,,Seedance 1.0 Lite
 fal-ai/bytedance/seedance/v1/pro/image-to-video,image-to-video,image,video,,mega video tokens,2.5,,"Seedance 1.0 Pro, a high quality video generation model developed by Bytedance."
 fal-ai/bytedance/seedance/v1/pro/text-to-video,text-to-video,text,video,,mega video tokens,2.5,,"Seedance 1.0 Pro, a high quality video generation model developed by Bytedance."
 fal-ai/bytedance/seededit/v3/edit-image,image-to-image,image,image,,run,0.03,,"SeedEdit 3.0 is an image editing model independently developed by ByteDance. It excels in accurately following editing instructions and effectively preserving image content, especially excelling in handling real images"
@@ -161,9 +161,9 @@ standard
 premium",run,"0.18
 0.27
 0.36",,"Finegrain Eraser removes objects—along with their shadows, reflections, and lighting artifacts—using only natural language, seamlessly filling the scene with contextually accurate content."
-fal-ai/finegrain-eraser/bbox,image-to-image,"express
+fal-ai/finegrain-eraser/bbox,image-to-image,image,image,"express
 standard
-premium",image,,run,"0.09
+premium",run,"0.09
 0.18
 0.27",express price is wrong?,"Finegrain Eraser removes any object selected with a bounding box—along with its shadows, reflections, and lighting artifacts—seamlessly reconstructing the scene with contextually accurate content."
 fal-ai/finegrain-eraser/mask,image-to-image,image,image,"express
@@ -785,7 +785,7 @@ fal-ai/sdxl-controlnet-union,text-to-image,text,image,,compute seconds,0.00111,,
 fal-ai/sdxl-controlnet-union/image-to-image,image-to-image,image,image,,compute seconds,0.00111,,An efficent SDXL multi-controlnet image-to-image model.
 fal-ai/sdxl-controlnet-union/inpainting,image-to-image,image,image,,compute seconds,0.00111,,An efficent SDXL multi-controlnet inpainting model.
 fal-ai/seedvr/upscale/image,image-to-image,image,image,,mega pixels,0.001,input or output?,Use SeedVR2 to upscale your images
-fal-ai/seedvr/upscale/video,video-to-video,video,video,,mega video tokens,0.001,?,Upscale your videos using SeedVR2 with temporal consistency!
+fal-ai/seedvr/upscale/video,video-to-video,video,video,,kilo video tokens,0.001,?,Upscale your videos using SeedVR2 with temporal consistency!
 fal-ai/sky-raccoon,text-to-image,text,image,,output mega pixels,0.06,,Generate images from a text prompt.
 fal-ai/skyreels-i2v,image-to-video,image,video,,run,0.3,,SkyReels V1 is the first and most advanced open-source human-centric video foundation model. By fine-tuning HunyuanVideo on O(10M) high-quality film and television clips
 fal-ai/smart-turn,speech-to-text,audio,text,,compute seconds,0.00125,,"An open source, community-driven and native audio turn detection model by Pipecat AI."
@@ -842,12 +842,11 @@ silent",output seconds,"0.2
 0.4",,Veo 3 is the latest state-of-the art video generation model from Google DeepMind
 fal-ai/vibevoice,text-to-speech,text,audio,,output seconds,0.04,rounded up to nearest 15 seconds,"Generate long, expressive multi-voice speech using Microsoft's powerful TTS"
 fal-ai/vibevoice/7b,text-to-speech,text,audio,,output seconds,0.04,,"Generate long, expressive multi-voice speech using Microsoft's powerful TTS"
-fal-ai/video-prompt-generator,llm,"text
-image?",text,"text
+fal-ai/video-prompt-generator,llm,text,text,"text
 text+image",run,"0.001
 0.0011",,"Generate video prompts using a variety of techniques including camera direction, style, pacing, special effects and more."
 fal-ai/video-understanding,vision,video,text,,compute seconds,0.002,,A video understanding model to analyze video content and answer questions about what's happening in the video based on user prompts.
-fal-ai/video-upscaler,video-to-video,video,video,,mega video tokens,0.0008,megapixel or megavideotokens or what?,The video upscaler endpoint uses RealESRGAN on each frame of the input video to upscale the video to a higher resolution.
+fal-ai/video-upscaler,video-to-video,video,video,,kilo video tokens,0.0008,megapixel or megavideotokens or what?,The video upscaler endpoint uses RealESRGAN on each frame of the input video to upscale the video to a higher resolution.
 fal-ai/vidu/image-to-video,image-to-video,image,video,,output seconds,0.05,,Vidu Image to Video generates high-quality videos with exceptional visual quality and motion diversity from a single image
 fal-ai/vidu/q1/image-to-video,image-to-video,image,video,,output seconds,0.08,min 5 units?,Vidu Q1 Image to Video generates high-quality 1080p videos with exceptional visual quality and motion diversity from a single image
 fal-ai/vidu/q1/reference-to-video,image-to-video,image,video,,output seconds,0.08,min 5 units?,Generate video clips from your multiple image references using Vidu Q1
