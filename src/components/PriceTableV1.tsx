@@ -599,7 +599,7 @@ export default function PriceTableV1() {
                   <TableCell>
                     {(() => {
                       const tagText = formatTag(model.tag)
-                      const colors = getLabelColor(tagText)
+                      const colors = getLabelColor('tag.' + tagText)
                       return (
                         <span className={`inline-flex items-center rounded-md ${colors.bg} px-2 py-1 text-xs font-medium ${colors.text}`}>
                           {tagText}
@@ -609,7 +609,7 @@ export default function PriceTableV1() {
                   </TableCell>
                   <TableCell>
                     {(() => {
-                      const colors = getLabelColor(model.inputs || 'N/A')
+                      const colors = getLabelColor('input.' + model.inputs || 'N/A')
                       return (
                         <span className={`inline-flex items-center rounded-md ${colors.bg} px-2 py-1 text-xs font-medium ${colors.text}`}>
                           {model.inputs || 'N/A'}
@@ -619,7 +619,7 @@ export default function PriceTableV1() {
                   </TableCell>
                   <TableCell>
                     {(() => {
-                      const colors = getLabelColor(model.output)
+                      const colors = getLabelColor('output.' + model.output)
                       return (
                         <span className={`inline-flex items-center rounded-md ${colors.bg} px-2 py-1 text-xs font-medium ${colors.text}`}>
                           {model.output}
@@ -629,7 +629,7 @@ export default function PriceTableV1() {
                   </TableCell>
                   <TableCell>
                     {(() => {
-                      const colors = getLabelColor(model.bip_units || 'N/A')
+                      const colors = getLabelColor('units.' + model.bip_units || 'N/A')
                       return (
                         <span className={`inline-flex items-center rounded-md ${colors.bg} px-2 py-1 text-xs font-medium ${colors.text}`}>
                           {model.bip_units || 'N/A'}
