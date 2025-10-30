@@ -256,9 +256,9 @@ export default function PriceTableV1() {
 
         {/* Add chart here */}
 
-        <div className="rounded-md border">
+        <div className="rounded-md border max-h-[70vh] overflow-y-auto">
           <Table>
-            <TableHeader>
+            <TableHeader className="sticky top-0 bg-background">
               <TableRow>
                 <TableHead 
                   className="w-[200px] cursor-pointer hover:bg-gray-50 select-none"
@@ -577,13 +577,7 @@ export default function PriceTableV1() {
                 
               </TableRow>
             </TableHeader>
-          </Table>
-        </div>
-
-        <div className="rounded-md border border-t-0 max-h-[70vh] overflow-y-auto">
-          <Table>
-
-          <TableBody>
+            <TableBody>
               {sortedModels.map((model, index) => (
                 <TableRow key={`${model.model_id}-${index}`}>
                   <TableCell className="font-medium max-w-[200px] truncate">
