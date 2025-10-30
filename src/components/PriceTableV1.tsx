@@ -26,47 +26,6 @@ interface PriceModelV1 {
 type SortColumn = 'model_id' | 'tag' | 'inputs' | 'output' | 'bip_price_usd' | 'bip_units'
 type SortDirection = 'asc' | 'desc'
 
-function valuePer1000Units(price: number, units: string): string {
-  if (units.includes('seconds')) {
-    return (1000 / price / 60 / 60).toFixed(2) + ' hours'
-  } else if (units.includes('minutes')) {
-    return (1000 / price / 60).toFixed(2) + ' hours'
-  } else if (units.includes('mega pixels')) {
-    return (1000 / price).toFixed(0) + ' HD images'
-  } else if (units.includes('kilo video tokens')) {
-    return (46.3 / price / 60 / 60).toFixed(2) + ' HD video hours'
-  } else if (units.includes('mega video tokens')) {
-    // for example, 5s HD price = $0.18, 1s HD price = $0.036, $1000 = 26315.8 seconds HD = 438.6 hours of HD video
-
-    // video tokens = (height x width x FPS x duration) / 1024
-    // video tokens per second = (1280 * 720 * 24) / 1024 = 21600
-    // 1,000,000 tokens / 21,600 tokens per second = 46.3 seconds of HD video per million tokens price unit
-    // price => 46.3 HD video seconds
-    // $1 = (46.3 / price) HD video seconds
-    // $1000 = (46.3 / price) * 1000 HD video seconds
-    // 1MVT = price
-    // price per second = price / 21,600
-    // 1000 X = 46,000 seconds
-    // $1000 = 46,000 / X
-    return (46.3 / price * 1000 / 60 / 60).toFixed(2) + ' HD video hours'
-  } else {
-    return (1000 / price).toFixed(0) + ' ' + units
-  }
-}
-
-function formatPrice(price: number, units: string, option?: string): React.ReactNode {
-  const formattedPrice = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 5,
-  }).format(price)
-  return <>
-    <p>{formattedPrice}{option ? ` for ${option}` : ''}</p>
-    <p className="text-xs text-muted-foreground">$1000 = {valuePer1000Units(price, units)}</p>
-  </>
-}
-
 function formatModelId(modelId: string): string {
   // Extract the model name from the model_id (everything after the last slash)
   const parts = modelId.split('/')
@@ -161,7 +120,49 @@ export default function PriceTableV1() {
   const [showOutputMenu, setShowOutputMenu] = useState<boolean>(false)
   const [selectedUnits, setSelectedUnits] = useState<Set<string>>(new Set())
   const [showUnitsMenu, setShowUnitsMenu] = useState<boolean>(false)
-  
+  const [budget, setBudget] = useState<number>(1000)
+    
+  function valuePerBudgetUnits(price: number, units: string): string {
+    if (units.includes('seconds')) {
+      return (budget / price / 60 / 60).toFixed(2) + ' hours'
+    } else if (units.includes('minutes')) {
+      return (budget / price / 60).toFixed(2) + ' hours'
+    } else if (units.includes('mega pixels')) {
+      return (budget / price).toFixed(0) + ' HD images'
+    } else if (units.includes('kilo video tokens')) {
+      return (46.3 / price / 60 / 60).toFixed(2) + ' HD video hours'
+    } else if (units.includes('mega video tokens')) {
+      // for example, 5s HD price = $0.18, 1s HD price = $0.036, $1000 = 26315.8 seconds HD = 438.6 hours of HD video
+
+      // video tokens = (height x width x FPS x duration) / 1024
+      // video tokens per second = (1280 * 720 * 24) / 1024 = 21600
+      // 1,000,000 tokens / 21,600 tokens per second = 46.3 seconds of HD video per million tokens price unit
+      // price => 46.3 HD video seconds
+      // $1 = (46.3 / price) HD video seconds
+      // $1000 = (46.3 / price) * 1000 HD video seconds
+      // 1MVT = price
+      // price per second = price / 21,600
+      // 1000 X = 46,000 seconds
+      // $1000 = 46,000 / X
+      return (46.3 / price * budget / 60 / 60).toFixed(2) + ' HD video hours'
+    } else {
+      return (budget / price).toFixed(0) + ' ' + units
+    }
+  }
+
+  function formatPrice(price: number, units: string, option?: string): React.ReactNode {
+    const formattedPrice = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 5,
+    }).format(price)
+    return <>
+      <p>{formattedPrice}{option ? ` for ${option}` : ''}</p>
+      <p className="text-xs text-muted-foreground">${budget.toFixed(0)} = {valuePerBudgetUnits(price, units)}</p>
+    </>
+  }
+
   const models = pricesV1Data as PriceModelV1[]
   const tagOptions = useMemo(() => {
     const unique = new Set<string>()
@@ -240,19 +241,32 @@ export default function PriceTableV1() {
   }
 
   return (
-    <Card className="w-full max-w-7xl mx-auto" onClick={() => {
+    <div className="w-full max-w-7xl mx-auto" onClick={() => {
       setShowTypeMenu(false)
       setShowInputMenu(false)
       setShowOutputMenu(false)
       setShowUnitsMenu(false)
     }}>
-      <CardHeader>
-        <CardTitle>AI Inference Price Table</CardTitle>
-        <CardDescription>
-          Calculate exact inference costs
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
+      <div className="flex gap-4">
+        <div>
+          <CardTitle>AI Inference Price Table</CardTitle>
+          <CardDescription>
+            Calculate exact inference costs
+          </CardDescription>
+        </div>
+        <div>
+        <div className="mb-4">
+          <input
+            type="text"
+            className="w-full p-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            value={budget}
+            onChange={e => setBudget(parseFloat(e.target.value))}
+          />
+          <label htmlFor="budget" className="block text-xs font-medium text-gray-500">Budget</label>
+        </div>
+        </div>
+      </div>
+      <div>
 
         {/* Add chart here */}
 
@@ -640,7 +654,7 @@ export default function PriceTableV1() {
             </TableBody>
           </Table>
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   )
 }
