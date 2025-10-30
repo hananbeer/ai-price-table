@@ -581,13 +581,11 @@ export default function PriceTableV1() {
               {sortedModels.map((model, index) => (
                 <TableRow key={`${model.model_id}-${index}`}>
                   <TableCell className="font-medium max-w-[200px] truncate">
-                    <div className="space-y-1 max-w-[200px]">
-                      <div className="font-semibold truncate">
-                        <a href={`https://fal.ai/models/${model.model_id}`} target="_blank" rel="noopener noreferrer">{model.model_id}</a>
-                      </div>
-                      <div className="text-xs text-muted-foreground font-mono whitespace-pre-wrap">
-                        {model.description}
-                      </div>
+                    <div className="font-semibold truncate">
+                      <a href={`https://fal.ai/models/${model.model_id}`} target="_blank" rel="noopener noreferrer">{model.model_id}</a>
+                    </div>
+                    <div className="text-xs text-muted-foreground font-mono whitespace-pre-wrap">
+                      {model.description}
                     </div>
                   </TableCell>
                   <TableCell>
