@@ -260,9 +260,9 @@ export default function PriceTableV1() {
             type="text"
             className="w-full p-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             value={budget}
-            onChange={e => setBudget(parseFloat(e.target.value))}
+            onChange={e => setBudget(isNaN(parseFloat(e.target.value)) ? 0 : parseFloat(e.target.value))}
           />
-          <label htmlFor="budget" className="block text-xs font-medium text-gray-500">Budget</label>
+          <label htmlFor="budget" className="block text-xs font-medium text-gray-500">Budget (USD)</label>
         </div>
         </div>
       </div>
